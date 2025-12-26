@@ -1,0 +1,168 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/styled-text/index.html
+
+Styled
+Text
+Text element with styles such as bold, italic and color.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+styledText
+=
+AddOnsResponseService
+.
+newStyledText
+()
+.
+setText
+(
+"Styled Text!"
+)
+.
+addStyle
+(
+AddOnsResponseService
+.
+TextStyle
+.
+ITALIC
+)
+.
+addStyle
+(
+AddOnsResponseService
+.
+TextStyle
+.
+UNDERLINE
+)
+.
+setFontWeight
+(
+AddOnsResponseService
+.
+FontWeight
+.
+BOLD
+)
+.
+setColor
+(
+AddOnsResponseService
+.
+newColor
+()
+.
+setRed
+(
+0.1
+)
+.
+setBlue
+(
+0.3
+)
+.
+setGreen
+(
+0.1
+)
+.
+setAlpha
+(
+0.78
+)
+);
+Methods
+Method
+Return type
+Brief description
+add
+Style(style)
+Styled
+Text
+Sets the style of the styled text, can apply multiple styles to a single styled text.
+set
+Color(color)
+Styled
+Text
+Sets the color of the styled text.
+set
+Font
+Weight(fontWeight)
+Styled
+Text
+Sets the font weight of the styled text.
+set
+Text(text)
+Styled
+Text
+Sets the main content of the styled text.
+Detailed documentation
+add
+Style(style)
+Sets the style of the styled text, can apply multiple styles to a single styled text.
+Parameters
+Name
+Type
+Description
+style
+Text
+Style
+The
+Text
+Style
+of the styled text.
+Return
+Styled
+Text
+— This styled text object, for chaining.
+set
+Color(color)
+Sets the color of the styled text.
+Parameters
+Name
+Type
+Description
+color
+Color
+The
+Color
+of the styled text.
+Return
+Styled
+Text
+— This styled text object, for chaining.
+set
+Font
+Weight(fontWeight)
+Sets the font weight of the styled text.
+Parameters
+Name
+Type
+Description
+font
+Weight
+Font
+Weight
+The
+Font
+Weight
+of the styled text.
+Return
+Styled
+Text
+— This styled text object, for chaining.
+set
+Text(text)
+Sets the main content of the styled text.
+Parameters
+Name
+Type
+Description
+text
+String
+The text message in the styled text.
+Return
+Styled
+Text
+— This styled text object, for chaining.

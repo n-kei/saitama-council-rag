@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/platform-data-source/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PlatformDataSource is used for populating items in a multiselect menu within a SelectionInput widget.
 This feature is exclusively available for Google Chat apps and cannot be used with Google Workspace add-ons.
@@ -88,6 +88,15 @@ Data
 Source
 Sets the data source from Google Workspace.
 set
+Drive
+Data
+Source
+Spec(driveDataSourceSpec)
+Platform
+Data
+Source
+Sets the drive data source spec from Google Workspace.
+set
 Host
 App
 Data
@@ -171,6 +180,121 @@ Common
 Data
 Source
 The data source to be set.
+Return
+Platform
+Data
+Source
+— This object, for chaining.
+set
+Drive
+Data
+Source
+Spec(driveDataSourceSpec)
+Sets the drive data source spec from Google Workspace.
+const
+driveDataSourceSpec
+=
+CardService
+.
+newDriveDataSourceSpec
+()
+.
+addItemType
+(
+CardService
+.
+DriveItemType
+.
+DOCUMENTS
+)
+.
+addItemType
+(
+CardService
+.
+DriveItemType
+.
+FORMS
+);
+const
+platformDataSource
+=
+CardService
+.
+newPlatformDataSource
+().
+setCommonDataSource
+(
+CardService
+.
+CommonDataSource
+.
+DRIVE
+).
+setDriveDataSourceSpec
+(
+driveDataSourceSpec
+);
+const
+multiSelect
+=
+CardService
+.
+newSelectionInput
+()
+.
+setType
+(
+CardService
+.
+SelectionInputType
+.
+MULTI_SELECT
+)
+.
+setFieldName
+(
+'files'
+)
+.
+setTitle
+(
+'Drive Files'
+)
+.
+setMultiSelectMaxSelectedItems
+(
+5
+)
+.
+setMultiSelectMinQueryLength
+(
+1
+)
+.
+setPlatformDataSource
+(
+platformDataSource
+);
+Available for Google Chat apps. For Google Workspace add-ons, it needs to add
+Per-file
+access scope
+(
+https://www.googleapis.com/auth/drive.file
+) to manifest.
+Parameters
+Name
+Type
+Description
+drive
+Data
+Source
+Spec
+Drive
+Data
+Source
+Spec
+The drive data source spec to be set.
 Return
 Platform
 Data

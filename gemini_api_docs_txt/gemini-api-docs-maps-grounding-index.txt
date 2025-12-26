@@ -20,6 +20,8 @@ This example demonstrates how to integrate Grounding with Google Maps into your
 application to provide accurate, location-aware responses to user queries. The
 prompt asks for local recommendations with an optional user location, enabling
 the Gemini model to leverage Google Maps data.
+Note:
+Grounding with Google Maps is not available with Gemini 3.
 Python
 from
 google

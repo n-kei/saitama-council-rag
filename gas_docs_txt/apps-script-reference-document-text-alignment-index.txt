@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/text-alignment/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextAlignment is an enumeration used to specify text alignment types.
 Text alignment enums are accessed via

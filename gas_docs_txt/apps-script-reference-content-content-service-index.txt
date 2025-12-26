@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/content/content-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ContentService allows you to serve text content from a script, for example, by publishing the script as a web app.
 When serving content through a web app, the browser URL will differ from the original script URL for security reasons.

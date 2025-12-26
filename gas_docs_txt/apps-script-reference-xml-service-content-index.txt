@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/content/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A generic XML node is represented by this class.
 It has implementing classes for various XML node types like Cdata, Comment, DocType, Element, EntityRef, ProcessingInstruction, and Text.

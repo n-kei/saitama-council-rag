@@ -1,0 +1,70 @@
+Source Path: gas_docs_html/apps-script/reference/card-service/drive-data-source-spec/index.html
+
+Drive
+Data
+Source
+Spec
+Holds a set of
+Drive
+Item
+Type
+objects that are displayed in a row.
+const
+driveDataSourceSpec
+=
+CardService
+.
+newDriveDataSourceSpec
+()
+.
+addItemType
+(
+CardService
+.
+DriveItemType
+.
+DOCUMENTS
+)
+.
+addItemType
+(
+CardService
+.
+DriveItemType
+.
+FORMS
+);
+Methods
+Method
+Return type
+Brief description
+add
+Item
+Type(driveItemType)
+Drive
+Data
+Source
+Spec
+Adds a driveItemType to allowed item types list.
+Detailed documentation
+add
+Item
+Type(driveItemType)
+Adds a driveItemType to allowed item types list.
+Parameters
+Name
+Type
+Description
+drive
+Item
+Type
+Drive
+Item
+Type
+The driveItemType to add.
+Return
+Drive
+Data
+Source
+Spec
+— This object, for chaining.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/month/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Month is an enum representing the months of the year.
 To call the enum, you use its parent class, name, and property like

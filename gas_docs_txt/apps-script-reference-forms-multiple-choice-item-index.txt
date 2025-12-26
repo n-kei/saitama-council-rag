@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/multiple-choice-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 MultipleChoiceItem is a question type in Google Forms allowing single selection from a list or an "other" field, and is autograded when used in a quiz.
 You can create or access MultipleChoiceItem objects from a Form object in Apps Script.
@@ -101,6 +101,7 @@ For
 Correct()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond correctly to a question.
 get
 Feedback
@@ -108,6 +109,7 @@ For
 Incorrect()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond incorrectly to a question.
 get
 Help
@@ -419,6 +421,7 @@ Returns the feedback that is shown to respondents when they respond correctly to
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -434,6 +437,7 @@ Returns the feedback that is shown to respondents when they respond incorrectly 
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

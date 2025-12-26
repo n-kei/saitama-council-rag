@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/item-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ItemResponse represents a response to a single question item within a form.
 Item responses can be accessed from a FormResponse and created from an Item that asks for a response.

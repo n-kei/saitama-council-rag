@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/cache/cache/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Cache class is used to insert, retrieve, and remove items from a cache, useful for speeding up access to expensive or slow resources.
 Data can be added to the cache using

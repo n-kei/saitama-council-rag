@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/optimization/linear-optimization-engine/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LinearOptimizationEngine is used to model and solve linear programs by defining variables, constraints, and objectives.
 You can add variables with specified bounds and types using methods like

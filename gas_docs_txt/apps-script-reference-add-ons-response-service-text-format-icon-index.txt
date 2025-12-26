@@ -1,0 +1,80 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/text-format-icon/index.html
+
+Text
+Format
+Icon
+An icon that is displayed in a
+Text
+Format
+Chip
+.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+icon
+=
+AddOnsResponseService
+.
+newTextFormatIcon
+()
+.
+setMaterialIconName
+(
+"check_box"
+);
+Methods
+Method
+Return type
+Brief description
+set
+Icon
+Url(iconUrl)
+Text
+Format
+Icon
+Sets the icon URL.
+set
+Material
+Icon
+Name(materialIconName)
+Text
+Format
+Icon
+Sets the material icon name defined in Google Material Icons.
+Detailed documentation
+set
+Icon
+Url(iconUrl)
+Sets the icon URL.
+Parameters
+Name
+Type
+Description
+icon
+Url
+String
+The destination URL of the icon.
+Return
+Text
+Format
+Icon
+— This text format icon object.
+set
+Material
+Icon
+Name(materialIconName)
+Sets the material icon name defined in Google Material Icons.
+Parameters
+Name
+Type
+Description
+material
+Icon
+Name
+String
+The material icon name to set.
+Return
+Text
+Format
+Icon
+— This text format icon object.

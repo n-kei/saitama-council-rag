@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CardService allows you to create generic cards for use in various Google extensibility products like Google Workspace add-ons.
 You can return single or multiple cards using the CardService.
@@ -429,6 +429,17 @@ Chip
 List
 Layout
 enumeration.
+Common
+Data
+Source
+Common
+Data
+Source
+The
+Common
+Data
+Source
+enumeration.
 Composed
 Email
 Type
@@ -446,6 +457,17 @@ Content
 Type
 The
 Content
+Type
+enumeration.
+Drive
+Item
+Type
+Drive
+Item
+Type
+The
+Drive
+Item
 Type
 enumeration.
 Expression
@@ -584,6 +606,17 @@ Text
 Button
 Style
 enumeration.
+Text
+Input
+Mode
+Text
+Input
+Mode
+The
+Text
+Input
+Mode
+enumeration.
 Update
 Draft
 Body
@@ -597,6 +630,17 @@ Update
 Draft
 Body
 Type
+enumeration.
+Variable
+Button
+Size
+Variable
+Button
+Size
+The
+Variable
+Button
+Size
 enumeration.
 Visibility
 Visibility
@@ -829,6 +873,18 @@ Creates a new set of
 Columns
 .
 new
+Common
+Widget
+Action()
+Common
+Widget
+Action
+Creates a new
+Common
+Widget
+Action
+.
+new
 Compose
 Action
 Response
@@ -842,6 +898,24 @@ Compose
 Action
 Response
 Builder
+.
+new
+Condition()
+Condition
+Creates a new
+Condition
+used for client-side validation.
+new
+Data
+Source
+Config()
+Data
+Source
+Config
+Creates a new, empty
+Data
+Source
+Config
 .
 new
 Date
@@ -896,6 +970,21 @@ Divider
 .
 new
 Drive
+Data
+Source
+Spec()
+Drive
+Data
+Source
+Spec
+Creates a new
+Drive
+Data
+Source
+Spec
+.
+new
+Drive
 Items
 Selected
 Action
@@ -936,6 +1025,48 @@ Action
 Response
 Builder
 .
+new
+Event
+Action()
+Event
+Action
+Creates a new
+Event
+Action
+used for client-side validation.
+new
+Expression
+Data()
+Expression
+Data
+Creates a new
+Expression
+Data
+used for client-side validation.
+new
+Expression
+Data
+Action()
+Expression
+Data
+Action
+Creates a new
+Expression
+Data
+Action
+used for client-side validation.
+new
+Expression
+Data
+Condition()
+Expression
+Data
+Condition
+Creates a new
+Expression
+Data
+Condition
+used for client-side validation.
 new
 Fixed
 Footer()
@@ -970,11 +1101,6 @@ App
 Data
 Source
 Creates a new
-Host
-App
-Data
-Source
-and return an empty
 Host
 App
 Data
@@ -1095,6 +1221,18 @@ Menu
 Item
 .
 new
+Platform
+Data
+Source()
+Platform
+Data
+Source
+Creates a new
+Platform
+Data
+Source
+.
+new
 Selection
 Input()
 Selection
@@ -1163,6 +1301,12 @@ Creates a new
 Time
 Picker
 .
+new
+Trigger()
+Trigger
+Creates and returns a new
+Trigger
+used for client-side validation.
 new
 Universal
 Action
@@ -1281,10 +1425,34 @@ Recipients
 Action
 .
 new
+Update
+Visibility
+Action()
+Update
+Visibility
+Action
+Creates a new
+Update
+Visibility
+Action
+.
+new
 Validation()
 Validation
 Creates a new
 Validation
+.
+new
+Workflow
+Data
+Source()
+Workflow
+Data
+Source
+Creates a new
+Workflow
+Data
+Source
 .
 Detailed documentation
 new
@@ -2110,6 +2278,24 @@ Return
 Columns
 — An empty set of Columns.
 new
+Common
+Widget
+Action()
+Creates a new
+Common
+Widget
+Action
+.
+Return
+Common
+Widget
+Action
+— An empty
+Common
+Widget
+Action
+.
+new
 Compose
 Action
 Response
@@ -2126,6 +2312,34 @@ Action
 Response
 Builder
 — An empty ComposeActionResponse builder.
+new
+Condition()
+Creates a new
+Condition
+used for client-side validation.
+Return
+Condition
+— An empty
+Condition
+.
+new
+Data
+Source
+Config()
+Creates a new, empty
+Data
+Source
+Config
+.
+Return
+Data
+Source
+Config
+— An empty
+Data
+Source
+Config
+.
 new
 Date
 Picker()
@@ -2347,6 +2561,28 @@ Divider
 — A divider.
 new
 Drive
+Data
+Source
+Spec()
+Creates a new
+Drive
+Data
+Source
+Spec
+.
+Return
+Drive
+Data
+Source
+Spec
+— An empty
+Drive
+Data
+Source
+Spec
+.
+new
+Drive
 Items
 Selected
 Action
@@ -2404,6 +2640,70 @@ Scope
 Action
 Response
 Builder
+.
+new
+Event
+Action()
+Creates a new
+Event
+Action
+used for client-side validation.
+Return
+Event
+Action
+— An empty
+Event
+Action
+.
+new
+Expression
+Data()
+Creates a new
+Expression
+Data
+used for client-side validation.
+Return
+Expression
+Data
+— An empty
+Expression
+Data
+.
+new
+Expression
+Data
+Action()
+Creates a new
+Expression
+Data
+Action
+used for client-side validation.
+Return
+Expression
+Data
+Action
+— An empty
+Expression
+Data
+Action
+.
+new
+Expression
+Data
+Condition()
+Creates a new
+Expression
+Data
+Condition
+used for client-side validation.
+Return
+Expression
+Data
+Condition
+— An empty
+Expression
+Data
+Condition
 .
 new
 Fixed
@@ -2445,17 +2745,18 @@ Host
 App
 Data
 Source
-and return an empty
-Host
-App
-Data
-Source
 .
 Return
 Host
 App
 Data
 Source
+— A
+Host
+App
+Data
+Source
+.
 new
 Icon
 Image()
@@ -2790,6 +3091,24 @@ Menu
 Item
 — An empty OverflowMenuItem.
 new
+Platform
+Data
+Source()
+Creates a new
+Platform
+Data
+Source
+.
+Return
+Platform
+Data
+Source
+— An empty
+Platform
+Data
+Source
+.
+new
 Selection
 Input()
 Creates a new
@@ -2874,6 +3193,16 @@ Return
 Time
 Picker
 — An empty TimePicker.
+new
+Trigger()
+Creates and returns a new
+Trigger
+used for client-side validation.
+Return
+Trigger
+— An empty
+Trigger
+.
 new
 Universal
 Action
@@ -3006,6 +3335,24 @@ Recipients
 Action
 — An empty UpdateDraftToRecipientsAction.
 new
+Update
+Visibility
+Action()
+Creates a new
+Update
+Visibility
+Action
+.
+Return
+Update
+Visibility
+Action
+— An empty
+Update
+Visibility
+Action
+.
+new
 Validation()
 Creates a new
 Validation
@@ -3037,3 +3384,21 @@ Google Workspace Developer Preview Program
 Return
 Validation
 — An empty validation.
+new
+Workflow
+Data
+Source()
+Creates a new
+Workflow
+Data
+Source
+.
+Return
+Workflow
+Data
+Source
+— An empty
+Workflow
+Data
+Source
+.

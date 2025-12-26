@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-table/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The DataSourceTable class is used to access and modify existing data source tables, specifically with BigQuery data sources.
 You can create a new data source table using
@@ -291,7 +291,7 @@ this data source table spans.
 get
 Row
 Limit()
-Integer
+Integer|null
 Returns the row limit for the data source table.
 get
 Sort
@@ -595,7 +595,7 @@ Row
 Limit()
 Returns the row limit for the data source table.
 Return
-Integer
+Integer|null
 — The row limit for the data source table, or
 null
 if no limit is set and the

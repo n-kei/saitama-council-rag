@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/chat-space-data-source/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ChatSpaceDataSource populates Google Chat spaces as selection items for a multiselect menu, only including spaces the user is a member of.
 This data source is exclusively for Google Chat apps and is not available for Google Workspace add-ons.

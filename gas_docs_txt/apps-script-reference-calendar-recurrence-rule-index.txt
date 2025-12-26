@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/calendar/recurrence-rule/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 RecurrenceRule represents a recurrence rule for an event series and can be chained with other rule creation methods.
 Modifiers like

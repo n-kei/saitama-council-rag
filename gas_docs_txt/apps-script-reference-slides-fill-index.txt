@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/fill/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Fill describes the background of a page element.
 You can get the solid fill, fill type, and visibility status of a fill.
@@ -17,6 +17,7 @@ Solid
 Fill()
 Solid
 Fill
+|null
 Get the solid fill of this background, or
 null
 if the fill type is not
@@ -101,6 +102,7 @@ Type.SOLID
 Return
 Solid
 Fill
+|null
 — The solid fill setting, or
 null
 if this fill type is not solid.

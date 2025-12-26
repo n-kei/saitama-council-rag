@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/big-query-data-source-spec-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BigQueryDataSourceSpecBuilder is used to build a data source specification for BigQuery.
 It provides methods to get and set the dataset ID, project ID, table ID, and raw query.

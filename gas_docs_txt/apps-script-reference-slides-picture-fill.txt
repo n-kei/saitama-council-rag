@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/picture-fill.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PictureFill is a fill that renders an image stretched to its container's dimensions.
 It provides methods to retrieve the image data as a Blob, a temporary content URL, or the original source URL.
@@ -31,7 +31,7 @@ Gets a URL to the image.
 get
 Source
 Url()
-String
+String|null
 Gets the image's source URL, if available.
 Detailed documentation
 get
@@ -98,7 +98,7 @@ Url()
 Gets the image's source URL, if available.
 When an image is inserted by URL, returns the URL provided during image insertion.
 Return
-String
+String|null
 — the image URL or
 null
 if the image does not have a source URL

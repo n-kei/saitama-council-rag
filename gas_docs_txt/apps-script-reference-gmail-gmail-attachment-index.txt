@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/gmail/gmail-attachment/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A GmailAttachment is a Blob with an extra
 getSize()

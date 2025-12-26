@@ -1,7 +1,7 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/text-generation/index.html
 
 The Gemini API can generate text output from various inputs, including text,
-images, video, and audio, leveraging Gemini models.
+images, video, and audio.
 Here's a basic example that takes a single text input:
 Python
 from
@@ -359,12 +359,13 @@ log
 content
 );
 }
-Thinking with Gemini 2.5
-2.5 Flash and Pro models have
+Thinking with Gemini
+Gemini models often have
 "thinking"
-enabled by default to enhance quality, which may take longer to run and increase token usage.
-When using 2.5 Flash, you can disable thinking by setting the thinking budget to zero.
-For more details, see the
+enabled by default
+which allows the model to reason before responding to a request.
+Each model supports different thinking configurations which gives you control
+over cost, latency, and intelligence. For more details, see the
 thinking guide
 .
 Python
@@ -1269,6 +1270,11 @@ GenerateContentConfig
 object also lets you override default generation parameters, such as
 temperature
 .
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 Python
 from
 google
@@ -2797,7 +2803,7 @@ log
 content
 );
 }
-Multi-turn conversations (Chat)
+Multi-turn conversations (chat)
 Our SDKs provide functionality to collect multiple rounds of prompts and
 responses into a chat, giving you an easy way to keep track of the conversation
 history.
@@ -4157,36 +4163,19 @@ log
 content
 );
 }
-Supported models
-All models in the Gemini family support text generation. To learn more
-about the models and their capabilities, visit the
-Models
-page.
-Best practices
 Prompting tips
-For basic text generation, a
-zero-shot
-prompt often suffices without needing examples, system instructions or specific
-formatting.
-For more tailored outputs:
-Use
-System instructions
-to guide the model.
-Provide few example inputs and outputs to guide the model. This is often referred to as
-few-shot
-prompting.
 Consult our
 prompt engineering guide
 for
-more tips.
-Structured output
-In some cases, you may need structured output, such as JSON. Refer to our
-structured output
-guide to learn how.
+suggestions on getting the most out of Gemini.
 What's next
-Try the
-Gemini API getting started Colab
+Try
+Gemini in Google AI Studio
 .
+Experiment with
+structured outputs
+for
+JSON-like responses.
 Explore Gemini's
 image
 ,

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-column-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedColumnChartBuilder is a builder specifically for column charts, offering various methods to customize chart appearance and data.
 You can add or remove data ranges, change chart types, and set options like background color, legend position, titles, and axis styles.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/color-scheme/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A ColorScheme maps ThemeColorTypes to actual colors used for rendering.
 You can retrieve the concrete color associated with a ThemeColorType using

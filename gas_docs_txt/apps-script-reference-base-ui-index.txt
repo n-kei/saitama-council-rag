@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/ui/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Ui object allows scripts to add UI elements like menus, dialogs, and sidebars to a Google App's user interface.
 Scripts can only interact with the UI of the currently open editor if they are container-bound to that editor.

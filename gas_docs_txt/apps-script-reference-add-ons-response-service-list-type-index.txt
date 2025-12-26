@@ -1,0 +1,18 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/list-type/index.html
+
+List
+Type
+An enum that represents the type of the list.
+Properties
+Property
+Type
+Description
+LIST_TYPE_UNSPECIFIED
+Enum
+Default value. Don't use.
+ORDERED
+Enum
+Ordered list.
+UNORDERED
+Enum
+Unordered list.

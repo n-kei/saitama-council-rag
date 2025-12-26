@@ -15,3 +15,6 @@ Default value. Don't use.
 USER
 Enum
 Google Workspace users.
+DRIVE
+Enum
+Use Google Drive as a data source.

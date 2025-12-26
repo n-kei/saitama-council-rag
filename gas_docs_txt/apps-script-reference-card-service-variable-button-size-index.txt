@@ -1,0 +1,23 @@
+Source Path: gas_docs_html/apps-script/reference/card-service/variable-button-size/index.html
+
+Variable
+Button
+Size
+An enum that represents the size of the variable picker button.
+Properties
+Property
+Type
+Description
+UNSPECIFIED
+Enum
+Automatically chooses
+COMPACT
+for Sidepanel, chooses
+FULL_SIZE
+otherwise.
+COMPACT
+Enum
+For buttons labeled `+`
+FULL_SIZE
+Enum
+For buttons labeled `+ variable`

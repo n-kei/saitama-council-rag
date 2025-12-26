@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/charts/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Charts service is the entry point for creating charts in scripts.
 You can create various chart types like Area, Bar, Column, Line, Pie, Scatter, and Table charts using this service.

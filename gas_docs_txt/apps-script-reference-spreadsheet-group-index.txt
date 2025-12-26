@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/group/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Spreadsheet groups associate contiguous rows or columns that can be expanded or collapsed to hide or show content.
 Each group has a control toggle to expand or collapse the group as a whole.

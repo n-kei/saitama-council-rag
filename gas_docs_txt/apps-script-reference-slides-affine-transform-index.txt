@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/affine-transform/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AffineTransform uses a 3x3 matrix to transform source coordinates into destination coordinates.
 The transformation involves scaling, shearing, and translation of coordinates.

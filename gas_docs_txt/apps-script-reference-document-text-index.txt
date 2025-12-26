@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/text/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Google Apps Script provides methods to manipulate text formatting in Google Docs, including setting font family, size, foreground color, italic, link URL, strikethrough, text alignment, and underline.
 Many text manipulation methods have overloaded versions that can apply the formatting to the entire text element or a specific character range using start and end offsets.
@@ -117,11 +117,13 @@ find
 Text(searchPattern)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern using regular expressions.
 find
 Text(searchPattern, from)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern, starting from a given
 search result.
 get
@@ -135,67 +137,70 @@ Retrieves the attributes at the specified character offset.
 get
 Background
 Color()
-String
+String|null
 Retrieves the background color setting.
 get
 Background
 Color(offset)
-String
+String|null
 Retrieves the background color at the specified character offset.
 get
 Font
 Family()
-String
+String|null
 Retrieves the font family setting.
 get
 Font
 Family(offset)
-String
+String|null
 Retrieves the font family at the specified character offset.
 get
 Font
 Size()
-Number
+Number|null
 Retrieves the font size setting.
 get
 Font
 Size(offset)
-Number
+Number|null
 Retrieves the font size at the specified character offset.
 get
 Foreground
 Color()
-String
+String|null
 Retrieves the foreground color setting.
 get
 Foreground
 Color(offset)
-String
+String|null
 Retrieves the foreground color at the specified character offset.
 get
 Link
 Url()
-String
+String|null
 Retrieves the link url.
 get
 Link
 Url(offset)
-String
+String|null
 Retrieves the link URL at the specified character offset.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Text()
@@ -206,12 +211,14 @@ Text
 Alignment()
 Text
 Alignment
+|null
 Gets the text alignment.
 get
 Text
 Alignment(offset)
 Text
 Alignment
+|null
 Gets the text alignment for a single character.
 get
 Text
@@ -242,43 +249,45 @@ Document
 .
 is
 Bold()
-Boolean
+Boolean|null
 Retrieves the bold setting.
 is
 Bold(offset)
-Boolean
+Boolean|null
 Retrieves the bold setting at the specified character offset.
 is
 Italic()
-Boolean
+Boolean|null
 Retrieves the italic setting.
 is
 Italic(offset)
-Boolean
+Boolean|null
 Retrieves the italic setting at the specified character offset.
 is
 Strikethrough()
-Boolean
+Boolean|null
 Retrieves the strikethrough setting.
 is
 Strikethrough(offset)
-Boolean
+Boolean|null
 Retrieves the strikethrough setting at the specified character offset.
 is
 Underline()
-Boolean
+Boolean|null
 Retrieves the underline setting.
 is
 Underline(offset)
-Boolean
+Boolean|null
 Retrieves the underline setting at the specified character offset.
 merge()
 Text
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 From
 Parent()
 Text
+|null
 Removes the element from its parent.
 replace
 Text(searchPattern, replacement)
@@ -620,6 +629,7 @@ the pattern to search for
 Return
 Range
 Element
+|null
 — a search result indicating the position of the search text, or null if there is no
     match
 Authorization
@@ -651,6 +661,7 @@ the search result to search from
 Return
 Range
 Element
+|null
 — a search result indicating the next position of the search text, or null if there is no
     match
 Authorization
@@ -882,7 +893,7 @@ Background
 Color()
 Retrieves the background color setting.
 Return
-String
+String|null
 — the background color, formatted in CSS notation (like
 '#ffffff'
 ), or null
@@ -966,7 +977,7 @@ offset
 Integer
 The character offset.
 Return
-String
+String|null
 — The background color, formatted in CSS notation (like
 '#ffffff'
 ).
@@ -996,7 +1007,7 @@ Family
 enum. Although this enum is
 deprecated, it will remain available for compatibility with older scripts.
 Return
-String
+String|null
 — the font family, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1093,7 +1104,7 @@ offset
 Integer
 The character offset.
 Return
-String
+String|null
 — The font family.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1106,7 +1117,7 @@ Font
 Size()
 Retrieves the font size setting.
 Return
-Number
+Number|null
 — the font size, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1187,7 +1198,7 @@ offset
 Integer
 The character offset.
 Return
-Number
+Number|null
 — The font size.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1200,7 +1211,7 @@ Foreground
 Color()
 Retrieves the foreground color setting.
 Return
-String
+String|null
 — the foreground color, formatted in CSS notation (like
 '#ffffff'
 ), or null
@@ -1284,7 +1295,7 @@ offset
 Integer
 The character offset.
 Return
-String
+String|null
 — The foreground color, formatted in CSS notation (like
 '#ffffff'
 ).
@@ -1299,7 +1310,7 @@ Link
 Url()
 Retrieves the link url.
 Return
-String
+String|null
 — the link url, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1380,7 +1391,7 @@ offset
 Integer
 The character offset.
 Return
-String
+String|null
 — The link URL.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1395,6 +1406,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1409,6 +1421,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1423,6 +1436,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1458,6 +1472,7 @@ App.TextAlignment.SUPERSCRIPT
 Return
 Text
 Alignment
+|null
 — the type of text alignment, or
 null
 if the text contains multiple types of text
@@ -1554,6 +1569,7 @@ The offset of the character.
 Return
 Text
 Alignment
+|null
 — The type of text alignment, or
 null
 if the text alignment has never been set.
@@ -1793,7 +1809,7 @@ is
 Bold()
 Retrieves the bold setting.
 Return
-Boolean
+Boolean|null
 — whether the text is bold, or null if the element contains multiple values for this
     attribute
 Authorization
@@ -1876,7 +1892,7 @@ offset
 Integer
 The character offset.
 Return
-Boolean
+Boolean|null
 — The bold setting.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1888,7 +1904,7 @@ is
 Italic()
 Retrieves the italic setting.
 Return
-Boolean
+Boolean|null
 — whether the text is italic, or null if the element contains multiple values for this
     attribute
 Authorization
@@ -1969,7 +1985,7 @@ offset
 Integer
 The character offset.
 Return
-Boolean
+Boolean|null
 — The italic setting.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1981,7 +1997,7 @@ is
 Strikethrough()
 Retrieves the strikethrough setting.
 Return
-Boolean
+Boolean|null
 — whether the text is strikethrough, or null if the element contains multiple values for
     this attribute
 Authorization
@@ -2062,7 +2078,7 @@ offset
 Integer
 The character offset.
 Return
-Boolean
+Boolean|null
 — The strikethrough setting.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2074,7 +2090,7 @@ is
 Underline()
 Retrieves the underline setting.
 Return
-Boolean
+Boolean|null
 — whether the text is underlined, or null if the element contains multiple values for
     this attribute
 Authorization
@@ -2157,7 +2173,7 @@ offset
 Integer
 The character offset.
 Return
-Boolean
+Boolean|null
 — The underline setting.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2287,6 +2303,7 @@ merge
 ();
 Return
 Text
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2355,6 +2372,7 @@ removeFromParent
 }
 Return
 Text
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

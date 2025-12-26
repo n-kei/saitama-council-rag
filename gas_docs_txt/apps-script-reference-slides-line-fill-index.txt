@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/line-fill/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LineFill describes the fill of a line or outline.
 You can get the type of line fill using
@@ -38,6 +38,7 @@ Solid
 Fill()
 Solid
 Fill
+|null
 Gets the solid fill of the line, or
 null
 if the fill type is not
@@ -125,6 +126,7 @@ Type.SOLID
 Return
 Solid
 Fill
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

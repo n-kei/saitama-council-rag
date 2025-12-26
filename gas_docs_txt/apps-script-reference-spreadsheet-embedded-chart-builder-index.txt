@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedChartBuilder is used to modify an existing EmbeddedChart in a spreadsheet.
 Changes made using EmbeddedChartBuilder are not saved until Sheet.updateChart(chart) is called.

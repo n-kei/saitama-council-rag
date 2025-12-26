@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/document-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Document service allows for creating and opening editable Google Documents using Apps Script.
 You can create a new document with a specified name or open an existing document by its ID or URL.

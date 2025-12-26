@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/page-background/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 You can retrieve the picture or solid fill of a page background using
 getPictureFill()
@@ -36,6 +36,7 @@ Picture
 Fill()
 Picture
 Fill
+|null
 Get the stretched picture fill of this background, or
 null
 if the background fill type
@@ -49,6 +50,7 @@ Solid
 Fill()
 Solid
 Fill
+|null
 Get the solid fill of this background, or
 null
 if the background fill type is not
@@ -147,6 +149,7 @@ Type.PICTURE
 Return
 Picture
 Fill
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -166,6 +169,7 @@ Type.SOLID
 Return
 Solid
 Fill
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

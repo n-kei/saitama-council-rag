@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/document/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Document represents an XML document.
 It includes methods for adding, getting, removing, and cloning content nodes that are immediate children or descendants of the document.

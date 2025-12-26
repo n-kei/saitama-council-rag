@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/on-close/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 OnClose is an enum used to specify what happens when a URL opened via OpenLink is closed.
 Its behavior can depend on the client platform and may take precedence over OpenAs.

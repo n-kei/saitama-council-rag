@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/feedback-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 FeedbackType is an enum in Google Apps Script representing supported feedback types that can be accessed from FormApp.FeedbackType.
 You access a FeedbackType enum property by calling its parent class, name, and property, like

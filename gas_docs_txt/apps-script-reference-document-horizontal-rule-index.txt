@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/horizontal-rule/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A
 HorizontalRule
@@ -45,16 +45,19 @@ get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Type()
@@ -77,6 +80,7 @@ From
 Parent()
 Horizontal
 Rule
+|null
 Removes the element from its parent.
 set
 Attributes(attributes)
@@ -202,6 +206,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -216,6 +221,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -230,6 +236,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -399,6 +406,7 @@ removeFromParent
 Return
 Horizontal
 Rule
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/border-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BorderStyle is a class representing a complete border style for widgets.
 BorderStyle enums are accessed through the parent class, name, and property.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/pivot-group/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PivotGroup provides methods to access and modify pivot table breakout groups.
 You can add or remove manual grouping rules and clear existing grouping rules or sorting.
@@ -46,6 +46,7 @@ Date
 Time
 Grouping
 Rule
+|null
 Returns the date-time grouping rule on the pivot group, or
 null
 if no date-time
@@ -60,6 +61,7 @@ Limit()
 Pivot
 Group
 Limit
+|null
 Returns the pivot group limit on the pivot group.
 get
 Index()
@@ -88,6 +90,7 @@ Column()
 Data
 Source
 Column
+|null
 Returns the data source column the pivot group operates on.
 hide
 Repeated
@@ -282,6 +285,7 @@ Date
 Time
 Grouping
 Rule
+|null
 — The date-time grouping rule.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -312,6 +316,7 @@ Return
 Pivot
 Group
 Limit
+|null
 — The pivot group limit.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -378,6 +383,7 @@ Return
 Data
 Source
 Column
+|null
 — The data source column the pivot group operates on.
 Authorization
 Scripts that use this method require authorization with one or more of the following

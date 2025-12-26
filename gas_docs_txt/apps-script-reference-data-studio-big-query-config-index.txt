@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/big-query-config/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BigQueryConfig is a configuration object for a native BigQuery connector used with Data Studio.
 It is returned from the

@@ -1,15 +1,7 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/files/index.html
 
-The Gemini family of artificial intelligence (AI) models is built to handle
-various types of input data, including text, images, and audio. Since these
-models can handle more than one type or
-mode
-of data, the Gemini models
-are called
-multimodal models
-or explained as having
-multimodal capabilities
-.
+Gemini can handle various types of input data, including text, images, and
+audio, at the same time.
 This guide shows you how to work with media files using the Files API. The
 basic operations are the same for audio files, images, videos, documents, and
 other supported file types.
@@ -169,7 +161,9 @@ err
 :=
 client
 .
-UploadFileFromPath
+Files
+.
+UploadFromPath
 (
 ctx
 ,
@@ -192,7 +186,9 @@ err
 defer
 client
 .
-DeleteFile
+Files
+.
+Delete
 (
 ctx
 ,
@@ -200,40 +196,53 @@ file
 .
 Name
 )
-model
-:=
-client
-.
-GenerativeModel
-(
-"gemini-2.5-flash"
-)
 resp
 ,
 err
 :=
-model
+client
+.
+Models
 .
 GenerateContent
 (
 ctx
 ,
+"gemini-2.5-flash"
+,
+[]
+*
 genai
 .
-FileData
+Content
 {
-URI
+{
+Parts
 :
-file
-.
-URI
-},
+[]
+*
 genai
 .
-Text
+Part
+{
+genai
+.
+NewPartFromFile
+(
+*
+file
+),
+genai
+.
+NewPartFromText
 (
 "Describe this audio clip"
-))
+),
+},
+},
+},
+nil
+)
 if
 err
 !=
@@ -450,6 +459,16 @@ metadata by calling
 files.get
 .
 Python
+from
+google
+import
+genai
+client
+=
+genai
+.
+Client
+()
 myfile
 =
 client
@@ -484,6 +503,25 @@ print
 myfile
 )
 JavaScript
+import
+{
+GoogleGenAI
+,
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
 const
 myfile
 =
@@ -533,6 +571,10 @@ log
 (
 fetchedFile
 );
+}
+await
+main
+();
 Go
 file
 ,
@@ -540,7 +582,9 @@ err
 :=
 client
 .
-UploadFileFromPath
+Files
+.
+UploadFromPath
 (
 ctx
 ,
@@ -566,7 +610,9 @@ err
 :=
 client
 .
-GetFile
+Files
+.
+Get
 (
 ctx
 ,
@@ -640,9 +686,18 @@ file_uri
 =
 $file_uri
 List uploaded files
-You can upload multiple files using the Files API. The following code gets
-a list of all the files uploaded:
+The following code gets a list of all the files uploaded:
 Python
+from
+google
+import
+genai
+client
+=
+genai
+.
+Client
+()
 print
 (
 'My files:'
@@ -665,6 +720,25 @@ f
 name
 )
 JavaScript
+import
+{
+GoogleGenAI
+,
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
 const
 listResponse
 =
@@ -701,34 +775,26 @@ file
 name
 );
 }
+}
+await
+main
+();
 Go
-iter
-:=
-client
-.
-ListFiles
-(
-ctx
-)
 for
-{
-ifile
+file
 ,
 err
 :=
-iter
+range
+client
 .
-Next
-()
-if
-err
-==
-iterator
+Files
 .
-Done
+All
+(
+ctx
+)
 {
-break
-}
 if
 err
 !=
@@ -745,7 +811,7 @@ fmt
 .
 Println
 (
-ifile
+file
 .
 Name
 )
@@ -764,6 +830,16 @@ Delete uploaded files
 Files are automatically deleted after 48 hours. You can also manually delete an
 uploaded file:
 Python
+from
+google
+import
+genai
+client
+=
+genai
+.
+Client
+()
 myfile
 =
 client
@@ -789,6 +865,25 @@ myfile
 name
 )
 JavaScript
+import
+{
+GoogleGenAI
+,
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
 const
 myfile
 =
@@ -829,6 +924,10 @@ name
 :
 fileName
 });
+}
+await
+main
+();
 Go
 file
 ,
@@ -836,7 +935,9 @@ err
 :=
 client
 .
-UploadFileFromPath
+Files
+.
+UploadFromPath
 (
 ctx
 ,
@@ -858,7 +959,9 @@ err
 }
 client
 .
-DeleteFile
+Files
+.
+Delete
 (
 ctx
 ,
@@ -939,6 +1042,11 @@ If your prompt results in hallucinated content:
 Try dialing down the temperature setting or asking the model for shorter descriptions so that it's less likely to extrapolate additional details.
 Tuning the sampling parameters:
 Experiment with different temperature settings and top-k selections to adjust the model's creativity.
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 Be specific in your instructions
 Prompts have the most success when they are clear and detailed. If you have a
 specific output in mind, it's better to include that requirement in the prompt

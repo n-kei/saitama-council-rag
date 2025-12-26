@@ -1,0 +1,204 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/text-format-element/index.html
+
+Text
+Format
+Element
+A text format element, which can be a
+Text
+Format
+Chip
+,
+Styled
+Text
+,
+Hyperlink
+, or
+List
+Container
+.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+sampleChip
+=
+AddOnsResponseService
+.
+newTextFormatChip
+()
+.
+setLabel
+(
+"Label!"
+);
+const
+textFormatElement
+=
+AddOnsResponseService
+.
+newTextFormatElement
+()
+.
+setTextFormatChip
+(
+sampleChip
+);
+Methods
+Method
+Return type
+Brief description
+set
+Hyperlink(hyperlink)
+Text
+Format
+Element
+Sets the text format element as a
+Hyperlink
+.
+set
+List
+Container(listContainer)
+Text
+Format
+Element
+Sets the text format element as a
+List
+Container
+.
+set
+Styled
+Text(styledText)
+Text
+Format
+Element
+Sets the text format element as a
+Styled
+Text
+.
+set
+Text(text)
+Text
+Format
+Element
+Sets the text format element as a text string.
+set
+Text
+Format
+Chip(chip)
+Text
+Format
+Element
+Sets the text format element as a
+Text
+Format
+Chip
+.
+Detailed documentation
+set
+Hyperlink(hyperlink)
+Sets the text format element as a
+Hyperlink
+.
+Parameters
+Name
+Type
+Description
+hyperlink
+Hyperlink
+The
+Hyperlink
+of the text format element.
+Return
+Text
+Format
+Element
+— This text format element object.
+set
+List
+Container(listContainer)
+Sets the text format element as a
+List
+Container
+.
+Parameters
+Name
+Type
+Description
+list
+Container
+List
+Container
+The
+List
+Container
+of the text format element.
+Return
+Text
+Format
+Element
+— This text format element object.
+set
+Styled
+Text(styledText)
+Sets the text format element as a
+Styled
+Text
+.
+Parameters
+Name
+Type
+Description
+styled
+Text
+Styled
+Text
+The
+Styled
+Text
+of the text format element.
+Return
+Text
+Format
+Element
+— This text format element object.
+set
+Text(text)
+Sets the text format element as a text string.
+Parameters
+Name
+Type
+Description
+text
+String
+The text of the text format element.
+Return
+Text
+Format
+Element
+— This text format element object.
+set
+Text
+Format
+Chip(chip)
+Sets the text format element as a
+Text
+Format
+Chip
+.
+Parameters
+Name
+Type
+Description
+chip
+Text
+Format
+Chip
+The
+Text
+Format
+Chip
+of the text format element.
+Return
+Text
+Format
+Element
+— This text format element object.

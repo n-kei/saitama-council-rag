@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/url-fetch/url-fetch-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 UrlFetchApp enables scripts to communicate with external hosts and access web resources by fetching URLs using HTTP and HTTPS requests.
 Requests made by UrlFetchApp originate from a specific set of Google IP ranges, which may need to be allowlisted.

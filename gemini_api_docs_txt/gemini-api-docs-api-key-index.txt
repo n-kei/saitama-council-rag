@@ -1,13 +1,13 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/api-key/index.html
 
+We have updated our
+Terms of Service
+.
 To use the Gemini API, you need an API key. This page outlines how to create and
 manage your keys in Google AI Studio as well as how to set up your environment
 to use them in your code.
+Create or view a Gemini API Key
 API Keys
-An
-API key
-is an
-encrypted string that you can use when calling Google Cloud APIs.
 You can create and manage all your Gemini API Keys from the
 Google AI Studio
 API Keys
@@ -485,6 +485,9 @@ Treat your Gemini API key like a password. If compromised, others can use your
 project's quota, incur charges (if billing is enabled), and access your
 private data, such as files.
 Critical security rules
+Keep keys confidential
+: API keys for Gemini may access sensitive data your
+application depends upon.
 Never commit API keys to source control.
 Do not check your API key into version control systems like Git.
 Never expose API keys on the client-side.
@@ -492,6 +495,14 @@ Do not use your API key directly
 in web or mobile apps in production. Keys in client-side code
 (including our JavaScript/TypeScript libraries and REST calls) can be
 extracted.
+Restrict access
+: Restrict API key usage to specific IP addresses, HTTP
+referrers, or Android/iOS apps where possible.
+Restrict usage
+: Enable only the necessary APIs for each key.
+Perform regular audits
+: Regularly audit your API keys and rotate them
+periodically.
 Best practices
 Use server-side calls with API keys
 The most secure way to use your API

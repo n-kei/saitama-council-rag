@@ -1,0 +1,121 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/resource-data/index.html
+
+Resource
+Data
+Represents a application specific resource data, a resource data contains a collection of
+key-value pairs of variable names and
+Variable
+Data
+.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+let
+customResourceData
+=
+AddOnsResponseService
+.
+newResourceData
+()
+.
+setVariableDataMap
+(
+{
+"field_1"
+:
+fieldData_1
+,
+"field_2"
+:
+fieldData_2
+}
+);
+let
+outputVariableData
+=
+AddOnsResponseService
+.
+newVariableData
+()
+.
+addResourceData
+(
+customResourceData
+);
+let
+workflowAction
+=
+AddOnsResponseService
+.
+newReturnOutputVariablesAction
+()
+.
+setVariableDataMap
+({
+"resource_data"
+:
+outputVariableData
+});
+Methods
+Method
+Return type
+Brief description
+add
+Variable
+Data(key, value)
+Resource
+Data
+Adds a
+Variable
+Data
+keyed by its variable name, a value is overwritten if the key
+already exists.
+set
+Variable
+Data
+Map(fields)
+Resource
+Data
+Sets the map of the variable data keyed by variable names.
+Detailed documentation
+add
+Variable
+Data(key, value)
+Adds a
+Variable
+Data
+keyed by its variable name, a value is overwritten if the key
+already exists.
+Parameters
+Name
+Type
+Description
+key
+String
+The variable name to retrieve the corresponding variable data.
+value
+Variable
+Data
+The
+Variable
+Data
+to be added.
+Return
+Resource
+Data
+— This resource data object, for chaining.
+set
+Variable
+Data
+Map(fields)
+Sets the map of the variable data keyed by variable names.
+Parameters
+Name
+Type
+Description
+fields
+Object
+A collection of key-value pairs of string and variable data.
+Return
+Resource
+Data
+— This resource data object, for chaining.

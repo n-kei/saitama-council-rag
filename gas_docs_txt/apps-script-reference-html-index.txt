@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/html/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The HTML service in Apps Script allows applications to return HTML, typically for user interfaces.
 Key classes for working with HTML in Apps Script include HtmlOutput, HtmlService, and HtmlTemplate.

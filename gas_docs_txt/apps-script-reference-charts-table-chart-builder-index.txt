@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/table-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TableChartBuilder is a tool for building table charts.
 Data for the table chart can be imported from an external source like a Google spreadsheet.

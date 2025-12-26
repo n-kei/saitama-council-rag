@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/developer-metadata-location/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The DeveloperMetadataLocation class provides access to information about the location of developer metadata within a spreadsheet.
 You can retrieve the location type of the metadata using the
@@ -29,6 +29,7 @@ Brief description
 get
 Column()
 Range
+|null
 Returns the
 Range
 for the column location of this metadata, or
@@ -51,6 +52,7 @@ Gets the type of location.
 get
 Row()
 Range
+|null
 Returns the
 Range
 for the row location of this metadata, or
@@ -65,6 +67,7 @@ Type.ROW
 get
 Sheet()
 Sheet
+|null
 Returns the
 Sheet
 location of this metadata, or
@@ -79,6 +82,7 @@ Type.SHEET
 get
 Spreadsheet()
 Spreadsheet
+|null
 Returns the
 Spreadsheet
 location of this metadata, or
@@ -106,6 +110,7 @@ Type.COLUMN
 .
 Return
 Range
+|null
 — The
 Range
 for the column location of this metadata, or
@@ -154,6 +159,7 @@ Type.ROW
 .
 Return
 Range
+|null
 — The
 Range
 for the row location of this metadata, or
@@ -186,6 +192,7 @@ Type.SHEET
 .
 Return
 Sheet
+|null
 — The
 Sheet
 location of this metadata, or
@@ -218,6 +225,7 @@ Type.SPREADSHEET
 .
 Return
 Spreadsheet
+|null
 — The
 Spreadsheet
 location of this metadata, or

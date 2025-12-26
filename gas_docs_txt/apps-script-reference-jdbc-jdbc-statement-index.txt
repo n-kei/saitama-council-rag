@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-statement/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 JdbcStatement represents a JDBC Statement and mirrors the documentation found in
 java.sql.Statement

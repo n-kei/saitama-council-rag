@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/checkbox-grid-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CheckboxGridItem is a form question item presented as a grid allowing multiple selections per row via checkboxes.
 You can access or create CheckboxGridItem instances from a Form object.

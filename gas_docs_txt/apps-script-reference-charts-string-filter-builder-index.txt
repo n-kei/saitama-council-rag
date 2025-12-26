@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/string-filter-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 StringFilterBuilder is a builder for string filter controls, which are simple text input fields used to filter data based on string matching in a specified column.
 The

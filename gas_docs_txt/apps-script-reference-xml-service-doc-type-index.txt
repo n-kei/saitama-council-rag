@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/doc-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DocType represents an XML DocumentType node.
 It provides methods to get and set various properties of the DocType, such as the element name, internal and external subset data, and its parent element.

@@ -40,7 +40,7 @@ by looking in the
 models documentation
 .
 In the following example, you can see that the
-gemini-1.5-flash
+gemini-2.0-flash
 model has an
 input limit of about 1,000,000 tokens and an output limit of about 8,000 tokens,
 which means a context window is 1,000,000 tokens.
@@ -328,6 +328,19 @@ needed into tiles of 768x768 pixels, each counted as 258 tokens. Prior to Gemini
 2.0, images used a fixed 258 tokens.
 Video and audio files are converted to tokens at the following fixed rates:
 video at 263 tokens per second and audio at 32 tokens per second.
+Media resolutions
+Gemini 3 Pro Preview introduces granular control over multimodal vision processing with the
+media_resolution
+parameter. The
+media_resolution
+parameter determines the
+maximum number of tokens allocated per input image or video frame.
+Higher resolutions improve the model's ability to
+read fine text or identify small details, but increase token usage and latency.
+For more details about the parameter and how it can impact token calculations,
+see the
+media resolution
+guide.
 Image files
 Note:
 You'll get the same token count if you use a file uploaded using the

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/dash-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DashStyle defines the types of dashes used to render linear geometry.
 These values are based on the "ST_PresetLineDashVal" simple type in the ECMA-376 standard.

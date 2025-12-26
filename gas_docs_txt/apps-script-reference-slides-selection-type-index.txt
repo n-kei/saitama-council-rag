@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/selection-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SelectionType indicates the most specific type of selected objects in Google Slides.
 Examples show how to retrieve details like TableCellRange or the parent Table based on the SelectionType.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/looker-data-source-spec-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LookerDataSourceSpecBuilder is used to create a new Looker Data Source Spec builder in Apps Script.
 You can build a data source specification from the builder's settings using the

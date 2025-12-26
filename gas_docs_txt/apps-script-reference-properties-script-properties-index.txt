@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/properties/script-properties/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The ScriptProperties class is deprecated and should not be used in new scripts.
 Script Properties store key-value pairs persistently for a script, independent of the user running it.

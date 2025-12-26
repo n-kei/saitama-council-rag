@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/select-multiple/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SelectMultiple contains information for the config and determines how the select multiple is displayed in Data Studio.
 Key methods include adding options, setting override capabilities, help text, unique IDs, dynamic status, and display names.

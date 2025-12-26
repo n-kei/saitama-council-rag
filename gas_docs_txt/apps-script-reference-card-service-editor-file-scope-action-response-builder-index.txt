@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/editor-file-scope-action-response-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EditorFileScopeActionResponseBuilder
 is used to build

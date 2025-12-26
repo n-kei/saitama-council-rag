@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/section-header-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SectionHeaderItem
 is a layout item in Google Forms that visually indicates the start of a section.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/conference-data/entry-point/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EntryPoint defines a specific way to join a conference, with examples shown for video, phone, SIP, and more.
 The EntryPoint object provides methods to set various properties like the type, URI, and access codes for the conference.

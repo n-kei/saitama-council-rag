@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Data Studio service allows scripts to access and modify Data Studio Community Connectors.
 It provides classes and methods for interacting with various aspects of Data Studio connectors, including configuration, fields, authentication, and data retrieval.

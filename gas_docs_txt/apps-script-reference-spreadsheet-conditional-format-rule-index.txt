@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/conditional-format-rule/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Use
 SpreadsheetApp.newConditionalFormatRule()
@@ -62,6 +62,7 @@ Boolean
 Condition()
 Boolean
 Condition
+|null
 Retrieves the rule's
 Boolean
 Condition
@@ -72,6 +73,7 @@ Gradient
 Condition()
 Gradient
 Condition
+|null
 Retrieves the rule's
 Gradient
 Condition
@@ -139,6 +141,7 @@ getCriteriaType
 Return
 Boolean
 Condition
+|null
 — The boolean condition object, or
 null
 if the rule does not use a boolean
@@ -197,6 +200,7 @@ asHexString
 Return
 Gradient
 Condition
+|null
 — The gradient condition object, or
 null
 if the rule does not use a gradient

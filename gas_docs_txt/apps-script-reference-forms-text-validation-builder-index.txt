@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/text-validation-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextValidationBuilder is a DataValidationBuilder used for creating text validation rules in forms.
 It provides methods to require text items to be numbers, within specific ranges, or matching/not matching patterns.

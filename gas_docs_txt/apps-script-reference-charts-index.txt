@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Charts service facilitates server-side chart creation using Google Charts Tools, whereas client-side rendering utilizes the Google Charts API.
 An example is provided illustrating the process of creating a data table, populating an area chart, and displaying it as an image.

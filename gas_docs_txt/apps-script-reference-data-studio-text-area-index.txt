@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/text-area/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextArea in Data Studio config controls how text input is displayed.
 TextArea properties can be set using methods like setId, setName, setHelpText, setAllowOverride, and setPlaceholder.

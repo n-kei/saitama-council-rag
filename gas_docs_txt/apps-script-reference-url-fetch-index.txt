@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/url-fetch/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The UrlFetch service allows scripts to fetch URLs and make HTTP/HTTPS requests and receive responses.
 Requests made using this service originate from a set pool of IP ranges that can be looked up for whitelisting.

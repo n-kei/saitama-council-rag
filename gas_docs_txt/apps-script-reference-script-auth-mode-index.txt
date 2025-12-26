@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/auth-mode/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AuthMode is an enumeration in Apps Script that identifies the categories of authorized services triggered functions can execute.
 AuthMode values are exposed as the

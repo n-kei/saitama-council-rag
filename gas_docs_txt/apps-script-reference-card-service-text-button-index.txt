@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/text-button/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A TextButton is a button with a text label used in Google Workspace add-ons and Google Chat apps, which can have its background color set and be disabled.
 You can set various actions for a TextButton upon clicking, including opening a link, executing a specific action, composing an email, or initiating an authorization flow.

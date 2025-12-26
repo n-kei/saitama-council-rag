@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-table-filter/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Access and modify existing data source table filters using the
 DataSourceTableFilter

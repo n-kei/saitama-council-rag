@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Google Sheets service in Apps Script allows creation, access, and modification of Google Sheets files with performance bundling.
 Numerous classes are available to interact with various spreadsheet aspects, including formatting, data sources, structure, and content.
@@ -535,6 +535,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the first alternating column color in the banding, or
 null
 if no color is set.
@@ -544,6 +545,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the first alternating row color, or
 null
 if no color is set.
@@ -553,6 +555,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the color of the last column in the banding, or
 null
 if no color is set.
@@ -562,6 +565,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the last row color in the banding, or
 null
 if no color is set.
@@ -571,6 +575,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the color of the first column in the banding, or
 null
 if no color is set.
@@ -580,6 +585,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the color of the header row or
 null
 if no color is set.
@@ -593,6 +599,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the second alternating column color in the banding, or
 null
 if no color is set.
@@ -602,6 +609,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the second alternating row color, or
 null
 if no color is set.
@@ -976,10 +984,11 @@ get
 Background
 Object()
 Color
+|null
 Gets the background color for this boolean condition.
 get
 Bold()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition bolds the text and returns
@@ -1005,10 +1014,11 @@ Font
 Color
 Object()
 Color
+|null
 Gets the font color for this boolean condition.
 get
 Italic()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition italicises the text and returns
@@ -1017,7 +1027,7 @@ if
 this boolean condition removes italics from the text.
 get
 Strikethrough()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition strikes through the text and returns
@@ -1025,7 +1035,7 @@ false
 if this boolean condition removes strikethrough from the text.
 get
 Underline()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition underlines the text and returns
@@ -1336,6 +1346,7 @@ Boolean
 Condition()
 Boolean
 Condition
+|null
 Retrieves the rule's
 Boolean
 Condition
@@ -1346,6 +1357,7 @@ Gradient
 Condition()
 Gradient
 Condition
+|null
 Retrieves the rule's
 Gradient
 Condition
@@ -1379,6 +1391,7 @@ Boolean
 Condition()
 Boolean
 Condition
+|null
 Retrieves the rule's
 Boolean
 Condition
@@ -1389,6 +1402,7 @@ Gradient
 Condition()
 Gradient
 Condition
+|null
 Retrieves the rule's
 Gradient
 Condition
@@ -1951,13 +1965,13 @@ get
 Last
 Execution
 Time()
-Date
+Date|null
 Gets the time the last data execution completed regardless of the execution state.
 get
 Last
 Refreshed
 Time()
-Date
+Date|null
 Gets the time the data last successfully refreshed.
 is
 Truncated()
@@ -2021,6 +2035,7 @@ Name(columnName)
 Data
 Source
 Column
+|null
 Returns the calculated column in the data source that matches the column name.
 get
 Calculated
@@ -2254,7 +2269,7 @@ Gets the parameter name.
 get
 Source
 Cell()
-String
+String|null
 Gets the source cell the parameter is valued based on, or
 null
 if the parameter type is
@@ -2505,7 +2520,7 @@ Refreshes the data of this object regardless of the current state.
 get
 Column
 Width(columnName)
-Integer
+Integer|null
 Returns the width of the specified column.
 get
 Data
@@ -2850,7 +2865,7 @@ this data source table spans.
 get
 Row
 Limit()
-Integer
+Integer|null
 Returns the row limit for the data source table.
 get
 Sort
@@ -3672,6 +3687,7 @@ Brief description
 get
 Column()
 Range
+|null
 Returns the
 Range
 for the column location of this metadata, or
@@ -3694,6 +3710,7 @@ Gets the type of location.
 get
 Row()
 Range
+|null
 Returns the
 Range
 for the row location of this metadata, or
@@ -3708,6 +3725,7 @@ Type.ROW
 get
 Sheet()
 Sheet
+|null
 Returns the
 Sheet
 location of this metadata, or
@@ -3722,6 +3740,7 @@ Type.SHEET
 get
 Spreadsheet()
 Spreadsheet
+|null
 Returns the
 Spreadsheet
 location of this metadata, or
@@ -3813,7 +3832,7 @@ Returns the actual height of this drawing in pixels.
 get
 On
 Action()
-String
+String|null
 Returns the name of the macro attached to this drawing.
 get
 Sheet()
@@ -4573,6 +4592,7 @@ Chart()
 Data
 Source
 Chart
+|null
 Casts to a data source chart instance if the chart is a data source chart, or
 null
 otherwise.
@@ -4587,7 +4607,7 @@ Return the data inside this object as a blob.
 get
 Chart
 Id()
-Integer
+Integer|null
 Returns a stable identifier for the chart that is unique across the spreadsheet containing the
 chart or
 null
@@ -7208,6 +7228,7 @@ Filter
 Criteria(columnPosition)
 Filter
 Criteria
+|null
 Gets the filter criteria on the specified column, or
 null
 if the column doesn't have
@@ -7252,6 +7273,7 @@ Criteria
 Type()
 Boolean
 Criteria
+|null
 Returns the criteria's boolean type, for example,
 CELL_EMPTY
 .
@@ -7270,12 +7292,14 @@ Visible
 Background
 Color()
 Color
+|null
 Returns the background color used as filter criteria.
 get
 Visible
 Foreground
 Color()
 Color
+|null
 Returns the foreground color used as a filter criteria.
 get
 Visible
@@ -7304,6 +7328,7 @@ Criteria
 Type()
 Boolean
 Criteria
+|null
 Returns the criteria's boolean type, for example,
 CELL_EMPTY
 .
@@ -7322,12 +7347,14 @@ Visible
 Background
 Color()
 Color
+|null
 Returns the background color used as filter criteria.
 get
 Visible
 Foreground
 Color()
 Color
+|null
 Returns the foreground color used as a filter criteria.
 get
 Visible
@@ -7672,12 +7699,14 @@ Max
 Color
 Object()
 Color
+|null
 Gets the color set for the maximum value of this gradient condition.
 get
 Max
 Type()
 Interpolation
 Type
+|null
 Gets the interpolation type for the maximum value of this gradient condition.
 get
 Max
@@ -7689,12 +7718,14 @@ Mid
 Color
 Object()
 Color
+|null
 Gets the color set for the midpoint value of this gradient condition.
 get
 Mid
 Type()
 Interpolation
 Type
+|null
 Gets the interpolation type for the midpoint value of this gradient condition.
 get
 Mid
@@ -7706,12 +7737,14 @@ Min
 Color
 Object()
 Color
+|null
 Gets the color set for the minimum value of this gradient condition.
 get
 Min
 Type()
 Interpolation
 Type
+|null
 Gets the interpolation type for the minimum value of this gradient condition.
 get
 Min
@@ -8151,6 +8184,7 @@ Column()
 Data
 Source
 Column
+|null
 Returns the data source column the filter operates on.
 remove()
 void
@@ -8199,6 +8233,7 @@ Date
 Time
 Grouping
 Rule
+|null
 Returns the date-time grouping rule on the pivot group, or
 null
 if no date-time
@@ -8213,6 +8248,7 @@ Limit()
 Pivot
 Group
 Limit
+|null
 Returns the pivot group limit on the pivot group.
 get
 Index()
@@ -8241,6 +8277,7 @@ Column()
 Data
 Source
 Column
+|null
 Returns the data source column the pivot group operates on.
 hide
 Repeated
@@ -8430,6 +8467,7 @@ Data
 Source
 Pivot
 Table
+|null
 Returns the pivot table as a data source pivot table if the pivot table is linked to a
 Data
 Source
@@ -8605,6 +8643,7 @@ Column()
 Data
 Source
 Column
+|null
 Returns the data source column the pivot value summarizes.
 get
 Summarized
@@ -8715,7 +8754,7 @@ Gets the range that is being protected.
 get
 Range
 Name()
-String
+String|null
 Gets the name of the protected range if it is associated with a named range.
 get
 Target
@@ -9087,6 +9126,7 @@ Formula()
 Data
 Source
 Formula
+|null
 Returns the
 Data
 Source
@@ -9174,6 +9214,7 @@ Returns the rectangular grid of values for this range.
 get
 Filter()
 Filter
+|null
 Returns the filter on the sheet this range belongs to, or
 null
 if there is no filter on
@@ -9359,6 +9400,7 @@ Value()
 Rich
 Text
 Value
+|null
 Returns the Rich Text value for the top left cell of the range, or
 null
 if the cell
@@ -10226,12 +10268,12 @@ Gets the end index of this value in the cell.
 get
 Link
 Url()
-String
+String|null
 Returns the link URL for this value.
 get
 Link
 Url(startOffset, endOffset)
-String
+String|null
 Returns the link URL for the text from
 start
 Offset
@@ -10344,6 +10386,7 @@ get
 Active
 Range()
 Range
+|null
 Returns the selected range in the active sheet, or
 null
 if there is no active range.
@@ -10353,6 +10396,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no active
@@ -10366,6 +10410,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current (highlighted) cell that is selected in one of the active ranges or
 null
 if there is no current cell.
@@ -10374,6 +10419,7 @@ Next
 Data
 Range(direction)
 Range
+|null
 Starting from the
 current cell
 and
@@ -10422,6 +10468,7 @@ Sheet()
 Data
 Source
 Sheet
+|null
 Returns the sheet as a
 Data
 Source
@@ -10568,6 +10615,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no active
@@ -10585,6 +10633,7 @@ get
 Column
 Group(columnIndex, groupDepth)
 Group
+|null
 Returns the column group at the given index and group depth.
 get
 Column
@@ -10624,6 +10673,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current cell in the active sheet or
 null
 if there is no current cell.
@@ -10673,13 +10723,14 @@ Returns an array of drawings on the sheet.
 get
 Filter()
 Filter
+|null
 Returns the filter in this sheet, or
 null
 if there is no filter.
 get
 Form
 Url()
-String
+String|null
 Returns the URL for the form that sends its responses to this sheet, or
 null
 if this
@@ -10783,6 +10834,7 @@ get
 Row
 Group(rowIndex, groupDepth)
 Group
+|null
 Returns the row group at the given index and group depth.
 get
 Row
@@ -10840,6 +10892,7 @@ Tab
 Color
 Object()
 Color
+|null
 Gets the sheet tab color, or
 null
 if the sheet tab has no color.
@@ -11236,13 +11289,14 @@ Background
 Color
 Object()
 Color
+|null
 Return the background
 Color
 of the slicer.
 get
 Column
 Position()
-Integer
+Integer|null
 Returns the column position (relative to the data range of the slicer) on which the filter is
 applied in the slicer, or
 null
@@ -11258,6 +11312,7 @@ Filter
 Criteria()
 Filter
 Criteria
+|null
 Returns the filter criteria of the slicer, or
 null
 if the filter criteria is not set.
@@ -11364,6 +11419,7 @@ get
 Background
 Color()
 Color
+|null
 Returns the background color used for sorting, or
 null
 if absent.
@@ -11374,11 +11430,12 @@ Column()
 Data
 Source
 Column
+|null
 Gets the data source column the sort spec acts on.
 get
 Dimension
 Index()
-Integer
+Integer|null
 Returns the dimension index or
 null
 if not linked to a local filter.
@@ -11386,6 +11443,7 @@ get
 Foreground
 Color()
 Color
+|null
 Returns the foreground color used for sorting, or
 null
 if absent.
@@ -11544,6 +11602,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no active
@@ -11574,6 +11633,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current cell in the active sheet or
 null
 if there is no current cell.
@@ -11774,6 +11834,7 @@ Sheet
 By
 Id(id)
 Sheet
+|null
 Gets the sheet with the given ID.
 get
 Sheet
@@ -11810,6 +11871,7 @@ Spreadsheet
 Theme()
 Spreadsheet
 Theme
+|null
 Returns the current theme of the spreadsheet, or
 null
 if no theme is applied.
@@ -12501,6 +12563,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no ranges
@@ -12521,6 +12584,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current (highlighted) cell that is selected in one of the active ranges in the
 active sheet or
 null
@@ -12679,7 +12743,7 @@ for a valid theme color type.
 get
 Font
 Family()
-String
+String|null
 Returns the font family of the theme, or
 null
 if it's a
@@ -12857,6 +12921,7 @@ Foreground
 Color
 Object()
 Color
+|null
 Gets the font color of the text.
 is
 Bold()

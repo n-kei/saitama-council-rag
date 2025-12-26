@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/cache/cache-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CacheService provides access to caches for short-term data storage.
 You can obtain specific cache instances for public (script-wide) or private (user-specific or document-specific) data.
@@ -27,6 +27,7 @@ get
 Document
 Cache()
 Cache
+|null
 Gets the cache instance scoped to the current document and script.
 get
 Script
@@ -58,6 +59,7 @@ getDocumentCache
 ();
 Return
 Cache
+|null
 — a document cache instance, or
 null
 if there is no containing document

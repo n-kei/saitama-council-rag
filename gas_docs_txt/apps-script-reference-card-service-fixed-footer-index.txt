@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/fixed-footer/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A FixedFooter is a component shown at the bottom of a Card, available for Google Workspace add-ons and Google Chat apps.
 It can have a primary button, which must be a filled text button, and optionally a secondary button, which must be an outlined text button and is only shown if a primary button is set.

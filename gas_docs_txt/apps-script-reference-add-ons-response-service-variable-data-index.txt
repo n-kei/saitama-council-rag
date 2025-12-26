@@ -1,0 +1,271 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/variable-data/index.html
+
+Variable
+Data
+Represents a variable data which can contain a collection of values in various types.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+variableData
+=
+AddOnsResponseService
+.
+newVariableData
+()
+.
+addBooleanValue
+(
+true
+)
+.
+addIntegerValue
+(
+123
+);
+Methods
+Method
+Return type
+Brief description
+add
+Boolean
+Value(value)
+Variable
+Data
+Adds a boolean value to the variable data.
+add
+Email
+Address(emailAddress)
+Variable
+Data
+Adds an email address to the variable data.
+add
+Float
+Value(value)
+Variable
+Data
+Adds a float value to the variable data.
+add
+Google
+User(googleUser)
+Variable
+Data
+Adds a google user to the variable data.
+add
+Integer
+Value(value)
+Variable
+Data
+Adds an integer value to the variable data.
+add
+Resource
+Data(resourceData)
+Variable
+Data
+Adds a
+Resource
+Data
+value to the variable data.
+add
+Resource
+Reference(resourceReference)
+Variable
+Data
+Adds a resource reference ID to the variable data.
+add
+String
+Value(value)
+Variable
+Data
+Adds a string value to the variable data.
+add
+Timestamp
+Value(value)
+Variable
+Data
+Adds a
+Time
+Stamp
+value to the variable data.
+add
+Workflow
+Text
+Format(workflowTextFormat)
+Variable
+Data
+Adds a
+Workflow
+Text
+Format
+value to the variable data.
+Detailed documentation
+add
+Boolean
+Value(value)
+Adds a boolean value to the variable data.
+Parameters
+Name
+Type
+Description
+value
+Boolean
+The boolean value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Email
+Address(emailAddress)
+Adds an email address to the variable data.
+Parameters
+Name
+Type
+Description
+email
+Address
+String
+The email address text value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Float
+Value(value)
+Adds a float value to the variable data.
+Parameters
+Name
+Type
+Description
+value
+Number
+The float value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Google
+User(googleUser)
+Adds a google user to the variable data.
+Parameters
+Name
+Type
+Description
+google
+User
+String
+The google user text value to be added, should have format of user/xxxx.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Integer
+Value(value)
+Adds an integer value to the variable data.
+Parameters
+Name
+Type
+Description
+value
+Integer
+The integer value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Resource
+Data(resourceData)
+Adds a
+Resource
+Data
+value to the variable data.
+Parameters
+Name
+Type
+Description
+resource
+Data
+Resource
+Data
+The resource data value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Resource
+Reference(resourceReference)
+Adds a resource reference ID to the variable data.
+Parameters
+Name
+Type
+Description
+resource
+Reference
+String
+The resource ID to the variable data, for example "space/123".
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+String
+Value(value)
+Adds a string value to the variable data.
+Parameters
+Name
+Type
+Description
+value
+String
+The string value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Timestamp
+Value(value)
+Adds a
+Time
+Stamp
+value to the variable data.
+Parameters
+Name
+Type
+Description
+value
+Time
+Stamp
+The timestamp value to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.
+add
+Workflow
+Text
+Format(workflowTextFormat)
+Adds a
+Workflow
+Text
+Format
+value to the variable data.
+Parameters
+Name
+Type
+Description
+workflow
+Text
+Format
+Workflow
+Text
+Format
+The workflow text format to be added.
+Return
+Variable
+Data
+— This variable data object, for chaining.

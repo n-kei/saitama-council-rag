@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-validation-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The DataValidationBuilder is used to construct data validation rules in a spreadsheet.
 You can define rules to require specific data types like dates, numbers, text, or values from a list or range.

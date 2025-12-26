@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-parameter/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataSourceParameter allows you to access existing data source parameters, but should only be used with data connected to a database.
 You can use
@@ -30,7 +30,7 @@ Gets the parameter name.
 get
 Source
 Cell()
-String
+String|null
 Gets the source cell the parameter is valued based on, or
 null
 if the parameter type is
@@ -67,7 +67,7 @@ Parameter
 Type.CELL
 .
 Return
-String
+String|null
 — The source cell, as specified in A1 notation.
 get
 Type()

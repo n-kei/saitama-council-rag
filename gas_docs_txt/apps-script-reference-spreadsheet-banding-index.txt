@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/banding/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Banding refers to the color patterns applied to rows or columns of a range within a spreadsheet.
 Each banding is defined by a range and specific colors for its rows, columns, headers, and footers.
@@ -24,6 +24,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the first alternating column color in the banding, or
 null
 if no color is set.
@@ -33,6 +34,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the first alternating row color, or
 null
 if no color is set.
@@ -42,6 +44,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the color of the last column in the banding, or
 null
 if no color is set.
@@ -51,6 +54,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the last row color in the banding, or
 null
 if no color is set.
@@ -60,6 +64,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the color of the first column in the banding, or
 null
 if no color is set.
@@ -69,6 +74,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the color of the header row or
 null
 if no color is set.
@@ -82,6 +88,7 @@ Column
 Color
 Object()
 Color
+|null
 Returns the second alternating column color in the banding, or
 null
 if no color is set.
@@ -91,6 +98,7 @@ Row
 Color
 Object()
 Color
+|null
 Returns the second alternating row color, or
 null
 if no color is set.
@@ -213,7 +221,7 @@ get
 First
 Column
 Color()
-String
+String|null
 Returns the first column color that is alternating, or
 null
 if no color is set.
@@ -221,7 +229,7 @@ get
 First
 Row
 Color()
-String
+String|null
 Returns the first row color that is alternating or
 null
 if no color is set.
@@ -229,7 +237,7 @@ get
 Footer
 Column
 Color()
-String
+String|null
 Returns the color of the last column, or
 null
 if no color is set.
@@ -237,7 +245,7 @@ get
 Footer
 Row
 Color()
-String
+String|null
 Returns the color of the last row, or
 null
 if no color is set.
@@ -245,7 +253,7 @@ get
 Header
 Column
 Color()
-String
+String|null
 Returns the color of the header column, or
 null
 if no color is set.
@@ -253,7 +261,7 @@ get
 Header
 Row
 Color()
-String
+String|null
 Returns the color of the header row or
 null
 if no color is set.
@@ -261,7 +269,7 @@ get
 Second
 Column
 Color()
-String
+String|null
 Returns the second column color that is alternating, or
 null
 if no color is set.
@@ -269,7 +277,7 @@ get
 Second
 Row
 Color()
-String
+String|null
 Returns the second row color that is alternating or
 null
 if no color is set.
@@ -303,6 +311,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The first alternating column color in the banding, or
 null
 if no color is set.
@@ -322,6 +331,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The first alternating row color in the banding, or
 null
 if no color is set.
@@ -341,6 +351,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The last column color in the banding, or
 null
 if no color is set.
@@ -360,6 +371,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The footer row color in the banding, or
 null
 if no color is set.
@@ -379,6 +391,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The first column color in the banding, or
 null
 if no color is set.
@@ -398,6 +411,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The color of the header row; returns
 null
 if no color is set.
@@ -429,6 +443,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The second alternating column color in the banding, or
 null
 if no color is set.
@@ -448,6 +463,7 @@ null
 if no color is set.
 Return
 Color
+|null
 — The second alternating row color in the banding, or
 null
 if no color is set.
@@ -911,7 +927,7 @@ Returns the first column color that is alternating, or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or
@@ -940,7 +956,7 @@ Returns the first row color that is alternating or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or
@@ -969,7 +985,7 @@ Returns the color of the last column, or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or
@@ -998,7 +1014,7 @@ Returns the color of the last row, or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or
@@ -1027,7 +1043,7 @@ Returns the color of the header column, or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or
@@ -1056,7 +1072,7 @@ Returns the color of the header row or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or
@@ -1085,7 +1101,7 @@ Returns the second column color that is alternating, or
 null
 if no color is set.
 Return
-String
+String|null
 — The HEX color or
 null
 if no color is set.
@@ -1110,7 +1126,7 @@ Returns the second row color that is alternating or
 null
 if no color is set.
 Return
-String
+String|null
 — The color code in CSS notation (such as
 '#ffffff'
 or

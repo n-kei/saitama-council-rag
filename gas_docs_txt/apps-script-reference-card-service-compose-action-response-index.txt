@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/compose-action-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ComposeActionResponse is a response object for callback methods in Gmail add-ons that compose draft messages when a UI element is selected.
 This object is distinct from the compose actions used to extend the compose UI.

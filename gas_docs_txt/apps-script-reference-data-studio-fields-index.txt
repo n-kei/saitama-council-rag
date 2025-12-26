@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/fields/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Fields define the dimensions and metrics available for use in Data Studio for a community connector.
 You can retrieve fields as an array, build them for Data Studio format, or filter them by ID.

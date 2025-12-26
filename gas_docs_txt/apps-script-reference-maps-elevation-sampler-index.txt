@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/maps/elevation-sampler/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ElevationSampler allows you to sample elevations at specific locations.
 You can use ElevationSampler to find the highest point along a route and plot it on a map.

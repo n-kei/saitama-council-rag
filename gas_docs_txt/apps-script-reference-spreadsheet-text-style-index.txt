@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/text-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextStyle defines the rendered style of text in a cell and can have a corresponding RichTextValue.
 If a RichTextValue spans multiple text runs with different style values, a method attempting to read that style will return
@@ -55,6 +55,7 @@ Foreground
 Color
 Object()
 Color
+|null
 Gets the font color of the text.
 is
 Bold()
@@ -79,7 +80,7 @@ Brief description
 get
 Foreground
 Color()
-String
+String|null
 Gets the font color of the text.
 Detailed documentation
 copy()
@@ -138,6 +139,7 @@ has multiple runs with different font
 colors.
 Return
 Color
+|null
 — The font color of the text or
 null
 .
@@ -225,7 +227,7 @@ Value
 has multiple runs with different font
 colors.
 Return
-String
+String|null
 — The font color of the text as a hex CSS value (for example, "#ff0000") or
 null
 .

@@ -124,7 +124,7 @@ Client
 ()
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 async
 def
 main
@@ -290,7 +290,7 @@ GoogleGenAI
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 async
 function

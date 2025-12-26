@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/data-table-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataTableBuilder is used to build DataTable objects by first specifying columns and then adding rows.
 The

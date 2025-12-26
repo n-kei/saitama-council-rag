@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/image-crop-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ImageCropStyle is a class used to apply crop styles to image components in Apps Script, as images cannot be sized or resized directly.
 The class provides methods to set the aspect ratio and the crop type of an image.

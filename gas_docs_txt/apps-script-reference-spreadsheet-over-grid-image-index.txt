@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/over-grid-image/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 OverGridImage represents an image placed over the grid in a spreadsheet.
 You can assign a function to an OverGridImage and retrieve or set its alt text, anchor cell, and dimensions.

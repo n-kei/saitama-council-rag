@@ -2,43 +2,26 @@ Source Path: gemini_api_docs_html/gemini-api/docs/video-understanding/index.html
 
 Gemini models can process videos, enabling many frontier developer use cases
 that would have historically required domain specific models.
-Some of Gemini's vision capabilities include the ability to:
-Describe, segment, and extract information from videos
-Answer questions about video content
-Refer to specific timestamps within a video
-Gemini was built to be multimodal from the ground up and we continue to push the
-frontier of what is possible. This guide shows how to use the Gemini API to
-generate text responses based on video inputs.
-Video input
+Some of Gemini's vision capabilities include the ability to: describe, segment,
+and extract information from videos, answer questions about video content, and
+refer to specific timestamps within a video.
 You can provide videos as input to Gemini in the following ways:
 Upload a video file
 using the File API before making a
-request to
-generateContent
-. Use this method for files larger than 20MB, videos
+request. Use this approach for files larger than 20MB, videos
 longer than approximately 1 minute, or when you want to reuse the file across
 multiple requests.
 Pass inline video data
-with the request to
-generateContent
-. Use this method for smaller files (<20MB) and shorter durations.
+in your request.
+Use this method for smaller files (<20MB) and shorter durations.
 Pass YouTube URLs
-as part of your
-generateContent
-request.
+as part of your request.
 Upload a video file
-You can use the
+The following code downloads a sample video, uploads it using the
 Files API
-to upload a video file.
-Always use the Files API when the total request size (including the file, text
-prompt, system instructions, etc.) is larger than 20 MB, the video duration is
-significant, or if you intend to use the same video in multiple prompts.
-The File API accepts video file formats directly.
-The following code downloads the sample video, uploads it using the File API,
-waits for it to be processed, and then uses the file reference in
-a
-generateContent
-request.
+,
+waits for it to be processed, and then uses the uploaded file reference to
+summarize the video.
 Python
 from
 google
@@ -474,6 +457,10 @@ jq
 -r
 ".candidates[].content.parts[].text"
 response.json
+Always use the Files API when the total request size (including the file, text
+prompt, system instructions, etc.) is larger than 20 MB, the video duration is
+significant, or if you intend to use the same video in multiple prompts.
+The File API accepts video file formats directly.
 To learn more about working with media files, see
 Files API
 .
@@ -564,6 +551,12 @@ text
 )
 ]
 )
+)
+print
+(
+response
+.
+text
 )
 JavaScript
 import
@@ -727,10 +720,22 @@ Pass YouTube URLs
 Preview:
 The YouTube URL feature is in preview and is available at no charge.
 Pricing and rate limits are likely to change.
-You can pass YouTube URLs directly to Gemini API as part of your
-generateContent
-request as follows:
+You can pass YouTube URLs directly to Gemini API as part of your request as follows:
 Python
+from
+google
+import
+genai
+from
+google.genai
+import
+types
+client
+=
+genai
+.
+Client
+()
 response
 =
 client
@@ -778,47 +783,30 @@ text
 ]
 )
 )
+print
+(
+response
+.
+text
+)
 JavaScript
 import
 {
-GoogleGenerativeAI
+GoogleGenAI
 }
 from
-"@google/generative-ai"
+"@google/genai"
 ;
 const
-genAI
+ai
 =
 new
-GoogleGenerativeAI
-(
-process
-.
-env
-.
-GOOGLE_API_KEY
-);
+GoogleGenAI
+({});
 const
-model
+contents
 =
-genAI
-.
-getGenerativeModel
-({
-model
-:
-"gemini-2.5-flash"
-});
-const
-result
-=
-await
-model
-.
-generateContent
-([
-"Please summarize the video in 3 sentences."
-,
+[
 {
 fileData
 :
@@ -829,17 +817,39 @@ fileUri
 ,
 },
 },
-]);
+{
+text
+:
+"Please summarize the video in 3 sentences."
+}
+];
+const
+response
+=
+await
+ai
+.
+models
+.
+generateContent
+({
+model
+:
+"gemini-2.5-flash"
+,
+contents
+:
+contents
+,
+});
 console
 .
 log
 (
-result
-.
 response
 .
 text
-());
+);
 Go
 package
 main
@@ -1381,8 +1391,8 @@ text
 )
 By default 1 frame per second (FPS) is sampled from the video. You might want to
 set low FPS (< 1) for long videos. This is especially useful for mostly static
-videos (e.g. lectures). If you want to capture more details in rapidly changing
-visuals, consider setting a higher FPS value.
+videos (e.g. lectures). Use a higher FPS for videos requiring granular temporal
+analysis, such as fast-action understanding or high-speed motion tracking.
 Supported video formats
 Gemini supports the following video format MIME types:
 video/mp4
@@ -1396,10 +1406,8 @@ video/wmv
 video/3gpp
 Technical details about videos
 Supported models & context
-: All Gemini 2.0 and 2.5 models can process video data.
-Models with a 2M context window can process videos up to 2 hours long at
-default media resolution or 6 hours long at low media resolution, while
-models with a 1M context window can process videos up to 1 hour long at
+: All Gemini can process video data.
+Models with a 1M context window can process videos up to 1 hour long at
 default media resolution or 3 hours long at low media resolution.
 File API processing
 : When using the File API, videos are stored at 1
@@ -1420,6 +1428,20 @@ Otherwise, frames are tokenized at 258 tokens per frame.
 Audio: 32 tokens per second.
 Metadata is also included.
 Total: Approximately 300 tokens per second of video at default media resolution, or 100 tokens per second of video at low media resolution.
+Medial resolution
+: Gemini 3 introduces granular control over multimodal
+vision processing with the
+media_resolution
+parameter. The
+media_resolution
+parameter determines the
+maximum number of tokens allocated per input image or video frame.
+Higher resolutions improve the model's ability to read fine text or identify
+small details, but increase token usage and latency.
+For more details about the parameter and how it can impact token
+calculations, see the
+media resolution
+guide.
 Timestamp format
 : When referring to specific moments in a video within your prompt, use the
 MM:SS

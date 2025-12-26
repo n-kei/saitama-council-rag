@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card-section.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A CardSection is used in Google Workspace add-ons and Google Chat apps to organize widgets and provide visual separation.
 You can add various widgets to a CardSection using the
@@ -79,6 +79,11 @@ Header(header)
 Card
 Section
 Sets the header of the section.
+set
+Id(id)
+Card
+Section
+Sets the unique ID assigned that's used to identify the section to be mutated.
 set
 Num
 Uncollapsible
@@ -241,6 +246,22 @@ Description
 header
 String
 The header text.
+Return
+Card
+Section
+— This object, for chaining.
+set
+Id(id)
+Sets the unique ID assigned that's used to identify the section to be mutated. Section mutation
+is only supported in Add-Ons.
+Parameters
+Name
+Type
+Description
+id
+String
+The id of the section, with a limit of 64 characters and in format of
+    `[a-zA-Z0-9-]+`.
 Return
 Card
 Section

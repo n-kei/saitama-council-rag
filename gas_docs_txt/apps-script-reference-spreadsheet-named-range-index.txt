@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/named-range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Named ranges are spreadsheet ranges with associated string aliases that can be created, accessed, and modified.
 Methods available for NamedRange include getting and setting the name and range, and removing the named range.

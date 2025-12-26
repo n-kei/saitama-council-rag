@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/big-query-data-source-spec/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BigQueryDataSourceSpec allows access to existing BigQuery data source specifications within SpreadsheetApp.
 You can create a new data source specification using SpreadsheetApp.newDataSourceSpec().

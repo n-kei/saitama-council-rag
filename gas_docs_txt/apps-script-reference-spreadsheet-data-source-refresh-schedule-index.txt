@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-refresh-schedule/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Use DataSourceRefreshSchedule to access and modify existing refresh schedules.
 This class should only be used with data that is connected to a database.

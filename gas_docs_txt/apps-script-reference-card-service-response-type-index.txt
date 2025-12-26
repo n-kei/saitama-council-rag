@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/response-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ResponseType is an enum representing the type of Chat app response, exclusively for Google Chat apps.
 ResponseType is called by referencing its parent class, name, and property (e.g.,

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/chat-client-data-source/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ChatClientDataSource is a data source for a multiselect menu in a SelectionInput widget, specifically for Google Chat.
 It populates selection items, for example, Google Chat spaces the user is a member of.

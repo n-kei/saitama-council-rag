@@ -1,0 +1,59 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/update-widget/index.html
+
+Update
+Widget
+A builder for
+Update
+Widget
+objects. Developers can update a widget in the card by passing
+a
+Update
+Widget
+to
+Modify
+Card
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Methods
+Method
+Return type
+Brief description
+add
+Suggestion(text, value, selected, startIconUri, bottomText)
+Update
+Widget
+Adds a new item that can be selected, for multi-select menus.
+Detailed documentation
+add
+Suggestion(text, value, selected, startIconUri, bottomText)
+Adds a new item that can be selected, for multi-select menus.
+Parameters
+Name
+Type
+Description
+text
+Object
+The text to be shown for this item. Non-string primitive arguments are converted to
+    strings automatically.
+value
+Object
+The form input value that is sent via the callback. Non-string primitive arguments
+    are converted to strings automatically.
+selected
+Boolean
+Whether the item is selected by default. If the selection input only accepts
+    one value (such as for radio buttons or a dropdown menu), only set this field for one item.
+start
+Icon
+Uri
+Object
+For multiselect menus, the URL for the icon displayed next to the item's
+    text field. Supports PNG and JPEG files.
+bottom
+Text
+Object
+For multiselect menus, a text description or label that's displayed below the
+    item's text field.
+Return
+Update
+Widget
+— This update widget object, for chaining.

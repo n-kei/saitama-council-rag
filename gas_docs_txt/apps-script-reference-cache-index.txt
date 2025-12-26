@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/cache/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Cache service allows a script to temporarily store results that take time to fetch or compute.
 Public caches are for data not dependent on a specific user, while private caches are for user-specific information.
@@ -67,6 +67,7 @@ get
 Document
 Cache()
 Cache
+|null
 Gets the cache instance scoped to the current document and script.
 get
 Script

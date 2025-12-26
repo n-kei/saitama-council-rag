@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/date-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DateItem allows respondents to indicate a date and can be accessed or created from a Form.
 DateItem objects can be duplicated, and their help text, ID, index, points, and title can be retrieved.
@@ -58,6 +58,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -217,6 +218,7 @@ Returns the feedback that is shown to respondents when they respond to a gradeab
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/named-range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A NamedRange is a Range with a name and ID for later retrieval; names are not unique, but IDs are unique within the tab.
 Once added to a tab, a NamedRange cannot be modified, only removed.

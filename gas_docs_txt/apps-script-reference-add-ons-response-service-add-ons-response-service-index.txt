@@ -8,12 +8,9 @@ Add
 Ons
 Response
 Service
-provides the ability to create responses for Google Workspace add-ons that
-extend Google Workspace Flows.
-Only available through the
-Gemini Alpha
-program
-for Google Workspace add-ons that extend Google Workspace Flows.
+provides the ability to create responses for Google Workspace
+add-ons that extend Google Workspace Studio.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
 Sample usage:
 function
 myFunction

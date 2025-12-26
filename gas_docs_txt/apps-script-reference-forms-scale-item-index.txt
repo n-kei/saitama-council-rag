@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/scale-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A ScaleItem is a question item in Google Forms that allows respondents to select one option from a numbered sequence of radio buttons.
 ScaleItems can be created and accessed from a Form object and are graded when used in a quiz.
@@ -62,6 +62,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -232,6 +233,7 @@ Returns the feedback that is shown to respondents when they respond to a gradeab
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

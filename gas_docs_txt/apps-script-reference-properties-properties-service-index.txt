@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/properties/properties-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PropertiesService allows scripts to store simple data in key-value pairs with different scopes.
 Properties can be scoped to one script, one user of a script, or one document in which an add-on is used, but cannot be shared between scripts.

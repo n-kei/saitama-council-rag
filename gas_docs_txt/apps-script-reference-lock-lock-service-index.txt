@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/lock/lock-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LockService is used to prevent concurrent access to sections of code, useful when multiple users or processes modify a shared resource.
 getDocumentLock()
@@ -21,6 +21,7 @@ get
 Document
 Lock()
 Lock
+|null
 Gets a lock that prevents any user of the current document from concurrently running a section
 of code.
 get
@@ -50,6 +51,7 @@ null
 is returned.
 Return
 Lock
+|null
 — a lock scoped to the script and current document, or
 null
 if called from a

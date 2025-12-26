@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/tab-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TabType is an enumeration of all the tab types available in DocumentApp.
 You can access TabType enum values by calling its parent class (DocumentApp), the enum name (TabType), and the property name.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-execution-status/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 DataExecutionStatus
@@ -41,13 +41,13 @@ get
 Last
 Execution
 Time()
-Date
+Date|null
 Gets the time the last data execution completed regardless of the execution state.
 get
 Last
 Refreshed
 Time()
-Date
+Date|null
 Gets the time the data last successfully refreshed.
 is
 Truncated()
@@ -90,7 +90,7 @@ Execution
 Time()
 Gets the time the last data execution completed regardless of the execution state.
 Return
-Date
+Date|null
 — The last execution time, or
 null
 if there has never been a data execution.
@@ -100,7 +100,7 @@ Refreshed
 Time()
 Gets the time the data last successfully refreshed.
 Return
-Date
+Date|null
 — The last successfully refreshed time, or
 null
 if there is never a successful

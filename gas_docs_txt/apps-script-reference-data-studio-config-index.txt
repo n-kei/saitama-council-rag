@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/config/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Config contains the configuration entries for a connector, defining the questions asked when adding a new connector.
 The

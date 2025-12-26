@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/dialog/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Dialog is a builder for Dialog objects.
 Dialogs are only available for Google Chat apps, not Google Workspace add-ons.

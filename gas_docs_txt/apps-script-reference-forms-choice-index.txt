@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/choice/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Choice represents a single option within form items like CheckboxItem, ListItem, or MultipleChoiceItem.
 The

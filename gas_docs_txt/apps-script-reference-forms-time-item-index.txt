@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/time-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TimeItem allows respondents to indicate a time of day in a form.
 TimeItem can be accessed or created from a Form and is graded when used in a quiz.
@@ -86,6 +86,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -250,6 +251,7 @@ Returns the feedback that is shown to respondents when they respond to a gradeab
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

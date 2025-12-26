@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-line-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedLineChartBuilder is a builder specifically for line charts in Google Visualization (Gviz).
 It provides methods to add and remove data ranges, set chart type, customize appearance (colors, background, titles, text styles), and control chart behavior (legend position, hidden dimensions, merge strategy, log scale, point and curve styles, category reversal, and row/column transposition).

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/contact/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 All methods described, including those for getting and setting various contact details like names, addresses, phone numbers, URLs, and user-defined fields, are marked as deprecated and should not be used in new scripts.
 These deprecated methods require authorization with the

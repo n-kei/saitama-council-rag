@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-result-set-meta-data/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 JdbcResultSetMetaData provides metadata about a JDBC ResultSet.
 It includes methods to retrieve information about columns such as their name, type, size, and nullability.

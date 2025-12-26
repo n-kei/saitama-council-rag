@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/horizontal-alignment/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 HorizontalAlignment is an enumeration of supported horizontal alignment types.
 You call an enum by calling its parent class, name, and property, such as

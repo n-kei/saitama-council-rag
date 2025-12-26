@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/conference-data/conference-data-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The ConferenceDataService allows scripts to create conferencing information.
 It includes properties for ConferenceErrorType, EntryPointFeature, and EntryPointType enumerations.

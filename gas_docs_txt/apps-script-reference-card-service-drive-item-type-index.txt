@@ -1,0 +1,34 @@
+Source Path: gas_docs_html/apps-script/reference/card-service/drive-item-type/index.html
+
+Drive
+Item
+Type
+An enum define the file type for a drive item.
+To call an enum, you call its parent class, name, and property. For example,
+CardService.DriveItemType.DOCUMENTS
+.
+Properties
+Property
+Type
+Description
+DRIVE_ITEM_TYPE_UNSPECIFIED
+Enum
+Default value. Don't use.
+DOCUMENTS
+Enum
+Represents a Google Docs document.
+SPREADSHEETS
+Enum
+Represents a Google Sheets document.
+PRESENTATIONS
+Enum
+Represents a Google Slides document.
+PDFS
+Enum
+Represents a PDF document.
+FORMS
+Enum
+Represents a Google Forms document.
+FOLDERS
+Enum
+Represents a Google Drive folder.

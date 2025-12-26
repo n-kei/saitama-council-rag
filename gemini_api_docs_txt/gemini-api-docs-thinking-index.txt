@@ -1,20 +1,13 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/thinking/index.html
 
 The
-Gemini 2.5 series models
+Gemini 3 and 2.5 series models
 use an internal
 "thinking process" that significantly improves their reasoning and multi-step
 planning abilities, making them highly effective for complex tasks such as
 coding, advanced mathematics, and data analysis.
 This guide shows you how to work with Gemini's thinking capabilities using the
 Gemini API.
-Before you begin
-Ensure you use a supported 2.5 series model for thinking.
-You might find it beneficial to explore these models in AI Studio
-before diving into the API:
-Try Gemini 2.5 Flash in AI Studio
-Try Gemini 2.5 Pro in AI Studio
-Try Gemini 2.5 Flash-Lite in AI Studio
 Generating content with thinking
 Initiating a request with a thinking model is similar to any other content
 generation request. The key difference lies in specifying one of the
@@ -234,359 +227,10 @@ example.
 ]
 }'
 ```
-Thinking budgets
-The
-thinkingBudget
-parameter guides the model on the number of
-thinking tokens to use when generating a response. A higher token count
-generally allows for more detailed reasoning, which can be beneficial for
-tackling more
-complex tasks
-. If latency is more important, use a lower
-budget or disable thinking by setting
-thinkingBudget
-to 0.
-Setting the
-thinkingBudget
-to -1 turns
-on
-dynamic thinking
-, meaning the model will adjust the budget based on the
-complexity of the request.
-The
-thinkingBudget
-is only
-supported
-in Gemini
-2.5 Flash, 2.5 Pro, and 2.5 Flash-Lite. Depending on the prompt, the model might
-overflow or underflow the token budget.
-The following are
-thinkingBudget
-configuration details for each model type.
-Model
-Default setting
-(Thinking budget is not set)
-Range
-Disable thinking
-Turn on dynamic thinking
-2.5 Pro
-Dynamic thinking: Model decides when and how much to think
-128
-to
-32768
-N/A: Cannot disable thinking
-thinkingBudget = -1
-2.5 Flash
-Dynamic thinking: Model decides when and how much to think
-0
-to
-24576
-thinkingBudget = 0
-thinkingBudget = -1
-2.5 Flash Preview
-Dynamic thinking: Model decides when and how much to think
-0
-to
-24576
-thinkingBudget = 0
-thinkingBudget = -1
-2.5 Flash Lite
-Model does not think
-512
-to
-24576
-thinkingBudget = 0
-thinkingBudget = -1
-2.5 Flash Lite Preview
-Model does not think
-512
-to
-24576
-thinkingBudget = 0
-thinkingBudget = -1
-Robotics-ER 1.5 Preview
-Dynamic thinking: Model decides when and how much to think
-0
-to
-24576
-thinkingBudget = 0
-thinkingBudget = -1
-2.5 Flash Live Native Audio Preview (09-2025)
-Dynamic thinking: Model decides when and how much to think
-0
-to
-24576
-thinkingBudget = 0
-thinkingBudget = -1
-Python
-from
-google
-import
-genai
-from
-google.genai
-import
-types
-client
-=
-genai
-.
-Client
-()
-response
-=
-client
-.
-models
-.
-generate_content
-(
-model
-=
-"gemini-2.5-pro"
-,
-contents
-=
-"Provide a list of 3 famous physicists and their key contributions"
-,
-config
-=
-types
-.
-GenerateContentConfig
-(
-thinking_config
-=
-types
-.
-ThinkingConfig
-(
-thinking_budget
-=
-1024
-)
-# Turn off thinking:
-# thinking_config=types.ThinkingConfig(thinking_budget=0)
-# Turn on dynamic thinking:
-# thinking_config=types.ThinkingConfig(thinking_budget=-1)
-),
-)
-print
-(
-response
-.
-text
-)
-JavaScript
-import
-{
-GoogleGenAI
-}
-from
-"@google/genai"
-;
-const
-ai
-=
-new
-GoogleGenAI
-({});
-async
-function
-main
-()
-{
-const
-response
-=
-await
-ai
-.
-models
-.
-generateContent
-({
-model
-:
-"gemini-2.5-pro"
-,
-contents
-:
-"Provide a list of 3 famous physicists and their key contributions"
-,
-config
-:
-{
-thinkingConfig
-:
-{
-thinkingBudget
-:
-1024
-,
-// Turn off thinking:
-// thinkingBudget: 0
-// Turn on dynamic thinking:
-// thinkingBudget: -1
-},
-},
-});
-console
-.
-log
-(
-response
-.
-text
-);
-}
-main
-();
-Go
-package
-main
-import
-(
-"context"
-"fmt"
-"google.golang.org/genai"
-"os"
-)
-func
-main
-()
-{
-ctx
-:=
-context
-.
-Background
-()
-client
-,
-err
-:=
-genai
-.
-NewClient
-(
-ctx
-,
-nil
-)
-if
-err
-!=
-nil
-{
-log
-.
-Fatal
-(
-err
-)
-}
-thinkingBudgetVal
-:=
-int32
-(
-1024
-)
-contents
-:=
-genai
-.
-Text
-(
-"Provide a list of 3 famous physicists and their key contributions"
-)
-model
-:=
-"gemini-2.5-pro"
-resp
-,
-_
-:=
-client
-.
-Models
-.
-GenerateContent
-(
-ctx
-,
-model
-,
-contents
-,
-&
-genai
-.
-GenerateContentConfig
-{
-ThinkingConfig
-:
-&
-genai
-.
-ThinkingConfig
-{
-ThinkingBudget
-:
-&
-thinkingBudgetVal
-,
-// Turn off thinking:
-// ThinkingBudget: int32(0),
-// Turn on dynamic thinking:
-// ThinkingBudget: int32(-1),
-},
-})
-fmt
-.
-Println
-(
-resp
-.
-Text
-())
-}
-REST
-curl
-"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent"
-\
--H
-"x-goog-api-key:
-$GEMINI_API_KEY
-"
-\
--H
-'Content-Type: application/json'
-\
--X
-POST
-\
--d
-'{
-"contents": [
-{
-"parts": [
-{
-"text": "Provide a list of 3 famous physicists and their key contributions"
-}
-]
-}
-],
-"generationConfig": {
-"thinkingConfig": {
-"thinkingBudget": 1024
-}
-}
-}'
 Thought summaries
 Thought summaries are synthesized versions of the model's raw thoughts and offer
 insights into the model's internal reasoning process. Note that
-thinking budgets apply to the model's raw thoughts and not to thought
+thinking levels and budgets apply to the model's raw thoughts and not to thought
 summaries.
 You can enable thought summaries by setting
 includeThoughts
@@ -1462,34 +1106,700 @@ Text
 }
 }
 }
-Thought signatures
-Because standard Gemini API text and content generation calls are stateless,
-when using thinking in multi-turn interactions (such as chat), the model doesn't
-have access to thought context from previous turns.
-You can maintain thought context using thought signatures, which are encrypted
-representations of the model's internal thought process. The model returns
-thought signatures in the response object when thinking and
-function calling
-are enabled. To ensure the model maintains context across multiple turns of a
-conversation, you must provide the thought signatures back to the model in the
-subsequent requests.
-You will receive thought signatures when:
-Thinking is enabled and thoughts are generated.
-The request includes
-function declarations
-.
+Controlling thinking
+Gemini models engage in dynamic thinking by default, automatically adjusting the
+amount of reasoning effort based on the complexity of the user's request.
+However, if you have specific latency constraints or require the model to engage
+in deeper reasoning than usual, you can optionally use parameters to control
+thinking behavior.
+Thinking levels (Gemini 3)
+The
+thinkingLevel
+parameter, recommended for Gemini 3 models and onwards,
+lets you control reasoning behavior.
+You can set thinking level to
+"low"
+or
+"high"
+for Gemini 3 Pro, and
+"minimal"
+,
+"low"
+,
+"medium"
+, and
+"high"
+for Gemini 3 Flash.
+Gemini 3 Pro and Flash thinking levels:
+low
+: Minimizes latency and cost. Best for simple instruction following, chat, or high-throughput applications
+high
+(Default, dynamic): Maximizes reasoning depth. The model may take significantly longer to reach a first token, but the output will be more carefully reasoned.
+Gemini 3 Flash thinking levels
+In addition to the levels above, Gemini 3 Flash also supports the following
+thinking levels that are not currently supported by Gemini 3 Pro:
+medium
+: Balanced thinking for most tasks.
+minimal
+: Matches the "no thinking" setting for most queries. The model may
+think very minimally for complex coding tasks. Minimizes latency for chat or
+high throughput applications.
 Note:
-Thought signatures are only available when you're using function calling,
-specifically, your request must include
+minimal
+does not guarantee that thinking is off.
+Python
+from
+google
+import
+genai
+from
+google.genai
+import
+types
+client
+=
+genai
+.
+Client
+()
+response
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-3-flash-preview"
+,
+contents
+=
+"Provide a list of 3 famous physicists and their key contributions"
+,
+config
+=
+types
+.
+GenerateContentConfig
+(
+thinking_config
+=
+types
+.
+ThinkingConfig
+(
+thinking_level
+=
+"low"
+)
+),
+)
+print
+(
+response
+.
+text
+)
+JavaScript
+import
+{
+GoogleGenAI
+,
+ThinkingLevel
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
+const
+response
+=
+await
+ai
+.
+models
+.
+generateContent
+({
+model
+:
+"gemini-3-flash-preview"
+,
+contents
+:
+"Provide a list of 3 famous physicists and their key contributions"
+,
+config
+:
+{
+thinkingConfig
+:
+{
+thinkingLevel
+:
+ThinkingLevel
+.
+LOW
+,
+},
+},
+});
+console
+.
+log
+(
+response
+.
+text
+);
+}
+main
+();
+Go
+package
+main
+import
+(
+"context"
+"fmt"
+"google.golang.org/genai"
+"os"
+)
+func
+main
+()
+{
+ctx
+:=
+context
+.
+Background
+()
+client
+,
+err
+:=
+genai
+.
+NewClient
+(
+ctx
+,
+nil
+)
+if
+err
+!=
+nil
+{
+log
+.
+Fatal
+(
+err
+)
+}
+thinkingLevelVal
+:=
+"low"
+contents
+:=
+genai
+.
+Text
+(
+"Provide a list of 3 famous physicists and their key contributions"
+)
+model
+:=
+"gemini-3-flash-preview"
+resp
+,
+_
+:=
+client
+.
+Models
+.
+GenerateContent
+(
+ctx
+,
+model
+,
+contents
+,
+&
+genai
+.
+GenerateContentConfig
+{
+ThinkingConfig
+:
+&
+genai
+.
+ThinkingConfig
+{
+ThinkingLevel
+:
+&
+thinkingLevelVal
+,
+},
+})
+fmt
+.
+Println
+(
+resp
+.
+Text
+())
+}
+REST
+curl
+"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent"
+\
+-H
+"x-goog-api-key:
+$GEMINI_API_KEY
+"
+\
+-H
+'Content-Type: application/json'
+\
+-X
+POST
+\
+-d
+'{
+"contents": [
+{
+"parts": [
+{
+"text": "Provide a list of 3 famous physicists and their key contributions"
+}
+]
+}
+],
+"generationConfig": {
+"thinkingConfig": {
+"thinkingLevel": "low"
+}
+}
+}'
+You cannot disable thinking for Gemini 3 Pro. Gemini 3 Flash also does not
+support full thinking-off, but the
+minimal
+setting means the model likely will not think (though it still potentially can).
+If you don't specify a thinking level, Gemini will use the Gemini 3 models'
+default dynamic thinking level,
+"high"
+.
+Gemini 2.5 series models don't support
+thinkingLevel
+; use
+thinkingBudget
+instead.
+Thinking budgets
+The
+thinkingBudget
+parameter, introduced with the Gemini 2.5 series, guides
+the model on the specific number of thinking tokens to use for reasoning.
+Note:
+Use the
+thinkingLevel
+parameter with Gemini 3 models. While
+thinkingBudget
+is accepted for backwards compatibility, using it with Gemini 3
+Pro may result in suboptimal performance.
+The following are
+thinkingBudget
+configuration details for each model type.
+You can disable thinking by setting
+thinkingBudget
+to 0.
+Setting the
+thinkingBudget
+to -1 turns
+on
+dynamic thinking
+, meaning the model will adjust the budget based on the
+complexity of the request.
+Model
+Default setting
+(Thinking budget is not set)
+Range
+Disable thinking
+Turn on dynamic thinking
+2.5 Pro
+Dynamic thinking: Model decides when and how much to think
+128
+to
+32768
+N/A: Cannot disable thinking
+thinkingBudget = -1
+2.5 Flash
+Dynamic thinking: Model decides when and how much to think
+0
+to
+24576
+thinkingBudget = 0
+thinkingBudget = -1
+2.5 Flash Preview
+Dynamic thinking: Model decides when and how much to think
+0
+to
+24576
+thinkingBudget = 0
+thinkingBudget = -1
+2.5 Flash Lite
+Model does not think
+512
+to
+24576
+thinkingBudget = 0
+thinkingBudget = -1
+2.5 Flash Lite Preview
+Model does not think
+512
+to
+24576
+thinkingBudget = 0
+thinkingBudget = -1
+Robotics-ER 1.5 Preview
+Dynamic thinking: Model decides when and how much to think
+0
+to
+24576
+thinkingBudget = 0
+thinkingBudget = -1
+2.5 Flash Live Native Audio Preview (09-2025)
+Dynamic thinking: Model decides when and how much to think
+0
+to
+24576
+thinkingBudget = 0
+thinkingBudget = -1
+Python
+from
+google
+import
+genai
+from
+google.genai
+import
+types
+client
+=
+genai
+.
+Client
+()
+response
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-2.5-flash"
+,
+contents
+=
+"Provide a list of 3 famous physicists and their key contributions"
+,
+config
+=
+types
+.
+GenerateContentConfig
+(
+thinking_config
+=
+types
+.
+ThinkingConfig
+(
+thinking_budget
+=
+1024
+)
+# Turn off thinking:
+# thinking_config=types.ThinkingConfig(thinking_budget=0)
+# Turn on dynamic thinking:
+# thinking_config=types.ThinkingConfig(thinking_budget=-1)
+),
+)
+print
+(
+response
+.
+text
+)
+JavaScript
+import
+{
+GoogleGenAI
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+async
+function
+main
+()
+{
+const
+response
+=
+await
+ai
+.
+models
+.
+generateContent
+({
+model
+:
+"gemini-2.5-flash"
+,
+contents
+:
+"Provide a list of 3 famous physicists and their key contributions"
+,
+config
+:
+{
+thinkingConfig
+:
+{
+thinkingBudget
+:
+1024
+,
+// Turn off thinking:
+// thinkingBudget: 0
+// Turn on dynamic thinking:
+// thinkingBudget: -1
+},
+},
+});
+console
+.
+log
+(
+response
+.
+text
+);
+}
+main
+();
+Go
+package
+main
+import
+(
+"context"
+"fmt"
+"google.golang.org/genai"
+"os"
+)
+func
+main
+()
+{
+ctx
+:=
+context
+.
+Background
+()
+client
+,
+err
+:=
+genai
+.
+NewClient
+(
+ctx
+,
+nil
+)
+if
+err
+!=
+nil
+{
+log
+.
+Fatal
+(
+err
+)
+}
+thinkingBudgetVal
+:=
+int32
+(
+1024
+)
+contents
+:=
+genai
+.
+Text
+(
+"Provide a list of 3 famous physicists and their key contributions"
+)
+model
+:=
+"gemini-2.5-flash"
+resp
+,
+_
+:=
+client
+.
+Models
+.
+GenerateContent
+(
+ctx
+,
+model
+,
+contents
+,
+&
+genai
+.
+GenerateContentConfig
+{
+ThinkingConfig
+:
+&
+genai
+.
+ThinkingConfig
+{
+ThinkingBudget
+:
+&
+thinkingBudgetVal
+,
+// Turn off thinking:
+// ThinkingBudget: int32(0),
+// Turn on dynamic thinking:
+// ThinkingBudget: int32(-1),
+},
+})
+fmt
+.
+Println
+(
+resp
+.
+Text
+())
+}
+REST
+curl
+"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+\
+-H
+"x-goog-api-key:
+$GEMINI_API_KEY
+"
+\
+-H
+'Content-Type: application/json'
+\
+-X
+POST
+\
+-d
+'{
+"contents": [
+{
+"parts": [
+{
+"text": "Provide a list of 3 famous physicists and their key contributions"
+}
+]
+}
+],
+"generationConfig": {
+"thinkingConfig": {
+"thinkingBudget": 1024
+}
+}
+}'
+Depending on the prompt, the model might overflow or underflow the token budget.
+Thought signatures
+The Gemini API is stateless, so the model treats every API request independently
+and doesn't have access to thought context from previous turns in multi-turn
+interactions.
+In order to enable maintaining thought context across multi-turn interactions,
+Gemini returns thought signatures, which are encrypted representations of the
+model's internal thought process.
+Gemini 2.5 models
+return thought signatures when thinking is enabled and
+the request includes
+function calling
+,
+specifically
 function declarations
 .
-You can find an example of thinking with function calls on the
-Function calling
-page.
+Gemini 3 models
+may return thought signatures for all types of
+parts
+.
+We recommend you always pass all signatures back as received, but it's
+required
+for function calling signatures. Read the
+Thought Signatures
+page to
+learn more.
+Note:
+Circulation of thought signatures is required even when set to
+minimal
+for Gemini Flash 3.
+The
+Google GenAI SDK
+automatically handles the
+return of thought signatures for you. You only need to
+manage thought signatures manually
+if you're modifying conversation history or using the REST API.
 Other usage limitations to consider with function calling include:
 Signatures are returned from the model within other parts in the response,
-for example function calling or text parts. Return the
-entire response with all parts back to the model in subsequent turns.
+for example function calling or text parts.
+Return the entire response
+with all parts back to the model in subsequent turns.
 Don't concatenate parts with signatures together.
 Don't merge one part with a signature with another part without a signature.
 Pricing
@@ -1622,11 +1932,6 @@ output from the API.
 You can learn more about tokens in the
 Token counting
 guide.
-Supported models
-Thinking features are supported on all the 2.5 series models.
-You can find all model capabilities on the
-model overview
-page.
 Best practices
 This section includes some guidance for using thinking models efficiently.
 As always, following our
@@ -1672,51 +1977,18 @@ b
 Write Python code for a web application that visualizes real-time stock
 market data, including user authentication. Make it as efficient as
 possible.
-Thinking with tools and capabilities
+Supported models, tools, and capabilities
+Thinking features are supported on all 3 and 2.5 series models.
+You can find all model capabilities on the
+model overview
+page.
 Thinking models work with all of Gemini's tools and capabilities. This allows
-the models to interact with external systems, execute code,
-or access real-time information, incorporating the results into their reasoning
-and final response.
-The
-search tool
-allows the model to query
-Google Search to find up-to-date information or information beyond
-its training data. This is useful for questions about recent events or
-highly specific topics.
-The
-code execution tool
-enables the model
-to generate and run Python code to perform calculations, manipulate data,
-or solve problems that are best handled algorithmically. The model receives
-the code's output and can use it in its response.
-With
-structured output
-, you can
-constrain Gemini to respond with JSON. This is particularly useful for
-integrating the model's output into applications.
-Function calling
-connects the thinking
-model to external tools and APIs, so it can reason about when to call the right
-function and what parameters to provide.
-URL Context
-provides the model with URLs as
-additional context for your prompt. The model can then retrieve content from
-the URLs and use that content to inform and shape its response.
+the models to interact with external systems, execute code, or access real-time
+information, incorporating the results into their reasoning and final response.
 You can try examples of using tools with thinking models in the
 Thinking cookbook
 .
 What's next?
-To work through more in depth examples, like:
-Using tools with thinking
-Streaming with thinking
-Adjusting the thinking budget for different results
-and more, try our
-Thinking cookbook
-.
-Thinking coverage is now available in our
+Thinking coverage is available in our
 OpenAI Compatibility
 guide.
-For more info about Gemini 2.5 Pro, Gemini Flash 2.5, and Gemini 2.5
-Flash-Lite, visit the
-model page
-.

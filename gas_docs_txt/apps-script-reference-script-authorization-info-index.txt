@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/authorization-info/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AuthorizationInfo checks if a user has granted authorization for required script scopes and provides an authorization URL to grant those permissions.
 The AuthorizationInfo object allows you to control access to code sections requiring certain scopes and request authorization for subsequent executions.
@@ -49,12 +49,12 @@ App.AuthorizationStatus.REQUIRED
 get
 Authorization
 Url()
-String
+String|null
 Gets the authorization URL that can be used to grant access to the script.
 get
 Authorized
 Scopes()
-String[]
+String[]|null
 Gets a list of authorized scopes for the script.
 Detailed documentation
 get
@@ -121,7 +121,7 @@ authInfo
 getAuthorizationUrl
 ());
 Return
-String
+String|null
 — a URL that can be used to authorize the script
 get
 Authorized
@@ -157,5 +157,5 @@ authInfo
 getAuthorizedScopes
 ());
 Return
-String[]
+String[]|null
 — The list of authorized scopes.

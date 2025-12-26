@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/grid-validation/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GridValidation is a DataValidation specifically for GridItem in Google Forms.
 It allows setting validation rules like requiring one response per column for a GridItem.

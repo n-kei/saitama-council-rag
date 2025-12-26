@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The JDBC service enables scripts to connect to various databases including Google Cloud SQL, MySQL, Microsoft SQL Server, and Oracle.
 The

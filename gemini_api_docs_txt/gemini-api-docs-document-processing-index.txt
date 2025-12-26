@@ -2,7 +2,7 @@ Source Path: gemini_api_docs_html/gemini-api/docs/document-processing/index.html
 
 Gemini models can process documents in PDF format, using native
 vision to understand entire document contexts. This goes beyond
-simple text extraction, allowing Gemini to:
+just text extraction, allowing Gemini to:
 Analyze and interpret content, including text, images, diagrams,
 charts, and tables, even in long documents up to 1000 pages.
 Extract information into
@@ -12,12 +12,17 @@ Summarize and answer questions based on both the visual and textual elements
 in a document.
 Transcribe document content (e.g. to HTML), preserving layouts and
 formatting, for use in downstream applications.
-Passing inline PDF data
-You can pass inline PDF data in the request to
+You can also pass non-PDF documents in the same way but Gemini will see them
+as normal text which will eliminate context like charts or formatting.
+Passing PDF data inline
+You can pass PDF data inline in the request to
 generateContent
-.
-For PDF payloads under 20MB, you can choose between uploading base64
-encoded documents or directly uploading locally stored files.
+. This is best
+suited for smaller documents or temporary processing where you don't need to
+reference the file in subsequent requests. We recommend using the
+Files API
+for larger documents that you need to refer to in multi-turn interactions to
+improve request latency and reduce bandwidth usage.
 The following example shows you how to fetch a PDF from a URL and convert it to
 bytes for processing:
 Python
@@ -790,26 +795,13 @@ result
 Text
 ())
 }
-Uploading PDFs using the File API
-You can use the
-File API
-to upload larger documents. Always use the File
-API when the total request size (including the files, text prompt, system
-instructions, etc.) is larger than 20MB.
+Uploading PDFs using the Files API
+We recommend you use Files API for larger files or when you intend to reuse a
+document across multiple requests. This improves request latency and reduces
+bandwidth usage by decoupling the file upload from the model requests.
 Note:
-The
-File API
-lets you store up to 50MB of PDF files.
-Files are stored for 48 hours. You can access them in that period with your API
-key, but you can't download them from the API. The File API is available at no
-cost in all regions where the Gemini API is available.
-Call
-media.upload
-to upload a file using the
-File API. The following code uploads a document file and then uses the file in a
-call to
-models.generateContent
-.
+The Files API is available at no cost in all regions where the Gemini API is 
+available. Uploaded files are stored for 48 hours.
 Large PDFs from URLs
 Use the File API to simplify uploading and processing large PDF files from URLs:
 Python
@@ -3324,16 +3316,44 @@ jq
 ".candidates[].content.parts[].text"
 response.json
 Technical details
-Gemini supports a maximum of 1,000 document pages.
-Each document page is equivalent to 258 tokens.
+Gemini supports PDF files up to 50MB or 1000 pages. This limit applies
+to both inline data and Files API uploads. Each document page is equivalent to 258
+tokens.
 While there are no specific limits to the number of pixels in a document besides
 the model's
 context window
 , larger pages are
-scaled down to a maximum resolution of 3072x3072 while preserving their original
-aspect ratio, while smaller pages are scaled up to 768x768 pixels. There is no
+scaled down to a maximum resolution of 3072 x 3072 while preserving their original
+aspect ratio, while smaller pages are scaled up to 768 x 768 pixels. There is no
 cost reduction for pages at lower sizes, other than bandwidth, or performance
 improvement for pages at higher resolution.
+Gemini 3 models
+Gemini 3 introduces granular control over multimodal vision processing with the
+media_resolution
+parameter. You can now set the resolution to low, medium, or
+high per individual media part. With this addition, the processing of PDF
+documents has been updated:
+Native text inclusion:
+Text natively embedded in the PDF is extracted
+and provided to the model.
+Billing & token reporting:
+You are
+not charged
+for tokens originating from the extracted
+native text
+in PDFs.
+In the
+usage_metadata
+section of the API response, tokens generated
+from processing PDF pages (as images) are now counted under the
+IMAGE
+modality, not a separate
+DOCUMENT
+modality as in some earlier
+versions.
+For more details about the media resolution parameter, see the
+Media resolution
+guide.
 Document types
 Technically, you can pass other MIME types for document understanding, like
 TXT, Markdown, HTML, XML, etc. However, document vision

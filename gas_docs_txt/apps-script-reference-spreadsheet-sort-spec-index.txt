@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/sort-spec/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SortSpec represents the sorting specification.
 It includes methods to retrieve background and foreground colors used for sorting.
@@ -17,6 +17,7 @@ get
 Background
 Color()
 Color
+|null
 Returns the background color used for sorting, or
 null
 if absent.
@@ -27,11 +28,12 @@ Column()
 Data
 Source
 Column
+|null
 Gets the data source column the sort spec acts on.
 get
 Dimension
 Index()
-Integer
+Integer|null
 Returns the dimension index or
 null
 if not linked to a local filter.
@@ -39,6 +41,7 @@ get
 Foreground
 Color()
 Color
+|null
 Returns the foreground color used for sorting, or
 null
 if absent.
@@ -61,6 +64,7 @@ null
 if absent.
 Return
 Color
+|null
 — The background color.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -80,6 +84,7 @@ Return
 Data
 Source
 Column
+|null
 — The data source column the sort spec acts on.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -94,7 +99,7 @@ Returns the dimension index or
 null
 if not linked to a local filter.
 Return
-Integer
+Integer|null
 — The dimension index.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -110,6 +115,7 @@ null
 if absent.
 Return
 Color
+|null
 — The foreground color.
 Authorization
 Scripts that use this method require authorization with one or more of the following

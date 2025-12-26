@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/page-range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A PageRange is a collection of one or more Page instances.
 The getPages() method returns the list of Page instances within the PageRange.

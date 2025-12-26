@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/calendar/event-color/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EventColor is an enum representing named event colors available in the Calendar service.
 To use an enum, call its parent class, name, and property, for example,

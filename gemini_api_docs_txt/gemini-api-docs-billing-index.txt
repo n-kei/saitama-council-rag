@@ -54,7 +54,8 @@ your project's eligibility. If your project meets all the
 requirements, it will be instantly upgraded to the next tier.
 Why use the paid tier?
 When you enable billing and use the paid tier, you benefit from
-higher rate limits
+higher rate
+limits
 ,
 and your prompts and responses aren't used to improve Google products.
 For more information on data use for paid services, see the
@@ -73,13 +74,39 @@ Open
 Google AI Studio
 .
 In the bottom of the left sidebar, select
-Settings
+Dashboard
 >
-Plan information
-.
+Usage and
+Billing
+>
+Billing
+tab.
 Click
 Set up Billing
 for your chosen project to enable Cloud Billing.
+One-time prepayment verification
+Google may require a one-time prepayment to activate the paid tier for the
+Gemini API. This measure helps maintain the security and availability of our
+platform for all users. It is not a fee; it is a credit that is applied directly
+to your account for future use.
+How the prepayment process works
+Initiate an
+upgrade
+: When you activate the Gemini
+API on a project linked to an eligible billing account, we'll notify you if
+a prepayment is required.
+Get notified
+: You'll see a banner in the Google Cloud Console and receive
+an email informing you of the requirement.
+Make a payment
+: The banner and email will direct you to the
+Billing >
+Payments
+Overview page, where you can complete the one-time prepayment.
+Get upgraded
+: Once your payment is successfully processed (which is
+instant for most payment methods), your project will upgrade to the
+Gemini API paid tier, and your new rate limits will apply.
 Monitor usage
 After you enable Cloud Billing, you can monitor your usage of the Gemini API in
 Google AI Studio
@@ -116,9 +143,6 @@ can try the 1M token context window in the following ways:
 In Google AI Studio
 With pay-as-you-go plans
 With free-of-charge plans for select models
-See the latest free-of-charge rate limits per model on
-rate limits page
-.
 How can I calculate the number of tokens I'm using?
 Use the
 GenerativeModel.count_tokens
@@ -151,6 +175,25 @@ same "Paid Services" terms so long as at least 1 API project has billing enabled
 which you can validate on the
 Gemini API Key page
 if you see any projects marked as "Paid" under "Plan".
+What happens to my prepayment?
+The full amount is added as a credit to your Cloud Billing account. This credit
+will automatically be used to pay for any usage you accrue on Google Cloud,
+including the Gemini API or other services like Compute Engine and Cloud
+Storage.
+What if I don't prepay?
+No problem. Your project will remain on the Gemini API free tier. You won't lose
+any access, but you'll be subject to the free tier's rate limits. You can choose
+to complete the prepayment at any time in the future to upgrade.
+Can I get a refund for my prepayment?
+Yes. If you have a credit balance on your account, you can request a refund
+through the Cloud Console, subject to our standard refund policies.
+Does prepayment affect my $300 Free Trial credit?
+No. This is separate from your Free Trial credits. You can still use your Free
+Trial credits for eligible products.
+What happens if I spend beyond the prepaid amount?
+Once your prepaid credit balance is exhausted, your account will transition to
+standard billing. Any additional usage will be charged to the primary payment
+method linked to your Cloud Billing account.
 Where can I get help with billing?
 To get help with billing, see
 Get Cloud Billing support

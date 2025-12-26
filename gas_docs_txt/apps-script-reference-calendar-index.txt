@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/calendar/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Google Calendar service for Apps Script allows scripts to access and modify user calendars.
 Various classes like

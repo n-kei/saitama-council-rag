@@ -1,0 +1,21 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/font-weight/index.html
+
+Font
+Weight
+An enum that represents the font weight of the styled text.
+Properties
+Property
+Type
+Description
+FONT_WEIGHT_UNSPECIFIED
+Enum
+Standard weight with normal thickness.
+LIGHT
+Enum
+Lighter weight with reduced thickness.
+MEDIUM
+Enum
+Intermediate weight between light and bold.
+BOLD
+Enum
+Heavier weight with increased thickness.

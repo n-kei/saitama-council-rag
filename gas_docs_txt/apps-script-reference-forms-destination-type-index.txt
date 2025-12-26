@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/destination-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DestinationType
 is an enum that represents supported types of form-response destinations.

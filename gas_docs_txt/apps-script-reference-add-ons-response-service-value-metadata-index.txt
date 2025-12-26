@@ -1,0 +1,154 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/value-metadata/index.html
+
+Value
+Metadata
+A valueMetadata contains information about the potential values of a variable.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+let
+allowedValue1
+=
+"001"
+;
+let
+allowedValue2
+=
+"002"
+;
+const
+valueMetadata
+=
+AddOnsResponseService
+.
+newValueMetadata
+()
+.
+addEnumValue
+(
+allowedValue1
+);
+.
+addEnumValue
+(
+allowedValue2
+)
+.
+setDefaultValue
+(
+allowedValue1
+)
+.
+addCastableType
+(
+AddOnsResponseService
+.
+BasicDataType
+.
+STRING
+)
+.
+addCastableType
+(
+AddOnsResponseService
+.
+BasicDataType
+.
+INTEGER
+);
+Methods
+Method
+Return type
+Brief description
+add
+Castable
+Type(dataType)
+Value
+Metadata
+Adds a optional allowed types that can be dynamically casted for a variable data to this value
+metadata.
+add
+Enum
+Value(enumValue)
+Value
+Metadata
+Adds an optional string value to the allowed enum values of a variable, this field can only be
+set if the
+Data
+Type
+is set to String type.
+set
+Default
+Value(defaultValue)
+Value
+Metadata
+Sets the optional default value of the variable, example, if the variable type is boolean,
+defaultValue may be set to "
+true
+" or "
+false
+".
+Detailed documentation
+add
+Castable
+Type(dataType)
+Adds a optional allowed types that can be dynamically casted for a variable data to this value
+metadata.
+Parameters
+Name
+Type
+Description
+data
+Type
+Basic
+Data
+Type
+A
+Basic
+Data
+Type
+the variable can be casted to.
+Return
+Value
+Metadata
+— This value metadata object, for chaining.
+add
+Enum
+Value(enumValue)
+Adds an optional string value to the allowed enum values of a variable, this field can only be
+set if the
+Data
+Type
+is set to String type.
+Parameters
+Name
+Type
+Description
+enum
+Value
+String
+The allowed value to add to the enumeration.
+Return
+Value
+Metadata
+— This value metadata object, for chaining.
+set
+Default
+Value(defaultValue)
+Sets the optional default value of the variable, example, if the variable type is boolean,
+defaultValue may be set to "
+true
+" or "
+false
+".
+Parameters
+Name
+Type
+Description
+default
+Value
+String
+The default value of the variable.
+Return
+Value
+Metadata
+— This value metadata object, for chaining.

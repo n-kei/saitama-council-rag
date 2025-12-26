@@ -1,0 +1,17 @@
+Source Path: gas_docs_html/apps-script/reference/card-service/text-input-mode/index.html
+
+Text
+Input
+Mode
+An enum that defines the what type of input is allowed for the text input field.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Properties
+Property
+Type
+Description
+PLAIN_TEXT
+Enum
+Only allow plain text input.
+RICH_TEXT
+Enum
+Support both plain text input and variables in a text input.

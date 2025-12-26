@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/pivot-table/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Pivot tables can be accessed and modified using various methods.
 Methods are available to add calculated pivot values, column groups, filters, and pivot values.
@@ -65,6 +65,7 @@ Data
 Source
 Pivot
 Table
+|null
 Returns the pivot table as a data source pivot table if the pivot table is linked to a
 Data
 Source
@@ -323,6 +324,7 @@ Data
 Source
 Pivot
 Table
+|null
 — A data source pivot table.
 Authorization
 Scripts that use this method require authorization with one or more of the following

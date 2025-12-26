@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/link/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 Link
@@ -40,13 +40,14 @@ get
 Linked
 Slide()
 Slide
+|null
 Returns the linked
 Slide
 for non-URL links types, if it exists.
 get
 Slide
 Id()
-String
+String|null
 Returns the ID of the linked
 Slide
 or
@@ -61,7 +62,7 @@ Type.SLIDE_ID
 get
 Slide
 Index()
-Integer
+Integer|null
 Returns the zero-based index of the linked
 Slide
 or
@@ -78,6 +79,7 @@ Slide
 Position()
 Slide
 Position
+|null
 Returns the
 Slide
 Position
@@ -94,7 +96,7 @@ Type.SLIDE_POSITION
 .
 get
 Url()
-String
+String|null
 Returns the URL to the external web page or
 null
 if the
@@ -235,6 +237,7 @@ getLinkedSlide
 }
 Return
 Slide
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -311,7 +314,7 @@ getSlideId
 );
 }
 Return
-String
+String|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -388,7 +391,7 @@ getSlideIndex
 );
 }
 Return
-Integer
+Integer|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -471,6 +474,7 @@ getSlidePosition
 Return
 Slide
 Position
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -543,7 +547,7 @@ getUrl
 );
 }
 Return
-String
+String|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/sheet/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 Sheet
@@ -50,6 +50,7 @@ Sheet()
 Data
 Source
 Sheet
+|null
 Returns the sheet as a
 Data
 Source
@@ -196,6 +197,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no active
@@ -213,6 +215,7 @@ get
 Column
 Group(columnIndex, groupDepth)
 Group
+|null
 Returns the column group at the given index and group depth.
 get
 Column
@@ -252,6 +255,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current cell in the active sheet or
 null
 if there is no current cell.
@@ -301,13 +305,14 @@ Returns an array of drawings on the sheet.
 get
 Filter()
 Filter
+|null
 Returns the filter in this sheet, or
 null
 if there is no filter.
 get
 Form
 Url()
-String
+String|null
 Returns the URL for the form that sends its responses to this sheet, or
 null
 if this
@@ -411,6 +416,7 @@ get
 Row
 Group(rowIndex, groupDepth)
 Group
+|null
 Returns the row group at the given index and group depth.
 get
 Row
@@ -468,6 +474,7 @@ Tab
 Color
 Object()
 Color
+|null
 Gets the sheet tab color, or
 null
 if the sheet tab has no color.
@@ -849,7 +856,7 @@ instance describing the permissions for the current sheet.
 get
 Tab
 Color()
-String
+String|null
 Gets the sheet tab color, or
 null
 if the sheet tab has no color.
@@ -1349,6 +1356,7 @@ Return
 Data
 Source
 Sheet
+|null
 — A data source sheet.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2410,6 +2418,7 @@ getActiveRangeList
 Return
 Range
 List
+|null
 — The list of active ranges.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2579,6 +2588,7 @@ Integer
 The depth of the group.
 Return
 Group
+|null
 — The column group at the control index and depth, or throws an exception if the group
     doesn’t exist.
 Authorization
@@ -2813,6 +2823,7 @@ getCurrentCell
 ();
 Return
 Range
+|null
 — The current cell.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -3277,6 +3288,7 @@ getFilter
 ();
 Return
 Filter
+|null
 — The filter.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -3307,7 +3319,7 @@ sheet
 getFormUrl
 ();
 Return
-String
+String|null
 — The URL for the form that places its responses in this sheet, or
 null
 if this
@@ -4418,6 +4430,7 @@ Integer
 The depth of the group.
 Return
 Group
+|null
 — The row group at the control index and depth, or throws an exception if the group
     doesn’t exist.
 Authorization
@@ -4876,6 +4889,7 @@ getTabColorObject
 ();
 Return
 Color
+|null
 — The sheet tab color, or
 null
 if the sheet tab has no color.
@@ -8685,7 +8699,7 @@ first
 getTabColor
 ();
 Return
-String
+String|null
 — Color code in CSS notation (such as
 '#ffffff'
 ).

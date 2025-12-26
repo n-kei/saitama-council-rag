@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/text-finder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextFinder is used to find or replace text within a range, sheet, or spreadsheet with customizable search options.
 Key methods include finding all matches, navigating through matches, getting the current match, and replacing text.

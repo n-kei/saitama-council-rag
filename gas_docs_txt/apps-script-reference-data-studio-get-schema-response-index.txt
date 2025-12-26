@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/get-schema-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GetSchemaResponse is a builder used to create a
 getSchema()

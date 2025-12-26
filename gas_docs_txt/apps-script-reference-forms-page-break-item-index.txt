@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/page-break-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PageBreakItem marks the start of a new page in a form and can be accessed or created from a Form object.
 You can set the navigation for a page break to jump to another specific page break or use a defined PageNavigationType.

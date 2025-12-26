@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/duration-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DurationItem allows respondents to indicate a length of time in a form.
 Duration items can be accessed or created from a Form and are gradeable when used in a quiz.
@@ -55,6 +55,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -231,6 +232,7 @@ Returns the feedback that is shown to respondents when they respond to a gradeab
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

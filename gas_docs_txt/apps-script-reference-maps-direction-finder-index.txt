@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/maps/direction-finder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DirectionFinder allows you to get directions between locations.
 You can specify an origin, destination, and waypoints using addresses or coordinates.

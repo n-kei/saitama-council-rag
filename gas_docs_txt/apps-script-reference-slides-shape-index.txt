@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/shape/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Shape represents a generic page element in Google Slides that can be a text box, rectangle, or other predefined shapes.
 Shapes have methods to control their position, size, rotation, layering, and linking within a presentation.
@@ -38,6 +38,7 @@ Duplicates the page element.
 get
 Autofit()
 Autofit
+|null
 Returns the
 Autofit
 of the text within this shape.
@@ -78,18 +79,18 @@ Fill
 of the shape.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -99,6 +100,7 @@ page when the element has no rotation.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -125,6 +127,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -139,11 +142,12 @@ Parent
 Placeholder()
 Page
 Element
+|null
 Returns the parent page element of the placeholder.
 get
 Placeholder
 Index()
-Integer
+Integer|null
 Returns the placeholder index of the shape.
 get
 Placeholder
@@ -187,7 +191,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -419,6 +423,7 @@ if the shape
 doesn't allow text.
 Return
 Autofit
+|null
 — The autofit of the text within this shape.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -511,7 +516,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -529,7 +534,7 @@ Returns the element's inherent height in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -547,7 +552,7 @@ Returns the element's inherent width in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does
@@ -623,6 +628,7 @@ getLinkType
 }
 Return
 Link
+|null
 — The
 Link
 or
@@ -677,6 +683,7 @@ if the element is not in a
 group.
 Return
 Group
+|null
 — The group this page element belongs to, or
 null
 .
@@ -709,6 +716,7 @@ placeholder or has no parent.
 Return
 Page
 Element
+|null
 — The parent page element of this shape placeholder, or
 null
 if this shape is not
@@ -727,7 +735,7 @@ types are present in the same page, they each have their own unique index value.
 null
 if the shape is not a placeholder.
 Return
-Integer
+Integer|null
 — This shape's placeholder index, or
 null
 if the shape is not a placeholder.
@@ -842,7 +850,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does

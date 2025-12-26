@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/phone-field/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PhoneField is deprecated and the People API advanced service should be used instead.
 A PhoneField represents a phone number field within a Contact.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/selection/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Selection object represents the current selection in an active presentation.
 You can get the currently active page, selected page elements, selected pages in the filmstrip, selected table cells, or selected text range using methods like
@@ -50,6 +50,7 @@ get
 Current
 Page()
 Page
+|null
 Returns the currently active
 Page
 or
@@ -62,6 +63,7 @@ Range()
 Page
 Element
 Range
+|null
 Returns the
 Page
 Element
@@ -81,6 +83,7 @@ Page
 Range()
 Page
 Range
+|null
 Returns the
 Page
 Range
@@ -109,6 +112,7 @@ Range()
 Table
 Cell
 Range
+|null
 Returns the
 Table
 Cell
@@ -128,6 +132,7 @@ Text
 Range()
 Text
 Range
+|null
 Returns the
 Text
 Range
@@ -185,6 +190,7 @@ getObjectId
 }
 Return
 Page
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -269,6 +275,7 @@ Return
 Page
 Element
 Range
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -343,6 +350,7 @@ length
 Return
 Page
 Range
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -500,6 +508,7 @@ Return
 Table
 Cell
 Range
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -608,6 +617,7 @@ asString
 Return
 Text
 Range
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

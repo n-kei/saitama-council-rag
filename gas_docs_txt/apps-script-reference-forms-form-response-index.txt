@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/form-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A FormResponse object represents a response to a Google Form and can be used to access, submit, or generate pre-filled URLs for responses.
 You can retrieve all item responses for a form response using
@@ -173,7 +173,7 @@ Response
 Gets the item response contained in a form response for a given item.
 get
 Id()
-String
+String|null
 Gets the ID of the form response.
 get
 Item
@@ -550,7 +550,7 @@ getId
 );
 }
 Return
-String
+String|null
 — The ID of the form response, or
 null
 if the form response has not been

@@ -107,7 +107,7 @@ create
 ({
 model
 :
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 :
@@ -153,13 +153,18 @@ curl
 "Content-Type: application/json"
 \
 -H
-"Authorization: Bearer GEMINI_API_KEY"
+"Authorization: Bearer
+$GEMINI_API_KEY
+"
 \
 -d
 '{
-"model": "gemini-2.0-flash",
+"model": "gemini-2.5-flash",
 "messages": [
-{"role": "user", "content": "Explain to me how AI works"}
+{
+"role": "user",
+"content": "Explain to me how AI works"
+}
 ]
 }'
 What changed? Just three lines!
@@ -175,28 +180,55 @@ base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 This
 tells the OpenAI library to send requests to the Gemini API endpoint instead of
 the default URL.
-model="gemini-2.0-flash"
+model="gemini-2.5-flash"
 : Choose a compatible Gemini model
 Thinking
-Gemini 2.5 models are trained to think through complex problems, leading to
-significantly improved reasoning. The Gemini API comes with a
-"thinking budget"
-parameter
-which gives fine grain control
-over how much the model will think.
-Unlike the Gemini API, the OpenAI API offers three levels of thinking control:
-"low"
-,
-"medium"
-, and
-"high"
-, which map to 1,024, 8,192, and 24,576 tokens,
-respectively.
+Gemini models are trained to think through complex problems, leading
+to significantly improved reasoning. The Gemini API comes with
+thinking
+parameters
+which give fine grain
+control over how much the model will think.
+Different Gemini models have different reasoning configurations, you can see how
+they map to OpenAI's reasoning efforts as follows:
+reasoning_effort
+(OpenAI)
+thinking_level
+(Gemini 3)
+thinking_budget
+(Gemini 2.5)
+Pro
+Flash
+minimal
+low
+minimal
+1,024
+low
+low
+low
+1,024
+medium
+high
+medium
+8,192
+high
+high
+high
+24,576
+If no
+reasoning_effort
+is specified, Gemini uses the model's
+default
+level
+or
+budget
+.
 If you want to disable thinking, you can set
 reasoning_effort
 to
 "none"
-(note that reasoning cannot be turned off for 2.5 Pro models).
+for
+2.5 models. Reasoning cannot be turned off for Gemini 2.5 Pro or 3 models.
 Python
 from
 openai
@@ -350,31 +382,36 @@ curl
 "Content-Type: application/json"
 \
 -H
-"Authorization: Bearer GEMINI_API_KEY"
+"Authorization: Bearer
+$GEMINI_API_KEY
+"
 \
 -d
 '{
 "model": "gemini-2.5-flash",
 "reasoning_effort": "low",
 "messages": [
-{"role": "user", "content": "Explain to me how AI works"}
+{
+"role": "user",
+"content": "Explain to me how AI works"
+}
 ]
 }'
 Gemini thinking models also produce
 thought summaries
-and can use exact
-thinking budgets
 .
 You can use the
 extra_body
-field to include these fields
+field to include Gemini fields
 in your request.
 Note that
 reasoning_effort
 and
+thinking_level
+/
 thinking_budget
-overlap functionality, so
-they can't be used at the same time.
+overlap
+functionality, so they can't be used at the same time.
 Python
 from
 openai
@@ -431,7 +468,7 @@ extra_body
 {
 "thinking_budget"
 :
-800
+"low"
 ,
 "include_thoughts"
 :
@@ -510,7 +547,7 @@ extra_body
 {
 "thinking_budget"
 :
-800
+"low"
 ,
 "include_thoughts"
 :
@@ -553,6 +590,10 @@ curl
 }
 }
 }'
+Gemini 3 supports OpenAI compatibility for thought signatures in chat completion
+APIs. You can find the full example on the
+thought signatures
+page.
 Streaming
 The Gemini API supports
 streaming responses
@@ -586,7 +627,7 @@ create
 (
 model
 =
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 =
@@ -669,7 +710,7 @@ create
 ({
 model
 :
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 :
@@ -737,7 +778,7 @@ curl
 \
 -d
 '{
-"model": "gemini-2.0-flash",
+"model": "gemini-2.5-flash",
 "messages": [
 {"role": "user", "content": "Explain to me how AI works"}
 ],
@@ -853,7 +894,7 @@ create
 (
 model
 =
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 =
@@ -988,7 +1029,7 @@ create
 ({
 model
 :
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 :
@@ -1024,7 +1065,7 @@ curl
 \
 -d
 '{
-"model": "gemini-2.0-flash",
+"model": "gemini-2.5-flash",
 "messages": [
 {
 "role": "user",
@@ -1130,7 +1171,7 @@ create
 (
 model
 =
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 =
@@ -1329,7 +1370,7 @@ create
 ({
 model
 :
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 :
@@ -1373,7 +1414,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions" 
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer GEMINI_API_KEY" \
 -d "{
-\"model\": \"gemini-2.0-flash\",
+\"model\": \"gemini-2.5-flash\",
 \"messages\": [
 {
 \"role\": \"user\",
@@ -1613,7 +1654,7 @@ create
 (
 model
 =
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 =
@@ -1737,7 +1778,7 @@ create
 ({
 model
 :
-"gemini-2.0-flash"
+"gemini-5-flash"
 ,
 messages
 :
@@ -1813,7 +1854,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions" 
 -H "Content-Type: application/json" \
 -H "Authorization: Bearer GEMINI_API_KEY" \
 -d "{
-\"model\": \"gemini-2.0-flash\",
+\"model\": \"gemini-2.5-flash\",
 \"messages\": [
 {
 \"role\": \"user\",
@@ -1887,7 +1928,7 @@ parse
 (
 model
 =
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 =
@@ -2007,7 +2048,7 @@ parse
 ({
 model
 :
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 ,
 messages
 :
@@ -2698,7 +2739,7 @@ models
 .
 retrieve
 (
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 )
 print
 (
@@ -2742,7 +2783,7 @@ models
 .
 retrieve
 (
-"gemini-2.0-flash"
+"gemini-2.5-flash"
 );
 console
 .
@@ -2757,7 +2798,7 @@ main
 ();
 REST
 curl
-https://generativelanguage.googleapis.com/v1beta/openai/models/gemini-2.0-flash
+https://generativelanguage.googleapis.com/v1beta/openai/models/gemini-2.5-flash
 \
 -H
 "Authorization: Bearer GEMINI_API_KEY"

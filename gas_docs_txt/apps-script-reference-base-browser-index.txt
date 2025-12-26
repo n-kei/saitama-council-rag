@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/browser/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Browser class in Google Apps Script provides access to dialog boxes specifically for Google Sheets.
 The methods of the Browser class are only usable within the context of a Google Spreadsheet.
@@ -29,27 +29,27 @@ Return type
 Brief description
 input
 Box(prompt)
-String
+String|null
 Pops up a dialog box with a text input box in the user's browser.
 input
 Box(prompt, buttons)
-String
+String|null
 Pops up a dialog box with a text input box in the user's browser.
 input
 Box(title, prompt, buttons)
-String
+String|null
 Pops up a dialog box with a text input box in the user's browser.
 msg
 Box(prompt)
-String
+String|null
 Pops up a dialog box with the given message and an OK button in the user's browser.
 msg
 Box(prompt, buttons)
-String
+String|null
 Pops up a dialog box with the given message and specified buttons in the user's browser.
 msg
 Box(title, prompt, buttons)
-String
+String|null
 Pops up a dialog box with the given title, message and specified buttons in the user's browser.
 Detailed documentation
 input
@@ -81,7 +81,7 @@ prompt
 String
 The text to be displayed in the dialog box.
 Return
-String
+String|null
 — The text entered by the user (or 'cancel' for a canceled or dismissed dialog).
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -128,7 +128,7 @@ Button
 Set
 The type of button set to use.
 Return
-String
+String|null
 — The text entered by the user (or 'cancel' for a canceled or dismissed dialog).
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -181,7 +181,7 @@ Button
 Set
 The type of button set to use.
 Return
-String
+String|null
 — The text entered by the user (or 'cancel' for a canceled or dismissed dialog).
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -214,7 +214,7 @@ prompt
 String
 The text to be displayed in the dialog box.
 Return
-String
+String|null
 — The lower case text of the button that is clicked by the user (or 'cancel' for a
     dismissed dialog).
 Authorization
@@ -259,7 +259,7 @@ Button
 Set
 The type of button set to use.
 Return
-String
+String|null
 — The lower case text of the button that is clicked by the user (or 'cancel' for a
     dismissed dialog).
 Authorization
@@ -309,7 +309,7 @@ Button
 Set
 The type of button set to use.
 Return
-String
+String|null
 — The lower case text of the button that is clicked by the user (or 'cancel' for a
     dismissed dialog).
 Authorization

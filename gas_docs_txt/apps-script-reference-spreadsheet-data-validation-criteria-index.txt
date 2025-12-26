@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-validation-criteria/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataValidationCriteria is an enumeration used to define data validation rules for a range in a spreadsheet.
 Enum properties are accessed by calling the parent class, name, and property, such as SpreadsheetApp.DataValidationCriteria.DATE_IS_VALID_DATE.

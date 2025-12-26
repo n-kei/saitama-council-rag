@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/key-value/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 This class is deprecated and should not be used in new scripts; instead, use DecoratedText.
 You can set an authorization action that opens a URL to the authorization flow when the object is clicked.
@@ -19,6 +19,11 @@ Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Authorization
 Action(action)
@@ -32,6 +37,10 @@ Action(action, composedEmailType)
 Key
 Value
 Sets an action that composes a draft email when the object is clicked.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 On
 Click
@@ -54,6 +63,10 @@ Link(openLink)
 Key
 Value
 Sets a URL to be opened when the object is clicked.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Deprecated methods
 Method
 Return type
@@ -113,6 +126,25 @@ Key
 Value
 Sets the label text to be used as the key.
 Detailed documentation
+add
+Event
+Action(eventAction)
+Adds the event action that can be performed on the widget.
+Parameters
+Name
+Type
+Description
+event
+Action
+Event
+Action
+The
+Event
+Action
+to be added.
+Return
+Widget
+— The Object, for chaining.
 set
 Authorization
 Action(action)
@@ -327,6 +359,20 @@ An enum value that specifies whether the composed draft is a
 Return
 Key
 Value
+— This object, for chaining.
+set
+Id(id)
+Sets the unique ID assigned that's used to identify the widget to be mutated. Widget mutation
+is only supported in Add-Ons.
+Parameters
+Name
+Type
+Description
+id
+String
+The id of the widget, with a limit of 64 characters and in format of `[a-zA-Z0-9-]+`.
+Return
+Widget
 — This object, for chaining.
 set
 On
@@ -580,6 +626,21 @@ Return
 Key
 Value
 — This object, for chaining.
+set
+Visibility(visibility)
+Sets the visibility of the widget. The default value is `VISIBLE`.
+Parameters
+Name
+Type
+Description
+visibility
+Visibility
+The
+Visibility
+of the widget.
+Return
+Widget
+— The Object, for chaining.
 Deprecated methods
 set
 Bottom

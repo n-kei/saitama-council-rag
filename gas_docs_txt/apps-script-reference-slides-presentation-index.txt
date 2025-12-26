@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/presentation/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 You can add and remove editors and viewers to a presentation using various methods.
 Slides can be appended to or inserted into a presentation with different layouts or by copying existing slides.
@@ -130,6 +130,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -149,12 +150,14 @@ Gets the page width of the slides, layouts, and masters in the presentation in p
 get
 Selection()
 Selection
+|null
 Gets the user’s selection in the active presentation.
 get
 Slide
 By
 Id(id)
 Slide
+|null
 Returns the
 Slide
 with the given ID, or
@@ -742,6 +745,7 @@ The ID of the page element that is being retrieved.
 Return
 Page
 Element
+|null
 — The page element with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -806,6 +810,7 @@ getCurrentPage
 ();
 Return
 Selection
+|null
 — A representation of the user's selection, or
 null
 if the script is not bound to
@@ -834,6 +839,7 @@ String
 The ID of the slide that is being retrieved.
 Return
 Slide
+|null
 — The slide with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following

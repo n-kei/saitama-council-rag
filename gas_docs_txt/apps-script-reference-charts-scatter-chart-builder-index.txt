@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/scatter-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ScatterChartBuilder is used to create scatter charts.
 Data for the scatter chart can be imported from external sources like Google Spreadsheets using

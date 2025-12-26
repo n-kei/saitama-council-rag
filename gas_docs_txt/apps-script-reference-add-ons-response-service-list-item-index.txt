@@ -1,0 +1,68 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/list-item/index.html
+
+List
+Item
+A list item, where each list item can contain multiple
+Text
+Format
+Element
+.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+const
+listItem
+=
+AddOnsResponseService
+.
+newListItem
+()
+.
+addTextFormatElements
+(
+AddOnsResponseService
+.
+newStyledText
+());
+Methods
+Method
+Return type
+Brief description
+add
+Text
+Format
+Element(textFormatElement)
+List
+Item
+Adds a
+Text
+Format
+Element
+to the list item.
+Detailed documentation
+add
+Text
+Format
+Element(textFormatElement)
+Adds a
+Text
+Format
+Element
+to the list item.
+Parameters
+Name
+Type
+Description
+text
+Format
+Element
+Text
+Format
+Element
+The
+Text
+Format
+Element
+to add to the list item.
+Return
+List
+Item
+— This list item object, for chaining.

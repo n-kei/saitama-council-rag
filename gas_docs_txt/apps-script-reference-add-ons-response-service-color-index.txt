@@ -1,0 +1,127 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/color/index.html
+
+Color
+A Color object which represents a color in the RGBA color space.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+const
+errorStyledText
+=
+AddOnsResponseService
+.
+newStyledText
+()
+.
+setText
+(
+"Styled Text!"
+)
+.
+addStyle
+(
+AddOnsResponseService
+.
+TextStyle
+.
+UNDERLINE
+)
+.
+setColor
+(
+AddOnsResponseService
+.
+newColor
+()
+.
+setRed
+(
+0.1
+)
+.
+setBlue
+(
+1.0
+)
+.
+setGreen
+(
+1.0
+)
+.
+setAlpha
+(
+0.78
+)
+)
+Methods
+Method
+Return type
+Brief description
+set
+Alpha(alpha)
+Color
+Sets the alpha component of the color.
+set
+Blue(blue)
+Color
+Sets the blue component of the color.
+set
+Green(green)
+Color
+Sets the green component of the color.
+set
+Red(red)
+Color
+Sets the red component of the color.
+Detailed documentation
+set
+Alpha(alpha)
+Sets the alpha component of the color.
+Parameters
+Name
+Type
+Description
+alpha
+Number
+The alpha component of the color.
+Return
+Color
+— This object, for chaining.
+set
+Blue(blue)
+Sets the blue component of the color.
+Parameters
+Name
+Type
+Description
+blue
+Number
+The blue component of the color.
+Return
+Color
+— This object, for chaining.
+set
+Green(green)
+Sets the green component of the color.
+Parameters
+Name
+Type
+Description
+green
+Number
+The green component of the color.
+Return
+Color
+— This object, for chaining.
+set
+Red(red)
+Sets the red component of the color.
+Parameters
+Name
+Type
+Description
+red
+Number
+The red component of the color.
+Return
+Color
+— This object, for chaining.

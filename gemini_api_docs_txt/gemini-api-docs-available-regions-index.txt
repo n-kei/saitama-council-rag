@@ -46,7 +46,7 @@ Benin
 Bermuda
 Bhutan
 Bolivia
-Bosnia
+Bosnia and Herzegovina
 Botswana
 Brazil
 British Indian Ocean Territory
@@ -69,8 +69,8 @@ Cocos (Keeling) Islands
 Colombia
 Comoros
 Cook Islands
-Côte d'Ivoire
 Costa Rica
+Côte d'Ivoire
 Croatia
 Curaçao
 Czech Republic
@@ -109,7 +109,6 @@ Guinea-Bissau
 Guyana
 Haiti
 Heard Island and McDonald Islands
-Herzegovina
 Honduras
 Hungary
 Iceland
@@ -128,8 +127,8 @@ Kazakhstan
 Kenya
 Kiribati
 Kosovo
-Kyrgyzstan
 Kuwait
+Kyrgyzstan
 Laos
 Latvia
 Lebanon
@@ -188,11 +187,11 @@ Republic of the Congo
 Romania
 Rwanda
 Saint Barthélemy
+Saint Helena, Ascension and Tristan da Cunha
 Saint Kitts and Nevis
 Saint Lucia
 Saint Pierre and Miquelon
 Saint Vincent and the Grenadines
-Saint Helena, Ascension and Tristan da Cunha
 Samoa
 São Tomé and Príncipe
 Saudi Arabia
@@ -225,18 +224,18 @@ Tokelau
 Tonga
 Trinidad and Tobago
 Tunisia
-Türkiye
 Turkmenistan
 Turks and Caicos Islands
 Tuvalu
+Türkiye
 Uganda
 Ukraine
-United Kingdom
 United Arab Emirates
+United Kingdom
 United States
 United States Minor Outlying Islands
-U.S. Virgin Islands
 Uruguay
+U.S. Virgin Islands
 Uzbekistan
 Vanuatu
 Venezuela
@@ -246,3 +245,4 @@ Western Sahara
 Yemen
 Zambia
 Zimbabwe
+Åland Islands

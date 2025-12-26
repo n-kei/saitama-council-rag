@@ -1,0 +1,122 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/insert-section/index.html
+
+Insert
+Section
+A builder for InsertSection objects. Developers can insert a new section to the card by passing a
+Insert
+Section
+to
+Modify
+Card
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+insertSection
+=
+AddOnsResponseService
+.
+newInsertSection
+().
+insertBelowSection
+(
+'sample_id'
+)
+.
+setSection
+(
+CardService
+.
+newCardSection
+().
+setHeader
+(
+'New Section'
+));
+const
+modifyCard
+=
+AddOnsResponseService
+.
+newModifyCard
+()
+.
+setInsertSection
+(
+insertSection
+);
+Methods
+Method
+Return type
+Brief description
+insert
+At
+Top(onCardTop)
+Insert
+Section
+Sets the onCardTop flag, which indicates whether the new section should be inserted at the top
+of the card.
+insert
+Below
+Section(sectionId)
+Insert
+Section
+Sets the section ID, and the new section is inserted below it.
+set
+Section(section)
+Insert
+Section
+Sets the card section to be inserted.
+Detailed documentation
+insert
+At
+Top(onCardTop)
+Sets the onCardTop flag, which indicates whether the new section should be inserted at the top
+of the card.
+Parameters
+Name
+Type
+Description
+on
+Card
+Top
+Boolean
+The onCardTop flag.
+Return
+Insert
+Section
+— The insert section object, for chaining.
+insert
+Below
+Section(sectionId)
+Sets the section ID, and the new section is inserted below it. If the section ID is not found,
+then the new section is inserted at the end of the card.
+Parameters
+Name
+Type
+Description
+section
+Id
+String
+The ID of the section to insert below.
+Return
+Insert
+Section
+— The insert section object, for chaining.
+set
+Section(section)
+Sets the card section to be inserted.
+Parameters
+Name
+Type
+Description
+section
+Card
+Section
+The
+Card
+Section
+to be inserted.
+Return
+Insert
+Section
+— The insert section object, for chaining.

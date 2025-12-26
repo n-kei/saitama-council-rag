@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/looker-data-source-spec/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LookerDataSourceSpec is a DataSourceSpec used to access existing Looker data source specifications.
 You can obtain a Looker data source specification from a sheet with a Looker connection using

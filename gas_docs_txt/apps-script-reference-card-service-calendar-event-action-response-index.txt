@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/calendar-event-action-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CalendarEventActionResponse represents a response that modifies a calendar event being edited based on a user action.
 You can use the CalendarEventActionResponseBuilder to create a response, for example, to add attendees to an event.

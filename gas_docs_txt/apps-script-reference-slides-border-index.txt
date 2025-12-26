@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/border/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Border class describes the border around an element.
 Methods are available to get and set the dash style, line fill, and weight of the border, as well as check its visibility and set it to transparent.
@@ -15,6 +15,7 @@ Dash
 Style()
 Dash
 Style
+|null
 Gets the
 Dash
 Style
@@ -30,7 +31,7 @@ Fill
 of the border.
 get
 Weight()
-Number
+Number|null
 Gets the thickness of the border in points.
 is
 Visible()
@@ -63,6 +64,7 @@ of the border.
 Return
 Dash
 Style
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -92,7 +94,7 @@ null
 if the element does not have a
 border.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

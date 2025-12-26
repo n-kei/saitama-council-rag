@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/checkbox/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Checkbox contains configuration information determining how it's displayed in Data Studio.
 Methods available for Checkbox include setting allow override, help text, ID, dynamic status, and name.

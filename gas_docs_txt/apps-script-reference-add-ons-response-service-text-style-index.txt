@@ -1,0 +1,33 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/text-style/index.html
+
+Text
+Style
+An enum that represents the style of the styled text.
+Properties
+Property
+Type
+Description
+STYLE_UNSPECIFIED
+Enum
+No style applied.
+ITALIC
+Enum
+Italic style.
+UNDERLINE
+Enum
+Underline style.
+STRIKETHROUGH
+Enum
+Strikethrough style.
+LINE_BREAK
+Enum
+Line break.
+UPPERCASE
+Enum
+Uppercase style.
+CODE
+Enum
+Code style.
+CODE_BLOCK
+Enum
+Code block style.

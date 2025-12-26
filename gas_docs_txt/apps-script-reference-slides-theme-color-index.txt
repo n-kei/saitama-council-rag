@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/theme-color/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ThemeColor refers to a color based on an entry in the page's ColorScheme.
 The

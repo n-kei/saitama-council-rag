@@ -1,5 +1,8 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/video/index.html
 
+We have updated our
+Terms of Service
+.
 Veo 3.1
 is Google's state-of-the-art
 model for generating high-fidelity, 8-second 720p or 1080p videos featuring
@@ -1345,15 +1348,15 @@ and up to 20 times.
 Input video limitations:
 Veo-generated videos only up to 141 seconds long.
 Gemini API only supports video extensions for Veo-generated videos.
+The video should come from a previous generation, like
+operation.response.generated_videos[0].video
 Input videos are expected to have a certain length, aspect ratio, and dimensions:
 Aspect ratio: 9:16 or 16:9
 Resolution: 720p
 Video length: 141 seconds or less
 The output of the extension is a single video combining the user input video and
 the generated extended video for up to 148 seconds of video.
-This example takes the Veo-generated video
-butterfly_video
-, shown here with
+This example takes the a Veo-generated video, shown here with
 its original prompt, and extends it using the
 video
 parameter and a new
@@ -1392,8 +1395,18 @@ model
 ,
 video
 =
-butterfly_video
+operation
+.
+response
+.
+generated_videos
+[
+0
+]
+.
+video
 ,
+# This must be a video from a previous generation
 prompt
 =
 prompt

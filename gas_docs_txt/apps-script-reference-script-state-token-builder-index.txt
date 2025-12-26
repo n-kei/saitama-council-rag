@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/state-token-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 StateTokenBuilder allows scripts to create state tokens for use in callback APIs like OAuth flows.
 The

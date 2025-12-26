@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/language/language-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Language service in Apps Script provides a way to compute automatic translations of text.
 The

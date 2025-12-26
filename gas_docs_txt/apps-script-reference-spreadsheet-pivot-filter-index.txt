@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/pivot-filter/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PivotFilter is used to access and modify pivot table filters.
 You can get or set the filter criteria for a pivot filter.
@@ -42,6 +42,7 @@ Column()
 Data
 Source
 Column
+|null
 Returns the data source column the filter operates on.
 remove()
 void
@@ -113,6 +114,7 @@ Return
 Data
 Source
 Column
+|null
 — The data source column the filter operates on.
 Authorization
 Scripts that use this method require authorization with one or more of the following

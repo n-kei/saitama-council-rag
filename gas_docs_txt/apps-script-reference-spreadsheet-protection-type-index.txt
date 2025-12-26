@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/protection-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ProtectionType is an enumeration used to specify parts of a spreadsheet that can be protected from edits.
 Enums are called using their parent class, name, and property, for example,

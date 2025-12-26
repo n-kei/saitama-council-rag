@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/bookmark/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Bookmark object represents a bookmark in a Google Document.
 You can add a bookmark at the cursor position in the active document tab.

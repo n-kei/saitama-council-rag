@@ -1,5 +1,8 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/libraries/index.html
 
+We have updated our
+Terms of Service
+.
 When building with the Gemini API, we recommend using the
 Google GenAI SDK
 .
@@ -56,6 +59,13 @@ Installation: If you're using Maven, add the following to your dependencies:
 <version>1.0.0</version>
 </dependency>
 </dependencies>
+C#
+Library:
+Google.GenAI
+GitHub Repository:
+googleapis/dotnet-genai
+Installation:
+dotnet add package Google.GenAI
 General availability
 We started rolling out Google GenAI SDK, a new set of libraries to access Gemini
 API, in late 2024 when we launched Gemini 2.0.

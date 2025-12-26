@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/slides-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SlidesApp is used to create and open editable presentations.
 You can open a presentation using its ID or URL, or create a new one with a specified name.
@@ -230,6 +230,7 @@ get
 Active
 Presentation()
 Presentation
+|null
 Returns the currently active presentation to which the script is
 container-bound
 , or
@@ -315,6 +316,7 @@ getActivePresentation
 If the presentation is already open, the same presentation instance is returned.
 Return
 Presentation
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

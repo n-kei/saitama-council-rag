@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-table-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedTableChartBuilder is a builder specifically for table charts, offering various methods to configure their appearance and behavior.
 You can add or remove data ranges, set the chart type to other embedded chart types, and build the chart with the

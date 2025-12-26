@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/groups/group/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Group object allows querying its members and their roles within the group.
 You can retrieve a group's email address, its direct child groups, and direct members.

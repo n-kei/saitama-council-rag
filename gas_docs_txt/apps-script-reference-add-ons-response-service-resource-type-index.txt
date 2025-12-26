@@ -1,0 +1,51 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/resource-type/index.html
+
+Resource
+Type
+An application specific resource type, the unique identifier of the resource type should have a
+corresponding WorkflowResourceDefinition.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+customResourceType
+=
+AddOnsResponseService
+.
+newResourceType
+()
+.
+setWorkflowResourceDefinitionId
+(
+"sample_resource_type_1"
+);
+Methods
+Method
+Return type
+Brief description
+set
+Workflow
+Resource
+Definition
+Id(resourceType)
+Resource
+Type
+Sets the workflow resource definition id.
+Detailed documentation
+set
+Workflow
+Resource
+Definition
+Id(resourceType)
+Sets the workflow resource definition id.
+Parameters
+Name
+Type
+Description
+resource
+Type
+String
+The workflow resource definition id.
+Return
+Resource
+Type
+— This ResourceType object.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/page/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Various elements such as charts, tables, text boxes, videos, and Word Art can be inserted into a Google Slides page using specific methods with options for position, size, and content.
 Elements can be inserted with default settings or with explicitly defined position and size parameters.
@@ -73,6 +73,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -98,6 +99,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -111,6 +113,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -490,6 +493,7 @@ The ID of the page element that is being retrieved.
 Return
 Page
 Element
+|null
 — The page element with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -577,6 +581,7 @@ Type
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -638,6 +643,7 @@ Integer
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/calendar/event-guest/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EventGuest represents a guest of an event.
 The EventGuest object provides methods to retrieve information about a guest, including the number of additional guests, email address, guest status, and name.

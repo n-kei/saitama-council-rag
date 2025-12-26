@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/text-style-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextStyleBuilder is used to create TextStyle objects and configure text properties like name, color, and size.
 The

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/date-time-grouping-rule-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DateTimeGroupingRuleType defines types of date-time grouping rules.
 Examples assume the spreadsheet locale is "en-US", and grouping buckets may be translated based on the locale.

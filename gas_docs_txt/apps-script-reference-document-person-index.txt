@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/person/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A "Person" element represents a link to a person, primarily through an email address.
 An optional name can be associated with the email address and displayed instead of the email in the document body.
@@ -26,22 +26,25 @@ String
 Returns the person's email address.
 get
 Name()
-String
+String|null
 Returns the person's display name, if set.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Type()
@@ -61,11 +64,13 @@ Document
 .
 merge()
 Person
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 From
 Parent()
 Person
+|null
 Removes the element from its parent.
 set
 Attributes(attributes)
@@ -198,7 +203,7 @@ get
 Name()
 Returns the person's display name, if set.
 Return
-String
+String|null
 — The display name of the person link, or
 null
 if the element displays the email
@@ -216,6 +221,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -230,6 +236,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -244,6 +251,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -473,6 +481,7 @@ merge
 ();
 Return
 Person
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -541,6 +550,7 @@ removeFromParent
 }
 Return
 Person
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

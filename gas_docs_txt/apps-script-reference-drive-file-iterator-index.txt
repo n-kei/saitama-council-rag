@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/drive/file-iterator/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 FileIterator allows scripts to iterate over potentially large collections of files.
 File iterators can be accessed from DriveApp or a Folder.

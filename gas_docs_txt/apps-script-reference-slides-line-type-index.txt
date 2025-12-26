@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/line-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LineType represents various line types derived from a subset of ST_ShapeType values in ECMA-376.
 To use an enum, you call its parent class, name, and property, such as

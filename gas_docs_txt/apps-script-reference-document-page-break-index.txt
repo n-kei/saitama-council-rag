@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/page-break/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A PageBreak is an element representing a page break within a document.
 A PageBreak can be contained within a ListItem or Paragraph, unless they are within certain other document structures like Tables or Headers.
@@ -56,16 +56,19 @@ get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Type()
@@ -88,6 +91,7 @@ From
 Parent()
 Page
 Break
+|null
 Removes the element from its parent.
 set
 Attributes(attributes)
@@ -213,6 +217,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -227,6 +232,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -241,6 +247,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -410,6 +417,7 @@ removeFromParent
 Return
 Page
 Break
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

@@ -1,21 +1,24 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/models/gemini/index.html
 
-OUR MOST ADVANCED MODEL
-Gemini 2.5 Pro
-Our state-of-the-art thinking model, capable of reasoning over complex problems in code, math, and STEM, as well as analyzing large datasets, codebases, and documents using long context.
+We have updated our
+Terms of Service
+.
+OUR MOST INTELLIGENT MODEL
+Gemini 3 Pro
+The best model in the world for multimodal understanding, and our most powerful agentic and vibe-coding model yet, delivering richer visuals and deeper interactivity, all built on a foundation of state-of-the-art reasoning.
 Expand to learn more
 Try in Google AI Studio
 Model details
-Gemini 2.5 Pro
+Gemini 3 Pro Preview
 Property
 Description
 id_card
 Model code
-gemini-2.5-pro
+gemini-3-pro-preview
 save
 Supported data types
 Inputs
-Audio, images, video, text, and PDF
+Text, Image, Video, Audio, and PDF
 Output
 Text
 token_auto
@@ -40,7 +43,7 @@ Supported
 Function calling
 Supported
 Grounding with Google Maps
-Supported
+Not supported
 Image generation
 Not supported
 Live API
@@ -58,46 +61,111 @@ Versions
 Read the
 model version patterns
 for more details.
-Stable: gemini-2.5-pro
+Preview: gemini-3-pro-preview
 calendar_month
 Latest update
-June 2025
+November 2025
 cognition_2
 Knowledge cutoff
 January 2025
-Gemini 2.5 Pro TTS
+Gemini 3 Pro Image Preview
 Property
 Description
 id_card
 Model code
-gemini-2.5-pro-preview-tts
+gemini-3-pro-image-preview
 save
 Supported data types
 Inputs
-Text
+Image and Text
 Output
-Audio
+Image and Text
 token_auto
 Token limits
 [*]
 Input token limit
-8,192
+65,536
 Output token limit
-16,384
+32,768
 handyman
 Capabilities
 Audio generation
-Supported
+Not supported
 Batch API
-Not Supported
+Supported
 Caching
 Not supported
 Code execution
 Not supported
 File search
-Supported
+Not supported
 Function calling
 Not supported
+Grounding with Google Maps
+Not supported
+Image generation
+Supported
+Live API
+Not supported
+Search grounding
+Supported
+Structured outputs
+Supported
+Thinking
+Supported
+URL context
+Not supported
+123
+Versions
+Read the
+model version patterns
+for more details.
+Preview: gemini-3-pro-image-preview
+calendar_month
+Latest update
+November 2025
+cognition_2
+Knowledge cutoff
+January 2025
+OUR MOST INTELLIGENT MODEL
+Gemini 3 Flash
+Our most intelligent model built for speed, combining frontier intelligence with superior search and grounding.
+Expand to learn more
+Try in Google AI Studio
+Model details
+Gemini 3 Flash Preview
+Property
+Description
+id_card
+Model code
+gemini-3-flash-preview
+save
+Supported data types
+Inputs
+Text, Image, Video, Audio, and PDF
+Output
+Text
+token_auto
+Token limits
+[*]
+Input token limit
+1,048,576
+Output token limit
+65,536
+handyman
+Capabilities
+Audio generation
+Not supported
+Batch API
+Supported
+Caching
+Supported
+Code execution
+Supported
+File search
+Supported
+Function calling
+Supported
 Grounding with Google Maps
 Not supported
 Image generation
@@ -105,22 +173,25 @@ Not supported
 Live API
 Not supported
 Search grounding
-Not supported
+Supported
 Structured outputs
-Not supported
+Supported
 Thinking
-Not supported
+Supported
 URL context
-Not supported
+Supported
 123
 Versions
 Read the
 model version patterns
 for more details.
-gemini-2.5-pro-preview-tts
+Preview: gemini-3-flash-preview
 calendar_month
 Latest update
-May 2025
+December 2025
+cognition_2
+Knowledge cutoff
+January 2025
 FAST AND INTELLIGENT
 Gemini 2.5 Flash
 Our best model in terms of price-performance, offering well-rounded capabilities. 2.5 Flash is best for large scale processing, low-latency, high volume tasks that require thinking, and agentic use cases.
@@ -155,8 +226,6 @@ Supported
 Caching
 Supported
 Code execution
-Supported
-File search
 Supported
 File search
 Supported
@@ -279,7 +348,7 @@ Supported
 Code execution
 Not Supported
 File search
-Supported
+Not Supported
 Function calling
 Not supported
 Grounding with Google Maps
@@ -303,7 +372,7 @@ model version patterns
 for more details.
 Stable:
 gemini-2.5-flash-image
-Preview:
+Deprecated:
 gemini-2.5-flash-image-preview
 calendar_month
 Latest update
@@ -316,7 +385,7 @@ Property
 Description
 id_card
 Model code
-gemini-2.5-flash-native-audio-preview-09-2025
+gemini-2.5-flash-native-audio-preview-12-2025
 save
 Supported data types
 Inputs
@@ -341,7 +410,7 @@ Not supported
 Code execution
 Not supported
 File search
-Supported
+Not Supported
 Function calling
 Supported
 Grounding with Google Maps
@@ -364,10 +433,9 @@ Read the
 model version patterns
 for more details.
 Preview:
-gemini-2.5-flash-native-audio-preview-09-2025
+gemini-2.5-flash-native-audio-preview-12-2025
 Preview:
-gemini-live-2.5-flash-preview
-gemini-live-2.5-flash-preview will be deprecated on December 09, 2025
+gemini-2.5-flash-native-audio-preview-09-2025
 calendar_month
 Latest update
 September 2025
@@ -404,7 +472,7 @@ Not supported
 Code execution
 Not supported
 File search
-Supported
+Not Supported
 Function calling
 Not supported
 Grounding with Google Maps
@@ -429,7 +497,7 @@ for more details.
 gemini-2.5-flash-preview-tts
 calendar_month
 Latest update
-May 2025
+December 2025
 ULTRA FAST
 Gemini 2.5 Flash-Lite
 Our fastest flash model optimized for cost-efficiency and high throughput.
@@ -466,7 +534,7 @@ Supported
 Code execution
 Supported
 File search
-Not supported
+Supported
 Function calling
 Supported
 Grounding with Google Maps
@@ -526,7 +594,7 @@ Supported
 Code execution
 Supported
 File search
-Not supported
+Supported
 Function calling
 Supported
 Grounding with Google Maps
@@ -556,7 +624,128 @@ September 2025
 cognition_2
 Knowledge cutoff
 January 2025
-Previous Gemini Models
+OUR ADVANCED THINKING MODEL
+Gemini 2.5 Pro
+Our state-of-the-art thinking model, capable of reasoning over complex problems in code, math, and STEM, as well as analyzing large datasets, codebases, and documents using long context.
+Expand to learn more
+Try in Google AI Studio
+Model details
+Gemini 2.5 Pro
+Property
+Description
+id_card
+Model code
+gemini-2.5-pro
+save
+Supported data types
+Inputs
+Audio, images, video, text, and PDF
+Output
+Text
+token_auto
+Token limits
+[*]
+Input token limit
+1,048,576
+Output token limit
+65,536
+handyman
+Capabilities
+Audio generation
+Not supported
+Batch API
+Supported
+Caching
+Supported
+Code execution
+Supported
+File search
+Supported
+Function calling
+Supported
+Grounding with Google Maps
+Supported
+Image generation
+Not supported
+Live API
+Not supported
+Search grounding
+Supported
+Structured outputs
+Supported
+Thinking
+Supported
+URL context
+Supported
+123
+Versions
+Read the
+model version patterns
+for more details.
+Stable: gemini-2.5-pro
+calendar_month
+Latest update
+June 2025
+cognition_2
+Knowledge cutoff
+January 2025
+Gemini 2.5 Pro TTS
+Property
+Description
+id_card
+Model code
+gemini-2.5-pro-preview-tts
+save
+Supported data types
+Inputs
+Text
+Output
+Audio
+token_auto
+Token limits
+[*]
+Input token limit
+8,192
+Output token limit
+16,384
+handyman
+Capabilities
+Audio generation
+Supported
+Batch API
+Supported
+Caching
+Not supported
+Code execution
+Not supported
+File search
+Not Supported
+Function calling
+Not supported
+Grounding with Google Maps
+Not supported
+Image generation
+Not supported
+Live API
+Not supported
+Search grounding
+Not supported
+Structured outputs
+Not supported
+Thinking
+Not supported
+URL context
+Not supported
+123
+Versions
+Read the
+model version patterns
+for more details.
+gemini-2.5-pro-preview-tts
+calendar_month
+Latest update
+December 2025
+Previous Gemini models
 OUR SECOND GENERATION WORKHORSE MODEL
 Gemini 2.0 Flash
 Our second generation workhorse model, with a 1 million token context window.
@@ -604,7 +793,7 @@ Supported
 Image generation
 Not supported
 Live API
-Supported
+Not supported
 Search grounding
 Supported
 Structured outputs
@@ -688,67 +877,6 @@ gemini-2.0-flash-preview-image-generation is not currently supported in a number
 calendar_month
 Latest update
 May 2025
-cognition_2
-Knowledge cutoff
-August 2024
-Gemini 2.0 Flash Live
-Property
-Description
-id_card
-Model code
-gemini-2.0-flash-live-001
-gemini-2.0-flash-live-001 will be deprecated on December 09, 2025
-save
-Supported data types
-Inputs
-Audio, video, and text
-Output
-Text, and audio
-token_auto
-Token limits
-[*]
-Input token limit
-1,048,576
-Output token limit
-8,192
-handyman
-Capabilities
-Audio generation
-Supported
-Batch API
-Not supported
-Caching
-Not supported
-Code execution
-Supported
-File search
-Not supported
-Function calling
-Supported
-Grounding with Google Maps
-Not supported
-Image generation
-Not supported
-Live API
-Supported
-Search grounding
-Supported
-Structured outputs
-Supported
-Thinking
-Not supported
-URL context
-Supported
-123
-Versions
-Read the
-model version patterns
-for more details.
-Preview:
-gemini-2.0-flash-live-001
-calendar_month
-Latest update
-April 2025
 cognition_2
 Knowledge cutoff
 August 2024

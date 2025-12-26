@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-chart/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 EmbeddedChart
@@ -164,6 +164,7 @@ Chart()
 Data
 Source
 Chart
+|null
 Casts to a data source chart instance if the chart is a data source chart, or
 null
 otherwise.
@@ -178,7 +179,7 @@ Return the data inside this object as a blob.
 get
 Chart
 Id()
-Integer
+Integer|null
 Returns a stable identifier for the chart that is unique across the spreadsheet containing the
 chart or
 null
@@ -249,6 +250,7 @@ Return
 Data
 Source
 Chart
+|null
 — The data source chart.
 get
 As(contentType)
@@ -301,7 +303,7 @@ chart or
 null
 if the chart is not in a spreadsheet.
 Return
-Integer
+Integer|null
 — A stable chart identifier.
 get
 Container

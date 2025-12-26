@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/optimization/status/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The status of a solution indicates whether a problem has been solved and if the solution is optimal.
 Status is represented by an enum which can be accessed by calling the parent class, name, and property.

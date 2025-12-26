@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/drive/folder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Google Drive folders can be managed using the
 DriveApp

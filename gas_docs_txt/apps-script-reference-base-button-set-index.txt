@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/button-set/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ButtonSet is an enum in Apps Script for creating predetermined, localized sets of dialog buttons for alerts and prompts.
 You can determine which button a user clicks by using the Button class in conjunction with ButtonSet.

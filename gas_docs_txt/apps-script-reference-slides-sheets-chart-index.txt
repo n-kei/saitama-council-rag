@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/sheets-chart/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SheetsChart represents a linked chart embedded from Google Sheets.
 You can manipulate the chart's position, size, and rotation on the page.
@@ -26,6 +26,7 @@ Aligns the element to the specified alignment position on the page.
 as
 Image()
 Image
+|null
 Returns the chart as an image or
 null
 if the chart is not an embedded image.
@@ -73,18 +74,18 @@ Type
 Returns the embed type of the Sheets chart.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -94,6 +95,7 @@ page when the element has no rotation.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -120,6 +122,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -155,7 +158,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -312,6 +315,7 @@ null
 if the chart is not an embedded image.
 Return
 Image
+|null
 — This chart as an image, or
 null
 if the chart is not an embedded image.
@@ -432,7 +436,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -450,7 +454,7 @@ Returns the element's inherent height in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -468,7 +472,7 @@ Returns the element's inherent width in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does
@@ -544,6 +548,7 @@ getLinkType
 }
 Return
 Link
+|null
 — The
 Link
 or
@@ -598,6 +603,7 @@ if the element is not in a
 group.
 Return
 Group
+|null
 — The group this page element belongs to, or
 null
 .
@@ -698,7 +704,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does

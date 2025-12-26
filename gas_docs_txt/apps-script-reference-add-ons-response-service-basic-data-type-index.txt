@@ -1,0 +1,40 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/basic-data-type/index.html
+
+Basic
+Data
+Type
+An enum that represents the basic generic data types.
+Properties
+Property
+Type
+Description
+BASIC_TYPE_UNSPECIFIED
+Enum
+Default value. Don't use.
+STRING
+Enum
+A string of characters.
+INTEGER
+Enum
+An integer value.
+FLOAT
+Enum
+A floating point number.
+TIMESTAMP
+Enum
+A timestamp in ISO 8601 format.
+BOOLEAN
+Enum
+A boolean value.
+EMAIL_ADDRESS
+Enum
+A string in the format of an email address.
+GOOGLE_USER
+Enum
+A user of the Google services, in the format of “users/encoded_GAIA_ID”
+FILE
+Enum
+A file type.
+FORMATTED_TEXT
+Enum
+A text with rich formatting.

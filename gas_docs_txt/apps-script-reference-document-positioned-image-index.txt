@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/positioned-image/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A PositionedImage is a fixed position image anchored to a Paragraph or ListItem, unlike an InlineImage which is an Element.
 PositionedImages are not considered Elements and do not have parent or sibling Elements.

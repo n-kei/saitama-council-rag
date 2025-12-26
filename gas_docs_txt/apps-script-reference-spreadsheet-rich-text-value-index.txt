@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/rich-text-value/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 RichTextValue represents cell text with substrings that can have different text styles.
 A "run" is the longest unbroken substring with the same text style.
@@ -42,12 +42,12 @@ Gets the end index of this value in the cell.
 get
 Link
 Url()
-String
+String|null
 Returns the link URL for this value.
 get
 Link
 Url(startOffset, endOffset)
-String
+String|null
 Returns the link URL for the text from
 start
 Offset
@@ -110,7 +110,7 @@ Link
 Url()
 Returns the link URL for this value.
 Return
-String
+String|null
 — The link URL for this value, or
 null
 if there is no link or if there are
@@ -140,7 +140,7 @@ Offset
 Integer
 The end offset.
 Return
-String
+String|null
 — The link URL for this value, or
 null
 if there is no link or if multiple

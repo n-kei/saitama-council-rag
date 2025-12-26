@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/spreadsheet-trigger-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SpreadsheetTriggerBuilder is a builder used to create triggers for spreadsheets.
 You can create triggers that fire on changes, edits, form submissions, or when the spreadsheet is opened.

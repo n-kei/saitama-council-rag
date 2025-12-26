@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/switch/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Switch is a UI element that can be toggled on or off and must be used within a DecoratedText widget.
 Switches are available for Google Workspace add-ons and Google Chat apps.

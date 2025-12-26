@@ -11,7 +11,7 @@ with the Live API.
 Overview of supported tools
 Here's a brief overview of the available tools for Live API models:
 Tool
-gemini-2.5-flash-native-audio-preview-09-2025
+gemini-2.5-flash-native-audio-preview-12-2025
 Search
 Yes
 Function calling
@@ -63,7 +63,7 @@ Client
 ()
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 # Simple function definitions
 turn_on_the_lights
 =
@@ -314,7 +314,7 @@ GoogleGenAI
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 // Simple function definitions
 const
@@ -1039,7 +1039,7 @@ Client
 ()
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 tools
 =
 [{
@@ -1263,7 +1263,7 @@ GoogleGenAI
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 const
 tools

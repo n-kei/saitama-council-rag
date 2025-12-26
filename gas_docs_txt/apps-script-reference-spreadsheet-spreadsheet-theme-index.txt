@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/spreadsheet-theme/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SpreadsheetTheme allows access and modification of existing spreadsheet themes.
 You can set a theme on a spreadsheet using
@@ -36,7 +36,7 @@ for a valid theme color type.
 get
 Font
 Family()
-String
+String|null
 Returns the font family of the theme, or
 null
 if it's a
@@ -114,7 +114,7 @@ if it's a
 null
 theme.
 Return
-String
+String|null
 — The theme font family.
 Authorization
 Scripts that use this method require authorization with one or more of the following

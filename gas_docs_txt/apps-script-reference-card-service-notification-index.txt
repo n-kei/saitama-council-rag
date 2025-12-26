@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/notification/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Notifications are displayed to users after interacting with a UI element.
 Notifications are created using

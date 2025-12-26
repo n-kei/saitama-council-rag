@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/selection/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A selection is the set of cells the user has highlighted in the sheet, which can include non-adjacent ranges.
 The current cell within a selection is where the user's focus is, highlighted with a darker border in the Google Sheets UI.
@@ -152,6 +152,7 @@ get
 Active
 Range()
 Range
+|null
 Returns the selected range in the active sheet, or
 null
 if there is no active range.
@@ -161,6 +162,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no active
@@ -174,6 +176,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current (highlighted) cell that is selected in one of the active ranges or
 null
 if there is no current cell.
@@ -182,6 +185,7 @@ Next
 Data
 Range(direction)
 Range
+|null
 Starting from the
 current cell
 and
@@ -217,6 +221,7 @@ getActiveRange
 ();
 Return
 Range
+|null
 — The active range.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -255,6 +260,7 @@ getActiveRangeList
 Return
 Range
 List
+|null
 — The list of active ranges.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -316,6 +322,7 @@ getCurrentCell
 ();
 Return
 Range
+|null
 — The current cell.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -401,6 +408,7 @@ Direction
 The direction in which to find the next data region edge cell.
 Return
 Range
+|null
 — The adjusted range that includes the data cell, or
 null
 if there is no

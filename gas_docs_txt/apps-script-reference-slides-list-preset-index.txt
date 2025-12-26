@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/list-preset/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ListPreset defines preset patterns of glyphs for lists in text.
 These presets utilize various glyphs including arrows, circles, diamonds, squares, stars, letters, and numbers.

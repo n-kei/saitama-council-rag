@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-parameter-meta-data/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 JdbcParameterMetaData provides metadata about the parameters of a prepared statement.
 It offers methods to retrieve information such as parameter count, type, mode, class name, precision, scale, nullability, and signed status.

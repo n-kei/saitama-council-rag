@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/mail/mail-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 MailApp service sends email with complete control over content and unlike GmailApp, it cannot access a user's Gmail inbox.
 Scripts using MailApp are less likely to require re-authorization from a user compared to GmailApp scripts.

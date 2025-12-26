@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/content/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Content Service allows scripts to serve text in various formats like text, XML, or JSON.
 The ContentService class is used for returning text content from a script.

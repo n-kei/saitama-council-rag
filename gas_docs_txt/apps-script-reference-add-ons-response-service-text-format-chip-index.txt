@@ -1,0 +1,116 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/text-format-chip/index.html
+
+Text
+Format
+Chip
+A clickable chip in the text format.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+chip
+=
+AddOnsResponseService
+.
+newChip
+()
+.
+setTextFormatIcon
+(
+AddOnsResponseService
+.
+newTextFormatIcon
+()
+.
+setIconUrl
+(
+"https://www.google.com/icon.png"
+))
+.
+setLabel
+(
+"test_label"
+)
+.
+setUrl
+(
+"https://www.google.com/chip.png"
+);
+}
+Methods
+Method
+Return type
+Brief description
+set
+Label(label)
+Text
+Format
+Chip
+Sets the text displayed in the chip.
+set
+Text
+Format
+Icon(icon)
+Text
+Format
+Chip
+Sets the icon displayed in the chip.
+set
+Url(url)
+Text
+Format
+Chip
+Sets the URL to navigate to when the chip is clicked.
+Detailed documentation
+set
+Label(label)
+Sets the text displayed in the chip.
+Parameters
+Name
+Type
+Description
+label
+String
+The text label of the chip.
+Return
+Text
+Format
+Chip
+— This chip object, for chaining.
+set
+Text
+Format
+Icon(icon)
+Sets the icon displayed in the chip.
+Parameters
+Name
+Type
+Description
+icon
+Text
+Format
+Icon
+The
+Text
+Format
+Icon
+to set in the chip.
+Return
+Text
+Format
+Chip
+— This chip object, for chaining.
+set
+Url(url)
+Sets the URL to navigate to when the chip is clicked.
+Parameters
+Name
+Type
+Description
+url
+String
+The destination URL to the chip.
+Return
+Text
+Format
+Chip
+— This chip object, for chaining.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/select-single/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SelectSingle contains configuration information for how a select single is displayed in Data Studio.
 You can add select options, enable overriding, set help text, ID, dynamic status, and display name for a SelectSingle config entry.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/predefined-layout/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PredefinedLayout refers to commonly found layouts in presentations, though their presence and placeholder configurations may vary.
 Enums within PredefinedLayout are accessed by calling their parent class, name, and property, such as

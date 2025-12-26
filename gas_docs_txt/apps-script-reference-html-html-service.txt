@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/html/html-service.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 HtmlService allows scripts to return HTML and other text content to a browser safely through sanitization.
 Security measures are in place to prevent scripts from directly returning malicious content.

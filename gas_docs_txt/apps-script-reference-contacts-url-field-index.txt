@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/url-field/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 UrlField is deprecated and the People API advanced service should be used instead.
 A UrlField represents a URL field within a Contact.

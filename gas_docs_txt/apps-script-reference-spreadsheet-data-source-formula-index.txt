@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-formula/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Use DataSourceFormula to access and modify existing data source formulas, but use Range.setFormula(formula) to create a new one.
 This class is specifically for data connected to a BigQuery database.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/session/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Session class provides access to session information like user language and script time zone.
 You can get information about the active user, the user under whose authority the script is running, or a temporary user key that doesn't reveal identity.

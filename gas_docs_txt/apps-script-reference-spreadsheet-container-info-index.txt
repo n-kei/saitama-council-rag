@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/container-info/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ContainerInfo is used to access and update a chart's position within a sheet.
 The position can be modified using the

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/line-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 LineChartBuilder is used to create line charts and offers various methods for customization.
 Data for the line chart can be imported from external sources like Google Sheets using a data source URL.

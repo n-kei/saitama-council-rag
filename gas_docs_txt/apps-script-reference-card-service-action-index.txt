@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/action/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 An Action enables interactivity in UI elements by invoking an Apps Script callback function with optional parameters.
 Actions are available for Google Workspace add-ons and Google Chat apps.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/image-button/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ImageButton is a CardService element for displaying an image button in Google Workspace add-ons and Google Chat apps.
 Key methods allow setting alternative text, icon or icon URL, button style, and various actions upon clicking like opening a link, triggering an authorization flow, composing an email, or executing a custom action.

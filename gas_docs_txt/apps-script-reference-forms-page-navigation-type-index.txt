@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/page-navigation-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PageNavigationType is an enum representing supported types of page navigation in forms.
 Page navigation occurs after completing a page with a chosen option containing a navigation instruction, with only the last instruction taking effect if multiple are chosen on the same page.

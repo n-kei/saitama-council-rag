@@ -1,5 +1,8 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/imagen/index.html
 
+We have updated our
+Terms of Service
+.
 Imagen is Google's high-fidelity image generation model, capable of generating
 realistic and high quality images from text prompts. All generated images
 include a SynthID watermark. To learn more about the available Imagen model

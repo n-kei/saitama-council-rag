@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/match-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 MatchType is an enumeration used to define how a string value should be matched.
 Matching a string using MatchType is a boolean operation returning

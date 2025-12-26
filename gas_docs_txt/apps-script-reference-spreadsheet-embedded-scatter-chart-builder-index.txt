@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-scatter-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedScatterChartBuilder is a builder specifically for scatter charts.
 It provides methods to add and manage data ranges for the chart.

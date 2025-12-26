@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/paragraph/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Paragraph is a segment of text terminated by a newline character.
 The
@@ -22,12 +22,13 @@ Return type
 Brief description
 get
 Index()
-Integer
+Integer|null
 Returns the index of the paragraph's newline.
 get
 Range()
 Text
 Range
+|null
 Returns a
 Text
 Range
@@ -41,7 +42,7 @@ null
 if the newline has been
 deleted.
 Return
-Integer
+Integer|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -60,6 +61,7 @@ if the paragraph's newline has been deleted.
 Return
 Text
 Range
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

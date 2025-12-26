@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/text-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A TextStyle object is used to configure text style for elements in charts options.
 It can be applied to elements like title, horizontal axis, vertical axis, legend, and tooltip.

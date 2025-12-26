@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/field/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Field object contains data-related information and its properties determine how it's used in Data Studio.
 You can create a new field using

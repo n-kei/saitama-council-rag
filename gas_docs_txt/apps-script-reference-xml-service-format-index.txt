@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/format/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Format class is used for outputting an XML document with customizable formatting options.
 You can format an entire XML Document or a specific Element node into a string.

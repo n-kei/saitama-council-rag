@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/gmail/gmail-draft/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GmailDraft represents a user-created draft message in a user's Gmail account.
 You can perform various actions on a GmailDraft, including deleting, sending, and updating its content.

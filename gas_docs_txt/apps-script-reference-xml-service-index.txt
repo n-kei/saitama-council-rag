@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The XML Service allows scripts to parse, navigate, and programmatically create XML documents.
 It provides classes like Document, Element, and Attribute for working with XML structure.

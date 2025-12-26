@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-column/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Use the DataSourceColumn class to access and modify data source columns that are connected to a database.
 You can retrieve the associated data source, formula, and name of a data source column.

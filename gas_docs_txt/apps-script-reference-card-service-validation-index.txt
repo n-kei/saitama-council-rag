@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/validation/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Validation object defines the validation rule for an attached widget.
 Validation is available for Google Chat apps and Google Workspace add-ons.

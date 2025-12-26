@@ -1,0 +1,192 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/resource-field/index.html
+
+Resource
+Field
+A ResourceField is a basic building block of a
+Dynamic
+Resource
+Definition
+, each resource
+field corresponds to a output variable of the current step. A single
+Dynamic
+Resource
+Definition
+can contain multiple resource fields.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+function
+onDynamicDefinitionFunction
+(
+e
+)
+{
+// ...
+let
+resourceField
+=
+AddOnsResponseService
+.
+newResourceField
+()
+.
+setSelector
+(
+"question_1"
+)
+.
+setDisplayText
+(
+"Question 1"
+)
+.
+setDataType
+(
+AddOnsResponseService
+.
+newDataType
+()
+.
+setBasicDataType
+(
+AddOnsResponseService
+.
+BasicDataType
+.
+STRING
+)
+);
+let
+resourceDefinitions
+=
+AddOnsResponseService
+.
+newDynamicResourceDefinition
+()
+.
+setResourceId
+(
+"resource_definition_1"
+)
+.
+addResourceField
+(
+resourceField
+);
+// ...
+}
+function
+onDynamicProviderFunction
+(
+e
+)
+{
+// ...
+let
+workflowAction
+=
+AddOnsResponseService
+.
+newResourceRetrievedAction
+()
+.
+setResourceData
+(
+AddOnsResponseService
+.
+newResourceData
+()
+.
+addVariableData
+(
+"question_1"
+,
+AddOnsResponseService
+.
+newVariableData
+().
+addStringValue
+(
+"Answer 1"
+))
+);
+// ...
+}
+Methods
+Method
+Return type
+Brief description
+set
+Data
+Type(dataType)
+Resource
+Field
+Sets the data type of the field, allows other steps to filter the variables by type at
+selection.
+set
+Display
+Text(displayText)
+Resource
+Field
+Sets the description of the field that is displayed to the end user during variable selection
+in subsequent steps.
+set
+Selector(selector)
+Resource
+Field
+Sets a key for the provider function to provide the value to during the step's execution.
+Detailed documentation
+set
+Data
+Type(dataType)
+Sets the data type of the field, allows other steps to filter the variables by type at
+selection.
+Parameters
+Name
+Type
+Description
+data
+Type
+Data
+Type
+A data type object, which can be a basic data type or a custom resource type.
+Return
+Resource
+Field
+— This resource field object, for chaining.
+set
+Display
+Text(displayText)
+Sets the description of the field that is displayed to the end user during variable selection
+in subsequent steps.
+Parameters
+Name
+Type
+Description
+display
+Text
+String
+The description for end users at variable selection.
+Return
+Resource
+Field
+— This resource field object, for chaining.
+set
+Selector(selector)
+Sets a key for the provider function to provide the value to during the step's execution.
+Parameters
+Name
+Type
+Description
+selector
+String
+The field's reference key used to retrieve its associated
+Variable
+Data
+with the same key used in
+Resource
+Data
+.
+Return
+Resource
+Field
+— This resource field object, for chaining.

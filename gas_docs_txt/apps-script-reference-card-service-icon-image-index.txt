@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/icon-image/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 IconImage allows you to use a predefined icon, a material design icon, or an icon from a URL with customizable crop style.
 You can set alternative text for accessibility, choose from predefined icons, specify an icon URL, set the image crop type, and set a material design icon.

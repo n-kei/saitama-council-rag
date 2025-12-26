@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/input-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 InputType is an enum that defines the input type of a widget.
 It has properties like TEXT, INTEGER, FLOAT, and EMAIL, each accepting a specific type of input.

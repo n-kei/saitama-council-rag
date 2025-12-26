@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/table-column/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TableColumn represents a column in a table, identified by its index and consisting of a list of table cells.
 You can access a specific cell within the column using its index with

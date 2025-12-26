@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-prepared-statement/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 JdbcPreparedStatement
@@ -105,6 +105,11 @@ Integer[]
 For documentation of this method, see
 java.sql.Statement#executeBatch()
 .
+execute
+Batch(parameters)
+Integer[]
+Submits a batch of commands to the database for execution and if all commands execute
+successfully, returns an array of update counts.
 execute
 Query()
 Jdbc
@@ -752,6 +757,71 @@ Return
 Integer[]
 — The update counts for each command in the batch, using the same order in which commands
     were added to the batch.
+Authorization
+Scripts that use this method require authorization with one or more of the following
+scopes
+:
+https://www.googleapis.com/auth/script.external_request
+execute
+Batch(parameters)
+Submits a batch of commands to the database for execution and if all commands execute
+successfully, returns an array of update counts. The parameters argument is a 2D array, where
+each inner array contains the parameters for a single execution of the statement. For example,
+if you have a statement like "INSERT INTO employees (name, age) VALUES (?, ?)", the parameters
+could be
+[["John Doe", 30], ["John Smith", 25]]
+.
+The following example inserts multiple rows into a database using batching:
+var
+conn
+=
+Jdbc
+.
+getCloudSqlConnection
+(
+"jdbc:google:mysql://..."
+);
+var
+stmt
+=
+conn
+.
+prepareStatement
+(
+"INSERT INTO employees (name, age) VALUES (?, ?)"
+);
+var
+params
+=
+[[
+"John Doe"
+,
+30
+],
+[
+"John Smith"
+,
+25
+]];
+stmt
+.
+executeBatch
+(
+params
+);
+Parameters
+Name
+Type
+Description
+parameters
+Object[][]
+A 2D array of Objects representing the parameters for each batch.
+Return
+Integer[]
+— An array of update counts containing one element for each command in the batch.
+Throws
+Error
+— if a database access error occurs.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

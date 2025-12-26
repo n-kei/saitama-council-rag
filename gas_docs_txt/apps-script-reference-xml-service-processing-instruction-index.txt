@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/processing-instruction/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ProcessingInstruction represents an XML ProcessingInstruction node.
 It includes methods to detach the node, get its raw data, retrieve its parent element, get its target, and get its text value.

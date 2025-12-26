@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/column/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Columns are available for Google Chat apps and Google Workspace add-ons.
 You can add various widgets like TextParagraph, Image, and TextInput to a column using the

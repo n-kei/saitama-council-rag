@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/drive/folder-iterator/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 FolderIterator allows scripts to iterate over potentially large collections of folders.
 Folder iterators can be accessed from DriveApp, a File, or a Folder.

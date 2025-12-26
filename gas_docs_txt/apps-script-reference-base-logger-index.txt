@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/logger/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Logger class is used to write to the Execution log and Google Cloud Logging, especially for structured logging and JSON payloads.
 Use the clear() method to clear the log and getLog() to retrieve all messages in the current log.

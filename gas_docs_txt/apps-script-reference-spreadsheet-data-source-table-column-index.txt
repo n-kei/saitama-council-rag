@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-table-column/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataSourceTableColumn
 allows you to access and modify existing columns in a

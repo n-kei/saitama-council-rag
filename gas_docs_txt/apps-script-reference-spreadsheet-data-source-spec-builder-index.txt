@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-spec-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataSourceSpecBuilder is used to create a specification for data sources connected to a database.
 To start building a specification, use SpreadsheetApp.newDataSourceSpec().

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/lock/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Lock service in Apps Script prevents concurrent access to sections of code, useful for managing shared resources and preventing collisions.
 The LockService class provides methods to get different types of locks: document, script, and user.
@@ -49,6 +49,7 @@ get
 Document
 Lock()
 Lock
+|null
 Gets a lock that prevents any user of the current document from concurrently running a section
 of code.
 get

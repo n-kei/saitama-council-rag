@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Google Forms service allows scripts to create, access, and modify Google Forms.
 An example script demonstrates creating a form with various item types, publishing it, and sharing it.
@@ -604,6 +604,7 @@ For
 Correct()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond correctly to a question.
 get
 Feedback
@@ -611,6 +612,7 @@ For
 Incorrect()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond incorrectly to a question.
 get
 Help
@@ -833,6 +835,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -960,6 +963,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -1100,6 +1104,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -1853,7 +1858,7 @@ Response
 Gets the item response contained in a form response for a given item.
 get
 Id()
-String
+String|null
 Gets the ID of the form response.
 get
 Item
@@ -2475,6 +2480,7 @@ For
 Correct()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond correctly to a question.
 get
 Feedback
@@ -2482,6 +2488,7 @@ For
 Incorrect()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond incorrectly to a question.
 get
 Help
@@ -2638,6 +2645,7 @@ For
 Correct()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond correctly to a question.
 get
 Feedback
@@ -2645,6 +2653,7 @@ For
 Incorrect()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond incorrectly to a question.
 get
 Help
@@ -2947,6 +2956,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -3215,6 +3225,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -3356,6 +3367,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -3586,6 +3598,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -3874,6 +3887,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help

@@ -7,10 +7,7 @@ A builder for
 Render
 Action
 objects.
-Only available through the
-Gemini Alpha
-program
-for Google Workspace add-ons that extend Google Workspace Flows.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
 Methods
 Method
 Return type
@@ -32,14 +29,21 @@ Action(hostAppAction)
 Render
 Action
 Builder
-Sets the host app action handled by individual host apps to the render action.
+Sets the
+Host
+App
+Action
+handled by individual host apps to the render action.
 Detailed documentation
 build()
 Builds the current render action and validates it.
 Return
 Render
 Action
-— A validated render action.
+— A validated
+Render
+Action
+object.
 set
 Action(action)
 Sets the action that add-ons can use to update the UI to the render action.
@@ -54,12 +58,16 @@ Return
 Render
 Action
 Builder
-— This object, for chaining.
+— This render action builder, for chaining.
 set
 Host
 App
 Action(hostAppAction)
-Sets the host app action handled by individual host apps to the render action.
+Sets the
+Host
+App
+Action
+handled by individual host apps to the render action.
 Parameters
 Name
 Type
@@ -70,9 +78,13 @@ Action
 Host
 App
 Action
-The host app action to use.
+The
+Host
+App
+Action
+to send to the host app.
 Return
 Render
 Action
 Builder
-— This object, for chaining.
+— This render action builder, for chaining.

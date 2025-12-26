@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/button/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Buttons are base classes for all buttons available in Google Workspace add-ons and Google Chat apps.
 Buttons have methods to set various click actions, such as authorizing, composing emails, executing a function, opening a link, or displaying an overflow menu.

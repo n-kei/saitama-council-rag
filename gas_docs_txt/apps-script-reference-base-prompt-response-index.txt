@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/prompt-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PromptResponse represents the response from a prompt dialog in a Google App's user interface, containing user-entered text and the clicked button.
 The

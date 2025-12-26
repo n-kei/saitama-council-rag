@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/update-draft-action-response-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 UpdateDraftActionResponseBuilder is used to build UpdateDraftActionResponse objects.
 This builder allows setting actions to update the Bcc, body, Cc, subject, and To recipients of an email draft.

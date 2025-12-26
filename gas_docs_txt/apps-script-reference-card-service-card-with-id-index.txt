@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card-with-id/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CardWithId
 is a builder for objects that provide a unique identifier for a card when sending multiple cards.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/text-range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A TextRange is a segment of text within a Shape or TableCell.
 Using methods that edit how text fits within a shape will deactivate any autofit settings applied to that shape.
@@ -146,6 +146,7 @@ Text
 Style()
 Text
 Style
+|null
 Returns the text style of the range, or
 null
 if the range is empty.
@@ -702,6 +703,7 @@ if the range is empty.
 Return
 Text
 Style
+|null
 — The text style of the range.
 Authorization
 Scripts that use this method require authorization with one or more of the following

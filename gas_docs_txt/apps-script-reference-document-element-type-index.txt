@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/element-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ElementType is an enumeration listing all possible element types in a document.
 You access ElementType enum values using the parent class, name, and property like

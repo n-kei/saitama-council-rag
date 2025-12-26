@@ -1,5 +1,8 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/embeddings/index.html
 
+We have updated our
+Terms of Service
+.
 The Gemini API offers text embedding models to generate embeddings for words,
 phrases, sentences, and code. These foundational embeddings power advanced NLP
 tasks such as semantic search, classification, and clustering, providing more

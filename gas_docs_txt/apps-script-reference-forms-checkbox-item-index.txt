@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/checkbox-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CheckboxItem allows respondents to select one or more checkboxes with an optional "other" field.
 You can add a new checkbox item to a form using
@@ -109,6 +109,7 @@ For
 Correct()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond correctly to a question.
 get
 Feedback
@@ -116,6 +117,7 @@ For
 Incorrect()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond incorrectly to a question.
 get
 Help
@@ -370,6 +372,7 @@ Returns the feedback that is shown to respondents when they respond correctly to
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -385,6 +388,7 @@ Returns the feedback that is shown to respondents when they respond incorrectly 
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

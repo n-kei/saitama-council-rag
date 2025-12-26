@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/universal-action-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 UniversalActionResponse is a response object used for creating universal actions.
 Universal actions can open links or display add-on cards.

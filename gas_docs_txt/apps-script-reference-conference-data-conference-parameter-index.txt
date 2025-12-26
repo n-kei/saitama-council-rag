@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/conference-data/conference-parameter/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A ConferenceParameter is a solution-specific parameter for add-ons that is persisted with conference data.
 ConferenceParameters can be updated or deleted and are passed to the add-on for these operations.

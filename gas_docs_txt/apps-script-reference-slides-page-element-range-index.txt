@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/page-element-range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PageElementRange is a collection of one or more PageElement instances.
 The

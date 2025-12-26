@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/line/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Line object in Apps Script represents a line page element and provides methods to manipulate its properties and position.
 You can align, move forward/backward, bring to front/back, duplicate, and remove a Line element.
@@ -75,23 +75,24 @@ End
 Connection()
 Connection
 Site
+|null
 Returns the connection at the end of the line, or
 null
 if there is no connection.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -128,6 +129,7 @@ of the line.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -154,6 +156,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -186,6 +189,7 @@ Start
 Connection()
 Connection
 Site
+|null
 Returns the connection at the beginning of the line, or
 null
 if there is no connection.
@@ -209,7 +213,7 @@ Number
 Returns the thickness of the line in points.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 is
@@ -542,6 +546,7 @@ if there is no connection.
 Return
 Connection
 Site
+|null
 — The connection at the end of the line.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -558,7 +563,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -576,7 +581,7 @@ Returns the element's inherent height in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -594,7 +599,7 @@ Returns the element's inherent width in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does
@@ -721,6 +726,7 @@ getLinkType
 }
 Return
 Link
+|null
 — The
 Link
 or
@@ -775,6 +781,7 @@ if the element is not in a
 group.
 Return
 Group
+|null
 — The group this page element belongs to, or
 null
 .
@@ -848,6 +855,7 @@ if there is no connection.
 Return
 Connection
 Site
+|null
 — The connection at the beginning of the line.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -919,7 +927,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does

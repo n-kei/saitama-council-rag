@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/filter/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Filter class is used to modify existing filters on Grid sheets.
 To use the Filter class, you must first access the filter using Range.getFilter() or Sheet.getFilter().
@@ -83,6 +83,7 @@ Filter
 Criteria(columnPosition)
 Filter
 Criteria
+|null
 Gets the filter criteria on the specified column, or
 null
 if the column doesn't have
@@ -167,6 +168,7 @@ The 1-indexed position of the column. For example, column B's index is 2.
 Return
 Filter
 Criteria
+|null
 — The filter criteria.
 Authorization
 Scripts that use this method require authorization with one or more of the following

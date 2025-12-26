@@ -1,0 +1,23 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/save-workflow-action/index.html
+
+Save
+Workflow
+Action
+This action indicates that the host app (Google Workspace Studio) should save the agent.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+workflowClientAction
+=
+AddOnsResponseService
+.
+newWorkflowClientAction
+()
+.
+setSaveWorkflowAction
+(
+AddOnsResponseService
+.
+newSaveWorkflowAction
+()
+);

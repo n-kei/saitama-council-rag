@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-chart/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The DataSourceChart class is used to access and modify existing data source charts linked to a BigQuery database.
 You can cancel a running data refresh using

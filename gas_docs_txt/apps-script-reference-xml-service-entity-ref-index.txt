@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/entity-ref/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EntityRef represents an XML EntityReference node.
 It provides methods to get and set the name, public ID, and system ID of the node.

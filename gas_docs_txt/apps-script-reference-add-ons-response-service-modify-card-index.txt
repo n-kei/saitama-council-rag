@@ -14,6 +14,7 @@ Action
 . For usage, see
 Update configuration cards
 .
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
 Sample usage:
 const
 insertSection
@@ -68,42 +69,71 @@ Insert
 Section(insertSection)
 Modify
 Card
-Sets the insert section for this action.
+Sets the
+Insert
+Section
+for this modify card object.
 set
 Insert
 Widget(insertWidget)
 Modify
 Card
-Sets the insert widget for this action.
+Sets the
+Insert
+Widget
+for this modify card object.
 set
 Remove
 Section(removeSection)
 Modify
 Card
-Sets the remove section for this action.
+Sets the
+Remove
+Section
+for this modify card object.
 set
 Remove
 Widget(removeWidget)
 Modify
 Card
-Sets the remove widget for this action.
+Sets the
+Remove
+Widget
+for this modify card object.
 set
 Replace
-Section(replaceSection)
+Section(replacementSection)
 Modify
 Card
-Sets the replace section for this action.
+Sets the replacement
+Card
+Section
+for this modify card object, the replacement section
+should have the same id as an existing card section.
 set
 Replace
-Widget(replaceWidget)
+Widget(replacementWidget)
 Modify
 Card
-Sets the replace widget for this action.
+Sets the replacement widget for this modify card object, the replacement widget should have the
+same id as an existing widget.
+set
+Update
+Widget(updateWidget)
+Modify
+Card
+Sets the
+Update
+Widget
+for this modify card object.
 Detailed documentation
 set
 Insert
 Section(insertSection)
-Sets the insert section for this action.
+Sets the
+Insert
+Section
+for this modify card object.
 Parameters
 Name
 Type
@@ -112,15 +142,18 @@ insert
 Section
 Insert
 Section
-The insert section to create.
+The insert section to apply to the card.
 Return
 Modify
 Card
-— This object, for chaining.
+— This modify card object, for chaining.
 set
 Insert
 Widget(insertWidget)
-Sets the insert widget for this action.
+Sets the
+Insert
+Widget
+for this modify card object.
 Parameters
 Name
 Type
@@ -129,15 +162,21 @@ insert
 Widget
 Insert
 Widget
-The insert widget to create.
+The
+Insert
+Widget
+to apply to the card.
 Return
 Modify
 Card
-— This object, for chaining.
+— This modify card object, for chaining.
 set
 Remove
 Section(removeSection)
-Sets the remove section for this action.
+Sets the
+Remove
+Section
+for this modify card object.
 Parameters
 Name
 Type
@@ -146,15 +185,21 @@ remove
 Section
 Remove
 Section
-The remove section to create.
+The
+Remove
+Section
+to apply to the card.
 Return
 Modify
 Card
-— This object, for chaining.
+— This modify card object, for chaining.
 set
 Remove
 Widget(removeWidget)
-Sets the remove widget for this action.
+Sets the
+Remove
+Widget
+for this modify card object.
 Parameters
 Name
 Type
@@ -163,41 +208,72 @@ remove
 Widget
 Remove
 Widget
-The remove widget to create.
+The
+Remove
+Widget
+to apply to the card.
 Return
 Modify
 Card
-— This object, for chaining.
+— This modify card object, for chaining.
 set
 Replace
-Section(replaceSection)
-Sets the replace section for this action.
+Section(replacementSection)
+Sets the replacement
+Card
+Section
+for this modify card object, the replacement section
+should have the same id as an existing card section.
 Parameters
 Name
 Type
 Description
-replace
+replacement
 Section
 Card
 Section
-The replace section to create.
+The replacement section to overwrite an existing card section.
 Return
 Modify
 Card
-— This object, for chaining.
+— This modify card object, for chaining.
 set
 Replace
-Widget(replaceWidget)
-Sets the replace widget for this action.
+Widget(replacementWidget)
+Sets the replacement widget for this modify card object, the replacement widget should have the
+same id as an existing widget.
 Parameters
 Name
 Type
 Description
-replace
+replacement
 Widget
 Widget
-The replace widget to create.
+The replacement widget to overwrite an existing widget.
 Return
 Modify
 Card
-— This object, for chaining.
+— This modify card object, for chaining.
+set
+Update
+Widget(updateWidget)
+Sets the
+Update
+Widget
+for this modify card object.
+Parameters
+Name
+Type
+Description
+update
+Widget
+Update
+Widget
+The
+Update
+Widget
+to apply to the card.
+Return
+Modify
+Card
+— This modify card object, for chaining.

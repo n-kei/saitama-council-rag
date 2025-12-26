@@ -1,0 +1,62 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/remove-widget/index.html
+
+Remove
+Widget
+A builder for RemoveWidget objects. Developers can remove a widget from the card by passing a
+Remove
+Widget
+to
+Modify
+Card
+.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+removeWidget
+=
+AddOnsResponseService
+.
+newRemoveWidget
+().
+setWidgetId
+(
+'sample_id'
+);
+const
+modifyCard
+=
+AddOnsResponseService
+.
+newModifyCard
+().
+setRemoveWidget
+(
+removeWidget
+);
+Methods
+Method
+Return type
+Brief description
+set
+Widget
+Id(widgetId)
+Remove
+Widget
+Sets the widget ID of the widget to be removed.
+Detailed documentation
+set
+Widget
+Id(widgetId)
+Sets the widget ID of the widget to be removed.
+Parameters
+Name
+Type
+Description
+widget
+Id
+String
+The ID of the widget to remove.
+Return
+Remove
+Widget
+— The remove widget object.

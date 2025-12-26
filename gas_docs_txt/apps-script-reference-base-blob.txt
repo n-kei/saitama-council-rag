@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/blob.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Blob is a data interchange object used in Apps Script services.
 Blobs have methods for copying, converting, and retrieving data in various formats.

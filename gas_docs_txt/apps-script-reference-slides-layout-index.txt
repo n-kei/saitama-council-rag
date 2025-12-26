@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/layout/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A layout in presentation slides acts as a template defining the arrangement and styling of content.
 Layouts provide methods to access and manipulate various page elements like background, images, shapes, and placeholders.
@@ -68,6 +68,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -93,6 +94,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -106,6 +108,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -472,6 +475,7 @@ The ID of the page element that is being retrieved.
 Return
 Page
 Element
+|null
 — The page element with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -559,6 +563,7 @@ Type
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -620,6 +625,7 @@ Integer
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

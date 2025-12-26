@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/date/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Date element represents a formatted date and includes methods to retrieve and set its attributes, display text, locale, and timestamp.
 The element provides methods for document structure manipulation like getting siblings and parent, checking if it's at the document end, merging with a preceding sibling, and removing itself from its parent.
@@ -31,16 +31,19 @@ get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Timestamp()
@@ -64,11 +67,13 @@ Document
 .
 merge()
 Date
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 From
 Parent()
 Date
+|null
 Removes the element from its parent.
 set
 Attributes(attributes)
@@ -222,6 +227,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -236,6 +242,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -250,6 +257,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -491,6 +499,7 @@ merge
 ();
 Return
 Date
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -559,6 +568,7 @@ removeFromParent
 }
 Return
 Date
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

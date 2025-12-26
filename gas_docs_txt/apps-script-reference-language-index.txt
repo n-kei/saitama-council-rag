@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/language/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Language service enables scripts to automatically translate text.
 The

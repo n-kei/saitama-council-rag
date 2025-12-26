@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/properties/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Properties service allows scripts to store key-value pairs with different scopes: script, user, or document.
 The

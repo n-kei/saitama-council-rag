@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/table-cell-range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TableCellRange is a collection of one or more TableCell instances.
 The

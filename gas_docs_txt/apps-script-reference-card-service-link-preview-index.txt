@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/link-preview/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Card action that displays a link preview card and smart chip in the host app.
 Methods include printing JSON, setting the link preview title, setting the preview card, and setting the smart chip title.

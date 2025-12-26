@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/drive/file.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Google Drive
 File
@@ -271,6 +271,7 @@ If the file is a shortcut, returns the resource key of the item it points to.
 get
 Thumbnail()
 Blob
+|null
 Gets a thumbnail image for the file, or
 null
 if no thumbnail exists.
@@ -1532,6 +1533,7 @@ getThumbnail
 }
 Return
 Blob
+|null
 — The thumbnail image for the file.
 Authorization
 Scripts that use this method require authorization with one or more of the following

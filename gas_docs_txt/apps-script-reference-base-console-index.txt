@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/console/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 console

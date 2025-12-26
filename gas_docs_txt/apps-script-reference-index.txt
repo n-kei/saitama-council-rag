@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The reference documentation details Apps Script services and script project resources.
 Apps Script services allow your script to access data on Google and external systems, including Google services for Google Workspace apps and utility services.

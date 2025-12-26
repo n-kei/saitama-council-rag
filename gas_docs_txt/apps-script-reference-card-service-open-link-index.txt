@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/open-link/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 OpenLink represents an action to open a link with options.
 It is available for Google Workspace add-ons and Google Chat apps.

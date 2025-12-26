@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/contacts-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ContactsApp is a deprecated class for accessing and managing Google Contacts.
 Users can create, remove, and update their contacts using this class.

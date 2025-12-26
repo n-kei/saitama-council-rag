@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/content/text-output/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextOutput is an object served from a script that displays content on googleusercontent.com due to security limitations, rather than directly returning text to the browser.
 You can create a TextOutput with simple text content using ContentService.createTextOutput() in a function like doGet().

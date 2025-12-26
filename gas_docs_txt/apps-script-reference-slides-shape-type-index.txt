@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/shape-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ShapeType is an enum representing various shape types, many of which align with predefined shapes from the ECMA-376 standard.
 You can access an enum value by calling its parent class, name, and property, like

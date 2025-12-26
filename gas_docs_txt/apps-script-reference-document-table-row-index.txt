@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/table-row/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TableRow represents a row within a Table and can only contain TableCell elements.
 Methods are available to append, insert, remove, and retrieve TableCell elements within a TableRow.
@@ -86,11 +86,13 @@ find
 Element(elementType)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type.
 find
 Element(elementType, from)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type, starting from the
 specified
 Range
@@ -100,11 +102,13 @@ find
 Text(searchPattern)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern using regular expressions.
 find
 Text(searchPattern, from)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern, starting from a given
 search result.
 get
@@ -115,6 +119,7 @@ get
 Cell(cellIndex)
 Table
 Cell
+|null
 Retrieves the
 Table
 Cell
@@ -131,17 +136,18 @@ Retrieves the child index for the specified child element.
 get
 Link
 Url()
-String
+String|null
 Retrieves the link url.
 get
 Minimum
 Height()
-Number
+Number|null
 Retrieves the minimum height, in points.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Num
@@ -157,11 +163,13 @@ get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Parent
 Table()
 Table
+|null
 Retrieves the
 Table
 containing the current row.
@@ -169,6 +177,7 @@ get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Text()
@@ -179,6 +188,7 @@ Text
 Alignment()
 Text
 Alignment
+|null
 Gets the text alignment.
 get
 Type()
@@ -226,6 +236,7 @@ Document
 merge()
 Table
 Row
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 Cell(cellIndex)
@@ -245,6 +256,7 @@ From
 Parent()
 Table
 Row
+|null
 Removes the element from its parent.
 replace
 Text(searchPattern, replacement)
@@ -451,6 +463,7 @@ The type of element to search for.
 Return
 Range
 Element
+|null
 — A search result indicating the position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -554,6 +567,7 @@ The search result to search from.
 Return
 Range
 Element
+|null
 — A search result indicating the next position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -579,6 +593,7 @@ the pattern to search for
 Return
 Range
 Element
+|null
 — a search result indicating the position of the search text, or null if there is no
     match
 Authorization
@@ -610,6 +625,7 @@ the search result to search from
 Return
 Range
 Element
+|null
 — a search result indicating the next position of the search text, or null if there is no
     match
 Authorization
@@ -732,6 +748,7 @@ the index of the cell to retrieve
 Return
 Table
 Cell
+|null
 — the table cell
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -831,7 +848,7 @@ Link
 Url()
 Retrieves the link url.
 Return
-String
+String|null
 — the link url, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -844,7 +861,7 @@ Minimum
 Height()
 Retrieves the minimum height, in points.
 Return
-Number
+Number|null
 — the minimum height, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -859,6 +876,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -926,6 +944,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -941,6 +960,7 @@ Table
 containing the current row.
 Return
 Table
+|null
 — the table containing the current row
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -955,6 +975,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -990,6 +1011,7 @@ App.TextAlignment.SUPERSCRIPT
 Return
 Text
 Alignment
+|null
 — the type of text alignment, or
 null
 if the text contains multiple types of text
@@ -1307,6 +1329,7 @@ merge
 Return
 Table
 Row
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1420,6 +1443,7 @@ removeFromParent
 Return
 Table
 Row
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

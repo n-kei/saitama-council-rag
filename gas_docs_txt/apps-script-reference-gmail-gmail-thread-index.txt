@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/gmail/gmail-thread/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A GmailThread object represents a conversation thread in a user's Gmail account and provides various methods to interact with the thread.
 You can add or remove labels from a thread using the

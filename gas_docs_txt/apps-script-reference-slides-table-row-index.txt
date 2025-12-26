@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/table-row/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A TableRow represents a row in a table and consists of a list of table cells, identified by its index.
 Methods are available to get a specific cell by index, retrieve the row's index, get the minimum height, find the number of cells, access the parent table, and remove the row.

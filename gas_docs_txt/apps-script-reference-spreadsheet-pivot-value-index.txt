@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/pivot-value/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PivotValue allows you to access and modify value groups within pivot tables.
 You can retrieve information about a PivotValue such as its display type, formula, associated PivotTable, source data column, and summarization function.
@@ -50,6 +50,7 @@ Column()
 Data
 Source
 Column
+|null
 Returns the data source column the pivot value summarizes.
 get
 Summarized
@@ -162,6 +163,7 @@ Return
 Data
 Source
 Column
+|null
 — The source data source column the pivot value summarizes.
 Authorization
 Scripts that use this method require authorization with one or more of the following

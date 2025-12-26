@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/document-trigger-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DocumentTriggerBuilder is used to build document triggers.
 The

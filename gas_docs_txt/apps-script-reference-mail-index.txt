@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/mail/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Mail service allows scripts to send email on a user's behalf.
 Unlike the Gmail Service, the Mail Service cannot access a user's Gmail account.

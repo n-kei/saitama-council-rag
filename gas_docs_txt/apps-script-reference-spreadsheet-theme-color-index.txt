@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/theme-color/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ThemeColor represents a theme color.
 It includes methods to get the color type and theme color type.

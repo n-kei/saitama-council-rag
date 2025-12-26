@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/tab/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Tab class represents a tab within a Google Docs document.
 You can retrieve a specific tab by its ID or get all first-level tabs in a document.

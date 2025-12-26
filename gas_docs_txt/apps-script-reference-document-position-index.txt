@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/position/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A
 Position
@@ -141,6 +141,7 @@ Inline
 Image(image)
 Inline
 Image
+|null
 Creates and inserts a new
 Inline
 Image
@@ -151,6 +152,7 @@ blob.
 insert
 Text(text)
 Text
+|null
 Inserts the specified text at this
 Position
 .
@@ -325,6 +327,7 @@ Position
 Return
 Inline
 Image
+|null
 — the new image element, or
 null
 if the element in which this
@@ -357,6 +360,7 @@ the string to insert at this
 Position
 Return
 Text
+|null
 — the new text element, or
 null
 if the element in which this

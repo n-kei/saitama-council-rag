@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/checkbox-validation/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CheckboxValidation is a DataValidation specifically for CheckboxItems in Google Forms.
 It allows you to set requirements for the number of choices a user must select from a checkbox item.

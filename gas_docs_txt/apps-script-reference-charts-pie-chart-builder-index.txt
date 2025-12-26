@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/pie-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PieChartBuilder
 is used to create pie charts and offers various methods to customize their appearance and data source.

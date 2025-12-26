@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-ref/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 JdbcRef is a JDBC
 Ref

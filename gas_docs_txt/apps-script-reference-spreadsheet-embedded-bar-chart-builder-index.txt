@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-bar-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedBarChartBuilder is a builder class for creating bar charts within Google Sheets.
 It provides methods to configure chart properties such as adding or removing data ranges, setting chart type, adjusting axis styles, and setting title and legend properties.

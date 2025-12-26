@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/list-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ListItem is a question type in Google Forms allowing respondents to select one choice from a drop-down list.
 You can create and access ListItem objects from a Form object using
@@ -99,6 +99,7 @@ For
 Correct()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond correctly to a question.
 get
 Feedback
@@ -106,6 +107,7 @@ For
 Incorrect()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond incorrectly to a question.
 get
 Help
@@ -389,6 +391,7 @@ Returns the feedback that is shown to respondents when they respond correctly to
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -404,6 +407,7 @@ Returns the feedback that is shown to respondents when they respond incorrectly 
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

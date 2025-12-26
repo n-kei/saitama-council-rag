@@ -1,5 +1,8 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/robotics-overview/index.html
 
+We have updated our
+Terms of Service
+.
 Preview:
 The Gemini Robotics-ER 1.5 model is currently in preview.
 Gemini Robotics-ER 1.5 is a vision-language model (VLM) that brings Gemini's

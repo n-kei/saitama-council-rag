@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/status/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Status is an enum representing status codes available only for Google Chat apps.
 Enums are called by referencing their parent class, name, and property, like

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/data-view-definition-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataViewDefinitionBuilder is used to build DataViewDefinition objects.
 The

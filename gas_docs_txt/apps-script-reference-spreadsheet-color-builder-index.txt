@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/color-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ColorBuilder is a builder for creating color objects in Apps Script spreadsheets.
 A new ColorBuilder is created using SpreadsheetApp.newColor().

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/chat-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ChatResponse is the response object for a card message in Google Chat, available only for Google Chat apps.
 You can create a ChatResponse using

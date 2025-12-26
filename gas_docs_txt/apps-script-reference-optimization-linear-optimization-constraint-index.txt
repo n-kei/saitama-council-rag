@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/optimization/linear-optimization-constraint/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A
 LinearOptimizationConstraint

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-sheet/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Use the DataSourceSheet class to access and modify existing data source sheets linked to a database.
 New data source sheets are created using the Spreadsheet.insertDataSourceSheet(spec) method.
@@ -59,7 +59,7 @@ Refreshes the data of this object regardless of the current state.
 get
 Column
 Width(columnName)
-Integer
+Integer|null
 Returns the width of the specified column.
 get
 Data
@@ -323,7 +323,7 @@ Name
 String
 The column name.
 Return
-Integer
+Integer|null
 — The column's width, or
 null
 if the column uses the default width.

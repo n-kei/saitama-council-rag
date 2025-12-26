@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Range represents a range of elements within a document, and the user's selection is a common use case.
 Scripts can only access the user's selection if they are bound to the document.

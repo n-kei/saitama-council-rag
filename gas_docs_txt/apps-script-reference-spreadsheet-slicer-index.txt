@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/slicer/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Slicer in Google Sheets is used to filter data ranges, charts, and pivot tables non-collaboratively.
 You can access and modify existing slicers using the methods provided by this class.
@@ -26,13 +26,14 @@ Background
 Color
 Object()
 Color
+|null
 Return the background
 Color
 of the slicer.
 get
 Column
 Position()
-Integer
+Integer|null
 Returns the column position (relative to the data range of the slicer) on which the filter is
 applied in the slicer, or
 null
@@ -48,6 +49,7 @@ Filter
 Criteria()
 Filter
 Criteria
+|null
 Returns the filter criteria of the slicer, or
 null
 if the filter criteria is not set.
@@ -139,7 +141,7 @@ Brief description
 get
 Background
 Color()
-String
+String|null
 Returns the background color of the slicer in CSS notation (such as '#ffffff').
 Detailed documentation
 get
@@ -151,6 +153,7 @@ Color
 of the slicer.
 Return
 Color
+|null
 — The background color of this slicer. Returns
 null
 if no color is set.
@@ -169,7 +172,7 @@ null
 if the column position is not set. This should be
 1-indexed position of the column similar to filter.
 Return
-Integer
+Integer|null
 — The column position of this slicer.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -200,6 +203,7 @@ if the filter criteria is not set.
 Return
 Filter
 Criteria
+|null
 — The filter criteria of this slicer.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -522,7 +526,7 @@ Color
 Object()
 Returns the background color of the slicer in CSS notation (such as '#ffffff').
 Return
-String
+String|null
 — The background color of this slicer. Returns
 null
 if no color is set.

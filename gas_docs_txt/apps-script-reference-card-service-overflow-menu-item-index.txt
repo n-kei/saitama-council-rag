@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/overflow-menu-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 OverflowMenuItem is a UI element for Google Chat apps and Google Workspace add-ons that displays an icon and text.
 You can set the text, starting icon, and disable the OverflowMenuItem.

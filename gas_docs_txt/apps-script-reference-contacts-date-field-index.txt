@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/date-field/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DateField is a deprecated class used only by the Contacts service to represent a date field in a Contact.
 Instead of DateField, the People API advanced service should be used.

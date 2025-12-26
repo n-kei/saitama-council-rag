@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/auto-text/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AutoText is a dynamic text element that changes over time, like a slide number.
 The
@@ -30,15 +30,17 @@ Type()
 Auto
 Text
 Type
+|null
 Returns the type of auto text.
 get
 Index()
-Integer
+Integer|null
 Returns the index of the auto text.
 get
 Range()
 Text
 Range
+|null
 Returns a
 Text
 Range
@@ -55,6 +57,7 @@ Return
 Auto
 Text
 Type
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -67,7 +70,7 @@ Returns the index of the auto text. Returns
 null
 if the auto text has been deleted.
 Return
-Integer
+Integer|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -86,6 +89,7 @@ been deleted.
 Return
 Text
 Range
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CardBuilder is used to build Card objects.
 You can add card actions and sections to a Card using the builder.
@@ -24,6 +24,12 @@ Adds a
 Card
 Action
 to this Card.
+add
+Expression
+Data(expressionData)
+Card
+Builder
+Adds an expression data to this card.
 add
 Section(section)
 Card
@@ -80,6 +86,28 @@ Action
 The
 Card
 Action
+to use.
+Return
+Card
+Builder
+— This object, for chaining.
+add
+Expression
+Data(expressionData)
+Adds an expression data to this card.
+The ExpressionData defines the CEL logic and condition as well as what event to trigger when
+a condition is satisfied.
+Parameters
+Name
+Type
+Description
+expression
+Data
+Expression
+Data
+The
+Expression
+Data
 to use.
 Return
 Card

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/filter-criteria/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 FilterCriteria allows you to get information about or copy the criteria on existing filters.
 You can create criteria for any filter type using
@@ -162,6 +162,7 @@ Criteria
 Type()
 Boolean
 Criteria
+|null
 Returns the criteria's boolean type, for example,
 CELL_EMPTY
 .
@@ -180,12 +181,14 @@ Visible
 Background
 Color()
 Color
+|null
 Returns the background color used as filter criteria.
 get
 Visible
 Foreground
 Color()
 Color
+|null
 Returns the foreground color used as a filter criteria.
 get
 Visible
@@ -307,6 +310,7 @@ criteriaType
 Return
 Boolean
 Criteria
+|null
 — The type of boolean criteria, or
 null
 if the criteria isn't a boolean
@@ -492,6 +496,7 @@ color
 );
 Return
 Color
+|null
 — The background color used as filter criteria.
 get
 Visible
@@ -556,6 +561,7 @@ color
 );
 Return
 Color
+|null
 — The foreground color used as a filter criteria.
 get
 Visible

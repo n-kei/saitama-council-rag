@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/trigger-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TriggerBuilder is a generic builder used for creating script triggers in Apps Script.
 It provides methods to create trigger builders for specific Google services such as Documents, Forms, Spreadsheets, and Calendar.

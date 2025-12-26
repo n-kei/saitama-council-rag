@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/quiz-feedback-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 QuizFeedbackBuilder is used to build Feedback objects and set common properties like display text.
 It provides methods to add links, set text, build the feedback object, and create a copy.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/html/html-output/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 HtmlOutput is an object used to serve sanitized HTML content from Apps Script, including embedded JavaScript and CSS, with content sandboxed using iframe sandboxing for security.
 Scripts must sanitize HTML due to security considerations and cannot return it directly to a browser, using HtmlService.createHtmlOutput for this purpose.

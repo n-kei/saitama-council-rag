@@ -43,7 +43,7 @@ Client
 ()
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 config
 =
 {
@@ -112,7 +112,7 @@ GoogleGenAI
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 const
 config
@@ -462,7 +462,7 @@ Client
 ()
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 config
 =
 {
@@ -600,7 +600,7 @@ GoogleGenAI
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 const
 config
@@ -937,7 +937,7 @@ Client
 ()
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 config
 =
 {
@@ -1080,7 +1080,7 @@ GoogleGenAI
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 const
 config
@@ -1729,7 +1729,7 @@ true
 }
 Thinking
 The latest native audio output model
-gemini-2.5-flash-native-audio-preview-09-2025
+gemini-2.5-flash-native-audio-preview-12-2025
 supports
 thinking capabilities
 , with dynamic
@@ -1750,7 +1750,7 @@ thinking budgets documentation
 Python
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 config
 =
 types
@@ -1800,7 +1800,7 @@ JavaScript
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 const
 config
@@ -1867,7 +1867,7 @@ for more info:
 Python
 model
 =
-"gemini-2.5-flash-native-audio-preview-09-2025"
+"gemini-2.5-flash-native-audio-preview-12-2025"
 config
 =
 types
@@ -1898,7 +1898,7 @@ JavaScript
 const
 model
 =
-'gemini-2.5-flash-native-audio-preview-09-2025'
+'gemini-2.5-flash-native-audio-preview-12-2025'
 ;
 const
 config

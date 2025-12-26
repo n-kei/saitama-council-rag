@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/calendar-trigger-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CalendarTriggerBuilder is used to build calendar triggers.
 The

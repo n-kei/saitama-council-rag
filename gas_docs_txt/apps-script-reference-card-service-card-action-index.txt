@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card-action/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CardAction is a clickable menu item added to the card header menu.
 CardAction objects can be configured to perform various actions when clicked, including opening authorization flows, composing emails, executing defined actions, or opening URLs.

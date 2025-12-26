@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/chat-action-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ChatActionResponse is a class used by Google Chat apps to configure how their responses are posted.
 This class is exclusively available for Google Chat apps and not for Google Workspace add-ons.

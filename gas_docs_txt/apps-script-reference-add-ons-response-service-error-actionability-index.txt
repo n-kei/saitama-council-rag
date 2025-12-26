@@ -1,0 +1,19 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/error-actionability/index.html
+
+Error
+Actionability
+A Enum that represents the error actionability. The enum values are mapped to the proto enum
+values to provide the corresponding enum value support in AppScript.
+Properties
+Property
+Type
+Description
+ERROR_ACTIONABILITY_UNSPECIFIED
+Enum
+Unspecified.
+NOT_ACTIONABLE
+Enum
+The error is not fixable by the user through the configuration card.
+ACTIONABLE
+Enum
+The error is fixable by the user through the configuration card.

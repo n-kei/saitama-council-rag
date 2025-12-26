@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/utilities/utilities/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Utilities service in Apps Script provides various helper functions for common tasks like encoding, decoding, date formatting, and data manipulation.
 It offers methods for base-64 encoding and decoding for both standard and web-safe formats with optional character set specification.

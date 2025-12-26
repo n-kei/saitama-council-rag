@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/material-icon/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 MaterialIcon is an object that supports all Google Font Icons and is available for Google Workspace add-ons and Google Chat apps.
 You can set the name of the icon using

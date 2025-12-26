@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/boolean-condition/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A
 BooleanCondition
@@ -38,10 +38,11 @@ get
 Background
 Object()
 Color
+|null
 Gets the background color for this boolean condition.
 get
 Bold()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition bolds the text and returns
@@ -67,10 +68,11 @@ Font
 Color
 Object()
 Color
+|null
 Gets the font color for this boolean condition.
 get
 Italic()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition italicises the text and returns
@@ -79,7 +81,7 @@ if
 this boolean condition removes italics from the text.
 get
 Strikethrough()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition strikes through the text and returns
@@ -87,7 +89,7 @@ false
 if this boolean condition removes strikethrough from the text.
 get
 Underline()
-Boolean
+Boolean|null
 Returns
 true
 if this boolean condition underlines the text and returns
@@ -100,12 +102,12 @@ Return type
 Brief description
 get
 Background()
-String
+String|null
 Gets the background color string for this boolean condition.
 get
 Font
 Color()
-String
+String|null
 Gets the font color string for this boolean condition.
 Detailed documentation
 get
@@ -165,6 +167,7 @@ asHexString
 }
 Return
 Color
+|null
 — The background color, or
 null
 if not set for this condition.
@@ -223,7 +226,7 @@ bold
 );
 }
 Return
-Boolean
+Boolean|null
 — whether or not the boolean condition bolds the text, or
 null
 if bolding is
@@ -462,6 +465,7 @@ asHexString
 }
 Return
 Color
+|null
 — The font color, or
 null
 if not set for this condition.
@@ -521,7 +525,7 @@ italic
 );
 }
 Return
-Boolean
+Boolean|null
 — whether or not the boolean condition italicises the text, or
 null
 if
@@ -581,7 +585,7 @@ strikethrough
 );
 }
 Return
-Boolean
+Boolean|null
 — whether or not the boolean condition strikes through the text, or
 null
 if
@@ -642,7 +646,7 @@ underline
 );
 }
 Return
-Boolean
+Boolean|null
 — whether or not the boolean condition underlines the text, or
 null
 if
@@ -703,7 +707,7 @@ color
 );
 }
 Return
-String
+String|null
 — The background color string, or
 null
 if not set for this condition.
@@ -760,7 +764,7 @@ getFontColor
 );
 }
 Return
-String
+String|null
 — The font color string, or
 null
 if not set for this condition.

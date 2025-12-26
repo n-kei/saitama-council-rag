@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/optimization/linear-optimization-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The LinearOptimizationService is used to model and solve linear and mixed-integer linear programs.
 You can add variables with upper and lower bounds using

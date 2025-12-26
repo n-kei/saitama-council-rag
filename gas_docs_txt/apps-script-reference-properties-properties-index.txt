@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/properties/properties/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The properties object allows access to user, document, or script properties through methods of the
 PropertiesService

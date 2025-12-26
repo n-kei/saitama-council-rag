@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/content-alignment/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ContentAlignment defines text anchoring types for Shape or TableCell.
 Supported alignments correspond to predefined types from the ECMA-376 standard.

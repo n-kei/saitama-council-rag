@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/html/html-output-meta-tag/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 HtmlOutputMetaTag represents a meta tag added to a page using HtmlOutput.addMetaTag().
 The getContent() method retrieves the content of the meta tag.

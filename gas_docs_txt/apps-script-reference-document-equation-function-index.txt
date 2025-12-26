@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/equation-function/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The EquationFunction represents a function within a mathematical Equation element in Google Docs.
 It can contain other EquationFunctions, EquationFunctionArgumentSeparators, EquationSymbols, and Text elements.
@@ -54,11 +54,13 @@ find
 Element(elementType)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type.
 find
 Element(elementType, from)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type, starting from the
 specified
 Range
@@ -68,11 +70,13 @@ find
 Text(searchPattern)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern using regular expressions.
 find
 Text(searchPattern, from)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern, starting from a given
 search result.
 get
@@ -95,12 +99,13 @@ Retrieves the code corresponding to the equation function.
 get
 Link
 Url()
-String
+String|null
 Retrieves the link url.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Num
@@ -111,11 +116,13 @@ get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Text()
@@ -126,6 +133,7 @@ Text
 Alignment()
 Text
 Alignment
+|null
 Gets the text alignment.
 get
 Type()
@@ -146,12 +154,14 @@ Document
 merge()
 Equation
 Function
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 From
 Parent()
 Equation
 Function
+|null
 Removes the element from its parent.
 replace
 Text(searchPattern, replacement)
@@ -284,6 +294,7 @@ The type of element to search for.
 Return
 Range
 Element
+|null
 — A search result indicating the position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -387,6 +398,7 @@ The search result to search from.
 Return
 Range
 Element
+|null
 — A search result indicating the next position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -412,6 +424,7 @@ the pattern to search for
 Return
 Range
 Element
+|null
 — a search result indicating the position of the search text, or null if there is no
     match
 Authorization
@@ -443,6 +456,7 @@ the search result to search from
 Return
 Range
 Element
+|null
 — a search result indicating the next position of the search text, or null if there is no
     match
 Authorization
@@ -652,7 +666,7 @@ Link
 Url()
 Retrieves the link url.
 Return
-String
+String|null
 — the link url, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -667,6 +681,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -721,6 +736,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -735,6 +751,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -770,6 +787,7 @@ App.TextAlignment.SUPERSCRIPT
 Return
 Text
 Alignment
+|null
 — the type of text alignment, or
 null
 if the text contains multiple types of text
@@ -1003,6 +1021,7 @@ merge
 Return
 Equation
 Function
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1072,6 +1091,7 @@ removeFromParent
 Return
 Equation
 Function
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

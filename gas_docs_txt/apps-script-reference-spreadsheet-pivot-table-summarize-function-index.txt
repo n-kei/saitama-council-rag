@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/pivot-table-summarize-function/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PivotTableSummarizeFunction is an enumeration of functions that summarize pivot table data.
 To call an enum, you use its parent class, name, and property, like

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/update-draft-action-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 An UpdateDraftActionResponse is used to modify an email draft being edited by a user.
 It can update recipients (To, Cc, Bcc), the subject line, and the body content of the draft.

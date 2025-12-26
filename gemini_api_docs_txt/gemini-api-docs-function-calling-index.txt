@@ -29,16 +29,16 @@ google.genai
 import
 types
 # Define the function declaration for the model
-weather_function
+schedule_meeting_function
 =
 {
 "name"
 :
-"get_current_temperature"
+"schedule_meeting"
 ,
 "description"
 :
-"Gets the current temperature for a given location."
+"Schedules a meeting with specified attendees at a given time and date."
 ,
 "parameters"
 :
@@ -50,7 +50,26 @@ weather_function
 "properties"
 :
 {
-"location"
+"attendees"
+:
+{
+"type"
+:
+"array"
+,
+"items"
+:
+{
+"type"
+:
+"string"
+},
+"description"
+:
+"List of people attending the meeting."
+,
+},
+"date"
 :
 {
 "type"
@@ -59,14 +78,44 @@ weather_function
 ,
 "description"
 :
-"The city name, e.g. San Francisco"
+"Date of the meeting (e.g., '2024-07-29')"
+,
+},
+"time"
+:
+{
+"type"
+:
+"string"
+,
+"description"
+:
+"Time of the meeting (e.g., '15:00')"
+,
+},
+"topic"
+:
+{
+"type"
+:
+"string"
+,
+"description"
+:
+"The subject or topic of the meeting."
 ,
 },
 },
 "required"
 :
 [
-"location"
+"attendees"
+,
+"date"
+,
+"time"
+,
+"topic"
 ],
 },
 }
@@ -86,7 +135,7 @@ Tool
 function_declarations
 =
 [
-weather_function
+schedule_meeting_function
 ])
 config
 =
@@ -114,7 +163,7 @@ model
 ,
 contents
 =
-"What's the temperature in London?"
+"Schedule a meeting with Bob and Alice for 03/14/2025 at 10:00 AM about the Q3 planning."
 ,
 config
 =
@@ -179,7 +228,7 @@ args
 "
 )
 #  In a real app, you would call your function here:
-#  result = get_current_temperature(**function_call.args)
+#  result = schedule_meeting(**function_call.args)
 else
 :
 print
@@ -211,16 +260,16 @@ GoogleGenAI
 ({});
 // Define the function declaration for the model
 const
-weatherFunctionDeclaration
+scheduleMeetingFunctionDeclaration
 =
 {
 name
 :
-'get_current_temperature'
+'schedule_meeting'
 ,
 description
 :
-'Gets the current temperature for a given location.'
+'Schedules a meeting with specified attendees at a given time and date.'
 ,
 parameters
 :
@@ -234,7 +283,30 @@ OBJECT
 properties
 :
 {
-location
+attendees
+:
+{
+type
+:
+Type
+.
+ARRAY
+,
+items
+:
+{
+type
+:
+Type
+.
+STRING
+},
+description
+:
+'List of people attending the meeting.'
+,
+},
+date
 :
 {
 type
@@ -245,14 +317,48 @@ STRING
 ,
 description
 :
-'The city name, e.g. San Francisco'
+'Date of the meeting (e.g., "2024-07-29")'
+,
+},
+time
+:
+{
+type
+:
+Type
+.
+STRING
+,
+description
+:
+'Time of the meeting (e.g., "15:00")'
+,
+},
+topic
+:
+{
+type
+:
+Type
+.
+STRING
+,
+description
+:
+'The subject or topic of the meeting.'
 ,
 },
 },
 required
 :
 [
-'location'
+'attendees'
+,
+'date'
+,
+'time'
+,
+'topic'
 ],
 },
 };
@@ -273,7 +379,7 @@ model
 ,
 contents
 :
-"What's the temperature in London?"
+'Schedule a meeting with Bob and Alice for 03/27/2025 at 10:00 AM about the Q3 planning.'
 ,
 config
 :
@@ -284,7 +390,7 @@ tools
 functionDeclarations
 :
 [
-weatherFunctionDeclaration
+scheduleMeetingFunctionDeclaration
 ]
 }],
 },
@@ -345,7 +451,7 @@ args
 `
 );
 // In a real app, you would call your actual function here:
-// const result = await getCurrentTemperature(functionCall.args);
+// const result = await scheduleMeeting(functionCall.args);
 }
 else
 {
@@ -386,9 +492,7 @@ POST
 "role": "user",
 "parts": [
 {
-"text": "What'
-\'
-'s the temperature in London?"
+"text": "Schedule a meeting with Bob and Alice for 03/27/2025 at 10:00 AM about the Q3 planning."
 }
 ]
 }
@@ -397,17 +501,36 @@ POST
 {
 "functionDeclarations": [
 {
-"name": "get_current_temperature",
-"description": "Gets the current temperature for a given location.",
+"name": "schedule_meeting",
+"description": "Schedules a meeting with specified attendees at a given time and date.",
 "parameters": {
 "type": "object",
 "properties": {
-"location": {
+"attendees": {
+"type": "array",
+"items": {"type": "string"},
+"description": "List of people attending the meeting."
+},
+"date": {
 "type": "string",
-"description": "The city name, e.g. San Francisco"
+"description": "Date of the meeting (e.g., '
+2024
+-07-29
+')"
+},
+"time": {
+"type": "string",
+"description": "Time of the meeting (e.g., '
+15
+:00
+')"
+},
+"topic": {
+"type": "string",
+"description": "The subject or topic of the meeting."
 }
 },
-"required": ["location"]
+"required": ["attendees", "date", "time", "topic"]
 }
 }
 ]
@@ -1233,32 +1356,37 @@ them in the description. This improves accuracy ("enum":
 required
 (array): An array of strings listing the parameter names that
 are mandatory for the function to operate.
-You can also construct FunctionDeclarations from Python functions directly using
+You can also construct
+FunctionDeclarations
+from Python functions directly using
 types.FunctionDeclaration.from_callable(client=client, callable=your_function)
 .
-Function calling with thinking
-Enabling "
-thinking
-" can improve function call
-performance by allowing the model to reason through a request before suggesting
-function calls. The Gemini API is stateless, the model's reasoning context will
-be lost between turns in a multi-turn conversation. To preserve this context,
-you can use thought signatures. A thought signature is an encrypted
-representation of the model's internal thought process that you pass back to
-the model on subsequent turns.
-The
-standard pattern for multi-turn tool
-use is to append the model's complete previous response to the conversation
-history. The
-content
-object includes the
-thought_signatures
-automatically.
-If you follow this pattern
-No code changes are required
+Function calling with thinking models
+Gemini 3 and 2.5 series models use an internal
+"thinking"
+process to reason through requests. This
+significantly improves function calling performance,
+allowing the model to better determine when to call a function and which
+parameters to use. Because the Gemini API is stateless, models use
+thought signatures
+to maintain context
+across multi-turn conversations.
+This section covers advanced management of thought signatures and is only
+necessary if you're manually constructing API requests (e.g., via REST) or
+manipulating conversation history.
+If you're using the
+Google GenAI SDKs
+(our
+official libraries), you don't need to manage this process
+. The SDKs
+automatically handle the necessary steps, as shown in the earlier
+example
 .
-Manually managing thought signatures
-If you modify the conversation history manually—instead of sending the complete previous response and want to benefit from thinking you must correctly handle the
+Managing conversation history manually
+If you modify the conversation history manually, instead of sending the
+complete previous response
+you
+must correctly handle the
 thought_signature
 included in the model's turn.
 Follow these rules to ensure the model's context is preserved:
@@ -1269,11 +1397,28 @@ Part
 .
 Don't merge a
 Part
-containing a signature with one that does not. This breaks the positional context of the thought.
+containing a signature with one that does not. This
+breaks the positional context of the thought.
 Don't combine two
 Parts
-that both contain signatures, as the signature strings cannot be merged.
-Inspecting Thought Signatures
+that both contain signatures, as the signature
+strings cannot be merged.
+Gemini 3 thought signatures
+In Gemini 3, any
+Part
+of a model response
+may contain a thought signature.
+While we generally recommend returning signatures from all
+Part
+types,
+passing back thought signatures is mandatory for function calling. Unless you
+are manipulating conversation history manually, the Google GenAI SDK will
+handle thought signatures automatically.
+If you are manipulating conversation history manually, refer to the
+Thoughts Signatures
+page for complete
+guidance and details on handling thought signatures for Gemini 3.
+Inspecting thought signatures
 While not necessary for implementation, you can inspect the response to see the
 thought_signature
 for debugging or educational purposes.
@@ -3342,6 +3487,726 @@ Python developers can try this out in the
 Live API Tool Use
 notebook
 .
+Multimodal function responses
+Note:
+This feature is available for
+Gemini 3
+series
+models.
+For Gemini 3 series models, you can include multimodal content in
+the function response parts that you send to the model. The model can process
+this multimodal content in its next turn to produce a more informed response.
+The following MIME types are supported for multimodal content in function
+responses:
+Images
+:
+image/png
+,
+image/jpeg
+,
+image/webp
+Documents
+:
+application/pdf
+,
+text/plain
+To include multimodal data in a function response, include it as one or more
+parts nested within the
+functionResponse
+part. Each multimodal part must
+contain
+inlineData
+. If you reference a multimodal part from
+within the structured
+response
+field, it must contain a unique
+displayName
+.
+You can also reference a multimodal part from within the structured
+response
+field of the
+functionResponse
+part by using the JSON reference format
+{"$ref": "<displayName>"}
+. The model substitutes the reference with the
+multimodal content when processing the response. Each
+displayName
+can only be
+referenced once in the structured
+response
+field.
+The following example shows a message containing a
+functionResponse
+for a
+function named
+get_image
+and a nested part containing image data with
+displayName: "wakeupcat.jpg"
+. The
+functionResponse
+'s
+response
+field
+references this image part:
+Python
+from
+google
+import
+genai
+from
+google.genai
+import
+types
+client
+=
+genai
+.
+Client
+()
+# This is a manual, two turn multimodal function calling workflow:
+# 1. Define the function tool
+get_image_declaration
+=
+types
+.
+FunctionDeclaration
+(
+name
+=
+"get_image"
+,
+description
+=
+"Retrieves the image file reference for a specific order item."
+,
+parameters
+=
+{
+"type"
+:
+"object"
+,
+"properties"
+:
+{
+"item_name"
+:
+{
+"type"
+:
+"string"
+,
+"description"
+:
+"The name or description of the item ordered (e.g., 'green shirt')."
+}
+},
+"required"
+:
+[
+"item_name"
+],
+},
+)
+tool_config
+=
+types
+.
+Tool
+(
+function_declarations
+=
+[
+get_image_declaration
+])
+# 2. Send a message that triggers the tool
+prompt
+=
+"Show me the green shirt I ordered last month."
+response_1
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-3-flash-preview"
+,
+contents
+=
+[
+prompt
+],
+config
+=
+types
+.
+GenerateContentConfig
+(
+tools
+=
+[
+tool_config
+],
+)
+)
+# 3. Handle the function call
+function_call
+=
+response_1
+.
+function_calls
+[
+0
+]
+requested_item
+=
+function_call
+.
+args
+[
+"item_name"
+]
+print
+(
+f
+"Model wants to call:
+{
+function_call
+.
+name
+}
+"
+)
+# Execute your tool (e.g., call an API)
+# (This is a mock response for the example)
+print
+(
+f
+"Calling external tool for:
+{
+requested_item
+}
+"
+)
+function_response_data
+=
+{
+"image_ref"
+:
+{
+"$ref"
+:
+"dress.jpg"
+},
+}
+function_response_multimodal_data
+=
+types
+.
+FunctionResponsePart
+(
+file_data
+=
+types
+.
+FunctionResponseFileData
+(
+mime_type
+=
+"image/png"
+,
+display_name
+=
+"dress.jpg"
+,
+file_uri
+=
+"gs://cloud-samples-data/generative-ai/image/dress.jpg"
+,
+)
+)
+# 4. Send the tool's result back
+# Append this turn's messages to history for a final response.
+history
+=
+[
+types
+.
+Content
+(
+role
+=
+"user"
+,
+parts
+=
+[
+types
+.
+Part
+(
+text
+=
+prompt
+)]),
+response_1
+.
+candidates
+[
+0
+]
+.
+content
+,
+types
+.
+Content
+(
+role
+=
+"tool"
+,
+parts
+=
+[
+types
+.
+Part
+.
+from_function_response
+(
+name
+=
+function_call
+.
+name
+,
+response
+=
+function_response_data
+,
+parts
+=
+[
+function_response_multimodal_data
+]
+)
+],
+)
+]
+response_2
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-3-flash-preview"
+,
+contents
+=
+history
+,
+config
+=
+types
+.
+GenerateContentConfig
+(
+tools
+=
+[
+tool_config
+],
+thinking_config
+=
+types
+.
+ThinkingConfig
+(
+include_thoughts
+=
+True
+)
+),
+)
+print
+(
+f
+"
+\n
+Final model response:
+{
+response_2
+.
+text
+}
+"
+)
+JavaScript
+import
+{
+GoogleGenAI
+,
+Type
+}
+from
+'@google/genai'
+;
+const
+client
+=
+new
+GoogleGenAI
+({
+apiKey
+:
+process
+.
+env
+.
+GEMINI_API_KEY
+});
+// This is a manual, two turn multimodal function calling workflow:
+// 1. Define the function tool
+const
+getImageDeclaration
+=
+{
+name
+:
+'get_image'
+,
+description
+:
+'Retrieves the image file reference for a specific order item.'
+,
+parameters
+:
+{
+type
+:
+Type
+.
+OBJECT
+,
+properties
+:
+{
+item_name
+:
+{
+type
+:
+Type
+.
+STRING
+,
+description
+:
+"The name or description of the item ordered (e.g., 'green shirt')."
+,
+},
+},
+required
+:
+[
+'item_name'
+],
+},
+};
+const
+toolConfig
+=
+{
+functionDeclarations
+:
+[
+getImageDeclaration
+],
+};
+// 2. Send a message that triggers the tool
+const
+prompt
+=
+'Show me the green shirt I ordered last month.'
+;
+const
+response1
+=
+await
+client
+.
+models
+.
+generateContent
+({
+model
+:
+'gemini-3-flash-preview'
+,
+contents
+:
+prompt
+,
+config
+:
+{
+tools
+:
+[
+toolConfig
+],
+},
+});
+// 3. Handle the function call
+const
+functionCall
+=
+response1
+.
+functionCalls
+[
+0
+];
+const
+requestedItem
+=
+functionCall
+.
+args
+.
+item_name
+;
+console
+.
+log
+(
+`Model wants to call:
+${
+functionCall
+.
+name
+}
+`
+);
+// Execute your tool (e.g., call an API)
+// (This is a mock response for the example)
+console
+.
+log
+(
+`Calling external tool for:
+${
+requestedItem
+}
+`
+);
+const
+functionResponseData
+=
+{
+image_ref
+:
+{
+$ref
+:
+'dress.jpg'
+},
+};
+const
+functionResponseMultimodalData
+=
+{
+fileData
+:
+{
+mimeType
+:
+'image/png'
+,
+displayName
+:
+'dress.jpg'
+,
+fileUri
+:
+'gs://cloud-samples-data/generative-ai/image/dress.jpg'
+,
+},
+};
+// 4. Send the tool's result back
+// Append this turn's messages to history for a final response.
+const
+history
+=
+[
+{
+role
+:
+'user'
+,
+parts
+:
+[{
+text
+:
+prompt
+}]
+},
+response1
+.
+candidates
+[
+0
+].
+content
+,
+{
+role
+:
+'tool'
+,
+parts
+:
+[
+{
+functionResponse
+:
+{
+name
+:
+functionCall
+.
+name
+,
+response
+:
+functionResponseData
+,
+parts
+:
+[
+functionResponseMultimodalData
+],
+},
+},
+],
+},
+];
+const
+response2
+=
+await
+client
+.
+models
+.
+generateContent
+({
+model
+:
+'gemini-3-flash-preview'
+,
+contents
+:
+history
+,
+config
+:
+{
+tools
+:
+[
+toolConfig
+],
+thinkingConfig
+:
+{
+includeThoughts
+:
+true
+},
+},
+});
+console
+.
+log
+(
+`\nFinal model response:
+${
+response2
+.
+text
+}
+`
+);
+REST
+"contents"
+:
+[
+...
+,
+{
+"role"
+:
+"user"
+,
+"parts"
+:
+[
+{
+"functionResponse"
+:
+{
+"name"
+:
+"get_image"
+,
+"response"
+:
+{
+"image_ref"
+:
+{
+"$ref"
+:
+"wakeupcat.jpg"
+}
+},
+"parts"
+:
+[
+{
+"fileData"
+:
+{
+"displayName"
+:
+"wakeupcat.jpg"
+,
+"mimeType"
+:
+"image/jpeg"
+,
+"fileUri"
+:
+"gs://cloud-samples-data/vision/label/wakeupcat.jpg"
+}
+}
+]
+}
+}
+]
+}
+]
 Model context protocol (MCP)
 Model Context Protocol (MCP)
 is
@@ -3711,6 +4576,14 @@ Model
 Function Calling
 Parallel Function Calling
 Compositional Function Calling
+Gemini 3 Pro
+✔️
+✔️
+✔️
+Gemini 3 Flash
+✔️
+✔️
+✔️
 Gemini 2.5 Pro
 ✔️
 ✔️
@@ -3757,9 +4630,19 @@ Give instructions: Specify how and when to use functions (e.g., "Don't
 guess dates; always use a future date for forecasts.").
 Encourage clarification: Instruct the model to ask clarifying questions
 if needed.
+See
+Agentic workflows
+for further strategies on designing these prompts. Here is an example of a tested
+system instruction
+.
 Temperature:
 Use a low temperature (e.g., 0) for more deterministic and
 reliable function calls.
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 Validation:
 If a function call has significant consequences (e.g.,
 placing an order), validate the call with the user before executing it.

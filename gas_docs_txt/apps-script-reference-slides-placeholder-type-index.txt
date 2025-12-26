@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/placeholder-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 PlaceholderType defines various types of placeholders, many corresponding to ECMA-376 standard placeholder IDs.
 You can access a specific placeholder type by calling its parent class, name, and property, such as

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/range-list/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 RangeList is a collection of one or more Range instances in the same sheet, useful for applying operations on collections of non-adjacent ranges or cells.
 RangeList provides methods to modify the appearance and content of the ranges it contains, such as setting background color, font styles, borders, and number formats.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/filter-criteria-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 FilterCriteriaBuilder is used to create filter criteria for spreadsheets.
 To create filter criteria, you must use SpreadsheetApp.newFilterCriteria(), add settings using the builder's methods, and then use build() to assemble the criteria.
@@ -127,6 +127,7 @@ Criteria
 Type()
 Boolean
 Criteria
+|null
 Returns the criteria's boolean type, for example,
 CELL_EMPTY
 .
@@ -145,12 +146,14 @@ Visible
 Background
 Color()
 Color
+|null
 Returns the background color used as filter criteria.
 get
 Visible
 Foreground
 Color()
 Color
+|null
 Returns the foreground color used as a filter criteria.
 get
 Visible
@@ -625,6 +628,7 @@ criteriaType
 Return
 Boolean
 Criteria
+|null
 — The type of boolean criteria, or
 null
 if the criteria isn't a boolean
@@ -809,6 +813,7 @@ color
 );
 Return
 Color
+|null
 — The background color used as filter criteria.
 get
 Visible
@@ -873,6 +878,7 @@ color
 );
 Return
 Color
+|null
 — The foreground color used as a filter criteria.
 get
 Visible

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/area-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AreaChartBuilder is used to create area charts.
 You can set various chart options like title, axis titles, dimensions, colors, and data using the builder methods.

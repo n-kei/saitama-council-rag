@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/paragraph/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Several methods are available to manipulate elements within a Google Document using Apps Script, including replacing text, setting alignment, and adjusting spacing.
 Methods like
@@ -190,11 +190,13 @@ find
 Element(elementType)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type.
 find
 Element(elementType, from)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type, starting from the
 specified
 Range
@@ -204,17 +206,20 @@ find
 Text(searchPattern)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern using regular expressions.
 find
 Text(searchPattern, from)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern, starting from a given
 search result.
 get
 Alignment()
 Horizontal
 Alignment
+|null
 Retrieves the
 Horizontal
 Alignment
@@ -236,6 +241,7 @@ get
 Heading()
 Paragraph
 Heading
+|null
 Retrieves the
 Paragraph
 Heading
@@ -243,33 +249,34 @@ Heading
 get
 Indent
 End()
-Number
+Number|null
 Retrieves the end indentation, in points.
 get
 Indent
 First
 Line()
-Number
+Number|null
 Retrieves the first line indentation, in points.
 get
 Indent
 Start()
-Number
+Number|null
 Retrieves the start indentation.
 get
 Line
 Spacing()
-Number
+Number|null
 Retrieves the line spacing, in points.
 get
 Link
 Url()
-String
+String|null
 Retrieves the link url.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Num
@@ -280,6 +287,7 @@ get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Positioned
@@ -303,16 +311,17 @@ get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Spacing
 After()
-Number
+Number|null
 Retrieves the spacing after the element, in points.
 get
 Spacing
 Before()
-Number
+Number|null
 Retrieves the spacing before the element, in points.
 get
 Text()
@@ -323,6 +332,7 @@ Text
 Alignment()
 Text
 Alignment
+|null
 Gets the text alignment.
 get
 Type()
@@ -401,10 +411,11 @@ is
 Left
 To
 Right()
-Boolean
+Boolean|null
 Retrieves the left-to-right setting.
 merge()
 Paragraph
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 Child(child)
@@ -414,6 +425,7 @@ remove
 From
 Parent()
 Paragraph
+|null
 Removes the element from its parent.
 remove
 Positioned
@@ -1212,6 +1224,7 @@ The type of element to search for.
 Return
 Range
 Element
+|null
 — A search result indicating the position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1315,6 +1328,7 @@ The search result to search from.
 Return
 Range
 Element
+|null
 — A search result indicating the next position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1340,6 +1354,7 @@ the pattern to search for
 Return
 Range
 Element
+|null
 — a search result indicating the position of the search text, or null if there is no
     match
 Authorization
@@ -1371,6 +1386,7 @@ the search result to search from
 Return
 Range
 Element
+|null
 — a search result indicating the next position of the search text, or null if there is no
     match
 Authorization
@@ -1448,6 +1464,7 @@ toString
 Return
 Horizontal
 Alignment
+|null
 — The alignment.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1707,6 +1724,7 @@ toString
 Return
 Paragraph
 Heading
+|null
 — The heading.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1719,7 +1737,7 @@ Indent
 End()
 Retrieves the end indentation, in points.
 Return
-Number
+Number|null
 — the end indentation, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1733,7 +1751,7 @@ First
 Line()
 Retrieves the first line indentation, in points.
 Return
-Number
+Number|null
 — the first line indentation, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1746,7 +1764,7 @@ Indent
 Start()
 Retrieves the start indentation.
 Return
-Number
+Number|null
 — the start indentation
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1759,7 +1777,7 @@ Line
 Spacing()
 Retrieves the line spacing, in points.
 Return
-Number
+Number|null
 — the line spacing, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1772,7 +1790,7 @@ Link
 Url()
 Retrieves the link url.
 Return
-String
+String|null
 — the link url, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1787,6 +1805,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1841,6 +1860,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1896,6 +1916,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1908,7 +1929,7 @@ Spacing
 After()
 Retrieves the spacing after the element, in points.
 Return
-Number
+Number|null
 — the spacing after the element, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1921,7 +1942,7 @@ Spacing
 Before()
 Retrieves the spacing before the element, in points.
 Return
-Number
+Number|null
 — the spacing before the element, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1957,6 +1978,7 @@ App.TextAlignment.SUPERSCRIPT
 Return
 Text
 Alignment
+|null
 — the type of text alignment, or
 null
 if the text contains multiple types of text
@@ -2277,7 +2299,7 @@ To
 Right()
 Retrieves the left-to-right setting.
 Return
-Boolean
+Boolean|null
 — the left-to-right setting
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2407,6 +2429,7 @@ merge
 ();
 Return
 Paragraph
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2494,6 +2517,7 @@ removeFromParent
 }
 Return
 Paragraph
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

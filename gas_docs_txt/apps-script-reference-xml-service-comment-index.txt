@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/comment/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Comment is a representation of an XML
 Comment

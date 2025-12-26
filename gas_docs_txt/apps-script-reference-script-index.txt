@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Script service provides access to script triggers and script publishing.
 It includes classes for managing authorization modes, statuses, and information.
@@ -105,12 +105,12 @@ App.AuthorizationStatus.REQUIRED
 get
 Authorization
 Url()
-String
+String|null
 Gets the authorization URL that can be used to grant access to the script.
 get
 Authorized
 Scopes()
-String[]
+String[]|null
 Gets a list of authorized scopes for the script.
 Authorization
 Status
@@ -372,7 +372,7 @@ Gets an object that checks if the user has granted authorization for the request
 get
 Identity
 Token()
-String
+String|null
 Gets an
 Open
 ID Connect

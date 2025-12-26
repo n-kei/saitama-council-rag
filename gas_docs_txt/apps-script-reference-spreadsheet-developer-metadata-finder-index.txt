@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/developer-metadata-finder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DeveloperMetadataFinder is used to search for developer metadata in a spreadsheet.
 You can create a DeveloperMetadataFinder using methods on Range, Sheet, or Spreadsheet objects.

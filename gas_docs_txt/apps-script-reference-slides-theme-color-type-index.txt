@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/theme-color-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ThemeColorType is the name of an entry in a page's color scheme.
 To call a ThemeColorType enum, you use its parent class, name, and property, for example,

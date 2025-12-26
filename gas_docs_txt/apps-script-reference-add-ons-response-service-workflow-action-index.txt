@@ -1,0 +1,50 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/workflow-action/index.html
+
+Workflow
+Action
+A WorkflowAction is a type of
+Host
+App
+Action
+that is used to perform a specific action in
+Google Workspace Studio. A WorkflowAction can be one of the following actions:
+Save
+Workflow
+Action
+Return
+Output
+Variables
+Action
+Return
+Element
+Error
+Action
+Resource
+Retrieved
+Action
+Workflow
+Validation
+Error
+Action
+Resource
+Fields
+Definition
+Retrieved
+Action
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+hostAppAction
+=
+AddOnsResponseService
+.
+newHostAppAction
+();
+hostAppAction
+.
+setWorkflowAction
+(
+AddOnsResponseService
+.
+newSaveWorkflowAction
+());

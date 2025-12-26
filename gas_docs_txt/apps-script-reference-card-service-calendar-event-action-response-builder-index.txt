@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/calendar-event-action-response-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CalendarEventActionResponseBuilder is a builder for CalendarEventActionResponse objects.
 Methods like addAttachments, addAttendees, and setConferenceData specify actions to take on a Calendar event when a UI action is triggered.

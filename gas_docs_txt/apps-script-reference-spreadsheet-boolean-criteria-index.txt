@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/boolean-criteria/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BooleanCriteria is an enumeration used for boolean criteria in conditional formats or filters.
 To use an enum property, you call its parent class, name, and property, such as

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/spreadsheet-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 SpreadsheetApp
@@ -323,6 +323,7 @@ Range
 List()
 Range
 List
+|null
 Returns the list of active ranges in the active sheet or
 null
 if there are no ranges
@@ -343,6 +344,7 @@ get
 Current
 Cell()
 Range
+|null
 Returns the current (highlighted) cell that is selected in one of the active ranges in the
 active sheet or
 null
@@ -860,6 +862,7 @@ getActiveRangeList
 Return
 Range
 List
+|null
 — the list of active ranges
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -940,6 +943,7 @@ getCurrentCell
 ();
 Return
 Range
+|null
 — the current cell
 Authorization
 Scripts that use this method require authorization with one or more of the following

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source-refresh-schedule-frequency/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Access a refresh schedule's frequency which specifies how often and when to refresh data connected to a database.
 Use

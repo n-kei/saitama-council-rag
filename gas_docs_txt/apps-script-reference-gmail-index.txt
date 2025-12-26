@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/gmail/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Gmail service allows for a wide range of email and account management tasks beyond just sending emails.
 This service includes classes for interacting with threads, messages, drafts, labels, and attachments within Gmail.

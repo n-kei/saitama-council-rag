@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/text-validation/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextValidation is a DataValidation specifically for TextItems in Google Forms.
 It can be used to set validation rules for text input, such as requiring a number within a specific range.

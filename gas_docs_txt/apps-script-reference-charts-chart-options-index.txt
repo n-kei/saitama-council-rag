@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/chart-options/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ChartOptions exposes configurable options for a Chart, such as height and color.
 Chart options are immutable.

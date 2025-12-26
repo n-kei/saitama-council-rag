@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/bar-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BarChartBuilder is a builder for creating bar charts, with more details available in the Google Charts documentation.
 You can build a bar chart by setting properties like title, axis titles, dimensions, legend position, and data source URL.

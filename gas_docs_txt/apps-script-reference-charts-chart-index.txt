@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/chart/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Chart object can be converted to a static image.
 The

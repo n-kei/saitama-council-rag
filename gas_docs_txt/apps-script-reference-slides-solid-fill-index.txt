@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/solid-fill/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SolidFill
 represents a solid color fill and is detached and immutable.

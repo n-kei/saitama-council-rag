@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/list-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ListStyle represents the list styling for a range of text.
 Methods are available to apply a list preset, get the glyph, retrieve the list the text belongs to, get the nesting level, check if the text is in a list, and remove the text from a list.
@@ -24,11 +24,12 @@ Preset
 to all of the paragraphs that overlap with the text.
 get
 Glyph()
-String
+String|null
 Returns the rendered glyph for the text.
 get
 List()
 List
+|null
 Returns the
 List
 the text is in, or
@@ -38,12 +39,12 @@ part of the text is in a list, or the text is in multiple lists.
 get
 Nesting
 Level()
-Integer
+Integer|null
 Returns the 0-based nesting level of the text.
 is
 In
 List()
-Boolean
+Boolean|null
 Returns
 true
 if the text is in exactly one list,
@@ -99,7 +100,7 @@ null
 if the text spans more than one
 paragraph or the text is not in a list.
 Return
-String
+String|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -121,6 +122,7 @@ to
 determine whether the text is in a list.
 Return
 List
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -135,7 +137,7 @@ null
 if the text is not in a
 list or there are mixed values.
 Return
-Integer
+Integer|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -155,7 +157,7 @@ null
 if only some of the text is in a list or if the text is in multiple
 lists.
 Return
-Boolean
+Boolean|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

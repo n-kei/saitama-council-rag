@@ -61,14 +61,14 @@ if needed.
 INTERNAL
 An unexpected error occurred on Google's side.
 Your input context is too long.
-Reduce your input context or temporarily switch to another model (e.g. from Gemini 1.5 Pro to Gemini 1.5 Flash) and see if it works. Or wait a bit and retry your request. If the issue persists after retrying, please report it using the
+Reduce your input context or temporarily switch to another model (e.g. from Gemini 2.5 Pro to Gemini 2.5 Flash) and see if it works. Or wait a bit and retry your request. If the issue persists after retrying, please report it using the
 Send feedback
 button in Google AI Studio.
 503
 UNAVAILABLE
 The service may be temporarily overloaded or down.
 The service is temporarily running out of capacity.
-Temporarily switch to another model (e.g. from Gemini 1.5 Pro to Gemini 1.5 Flash) and see if it works. Or wait a bit and retry your request. If the issue persists after retrying, please report it using the
+Temporarily switch to another model (e.g. from Gemini 2.5 Pro to Gemini 2.5 Flash) and see if it works. Or wait a bit and retry your request. If the issue persists after retrying, please report it using the
 Send feedback
 button in Google AI Studio.
 504
@@ -133,6 +133,11 @@ Recitation issue
 If you see the model stops generating output due to the RECITATION reason, this
 means the model output may resemble certain data. To fix this, try to make
 prompt / context as unique as possible and use a higher temperature.
+When using Gemini 3 models, we strongly recommend keeping the
+temperature
+at its default value of 1.0. Changing the temperature
+(setting it below 1.0) may lead to unexpected behavior, such as looping or
+degraded performance, particularly in complex mathematical or reasoning tasks.
 Repetitive tokens issue
 If you see repeated output tokens, try the following suggestions to help
 reduce or eliminate them.
@@ -223,6 +228,49 @@ If thinking is turned on, avoid giving explicit orders for how to
 Try a higher temperature >= 0.8.
 Add instructions like "Be concise", "Don't repeat yourself", or
           "Provide the answer once".
+Blocked or non-working API keys
+This section describes how to check whether your Gemini API key is blocked
+and what to do about it.
+Understand why keys are blocked
+We have identified a vulnerability where some API keys may have been publicly
+exposed. To protect your data and prevent unauthorized access, we have
+proactively blocked these known leaked keys from accessing the Gemini API.
+Confirm if your keys are affected
+If your key is known to be leaked, you can no longer use that key with the
+Gemini API. You can use
+Google AI Studio
+to see if any of
+your API keys are blocked from calling the Gemini API and generate new
+keys. You may also see the following error returned when attempting to use
+these keys:
+Your API key was reported as leaked. Please use another API key.
+Action for blocked API keys
+You should generate new API keys for your Gemini API integrations using
+Google
+AI Studio
+. We strongly recommend reviewing your API
+key management practices to ensure that your new keys are kept secure and are
+not publicly exposed.
+Unexpected charges due to vulnerability
+Submit a billing support case
+.
+Our billing team is working on this, and we will communicate updates as soon as
+possible.
+Google's security measures for leaked keys
+How is Google going to help secure my account from cost overrun and abuse if
+my API keys are leaked?
+We are moving towards issuing API keys when you request a new key using
+Google AI Studio
+that will by default be
+limited to only Google AI Studio and not accept keys from other services.
+This will help prevent any unintended cross-key usage.
+We are defaulting to blocking API keys that are leaked and used with the
+Gemini API, helping prevent abuse of cost and your application data.
+You will be able to find the status of your API keys within
+Google AI
+Studio
+and we will work on communicating
+proactively when we identify your API keys are leaked for immediate action.
 Improve model output
 For higher quality model outputs, explore writing more structured prompts. The
 prompt engineering guide

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/groups/role/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A user has exactly one role within a group they are subscribed to.
 Roles in a group can be OWNER, MANAGER, MEMBER, INVITED, PENDING, or BANNED.

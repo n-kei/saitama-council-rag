@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/lock/lock/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Lock is a mutual-exclusion lock used to ensure that only one instance of a script executes a given section of code at a time, particularly useful for callbacks and triggers to prevent collisions with shared resources.
 The

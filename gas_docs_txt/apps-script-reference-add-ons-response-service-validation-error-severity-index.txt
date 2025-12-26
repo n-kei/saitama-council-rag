@@ -1,0 +1,19 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/validation-error-severity/index.html
+
+Validation
+Error
+Severity
+An enum that represents the severity of the validation error.
+Properties
+Property
+Type
+Description
+SEVERITY_UNSPECIFIED
+Enum
+Unspecified.
+CRITICAL
+Enum
+Critical, the error is critical and must be fixed before publish.
+WARNING
+Enum
+Warning, the error is non-critical and is not blocking publish.

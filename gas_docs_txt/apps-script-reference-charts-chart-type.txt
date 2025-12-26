@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/chart-type.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ChartType represents the chart types supported by the Charts service.
 To call a chart type, you call its parent class, name, and property, for example,

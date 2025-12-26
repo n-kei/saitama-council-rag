@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/protection/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Protected ranges can cover static or named ranges, and protected sheets can have unprotected areas.
 You can manage editors for protected ranges and sheets, adding or removing them by email address or User object.
@@ -253,7 +253,7 @@ Gets the range that is being protected.
 get
 Range
 Name()
-String
+String|null
 Gets the name of the protected range if it is associated with a named range.
 get
 Target
@@ -1136,7 +1136,7 @@ getRangeName
 ());
 // Verify the name of the protected range.
 Return
-String
+String|null
 — the name of the protected named range, or
 null
 if the protected range is not

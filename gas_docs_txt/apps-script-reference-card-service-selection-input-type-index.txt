@@ -1,5 +1,13 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/selection-input-type/index.html
 
+Page Summary
+outlined_flag
+SelectionInputType defines the format of selectable items in user interfaces, like checkboxes or dropdowns.
+You cannot mix different selection input types, such as checkboxes and switches, within the same group.
+SelectionInputType is available for Google Chat apps and Google Workspace add-ons.
+To use an enum, you call its parent class, name, and property, like
+CardService.SelectionInput.CHECK_BOX
+.
 Selection
 Input
 Type
@@ -31,3 +39,6 @@ A set of switches. Users can turn on one or more switches.
 MULTI_SELECT
 Enum
 A multiselect menu for static or dynamic data.
+OVERFLOW_MENU
+Enum
+A UI element that houses additional options that don't fit within the primary interface

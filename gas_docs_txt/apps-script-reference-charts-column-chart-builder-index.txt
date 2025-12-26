@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/column-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ColumnChartBuilder is a builder for creating column charts.
 You can set data using a DataTable or a data source URL.

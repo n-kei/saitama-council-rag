@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/grid-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GridItem is a question item in a form presented as a grid, allowing one choice per row from radio buttons.
 GridItems can be accessed or created from a Form.

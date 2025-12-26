@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/video-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 VideoItem is a layout item in Google Forms that displays a video and can be accessed or created from a Form object.
 You can set the title, help text, video URL (using long URL, short URL, or video ID), alignment, and width of a VideoItem.

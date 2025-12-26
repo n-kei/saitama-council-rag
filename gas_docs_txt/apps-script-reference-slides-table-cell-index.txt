@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/table-cell/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TableCell represents a single cell within a table structure.
 Methods are available to retrieve information about the cell's position, span, content alignment, fill, merge state, and parent elements.
@@ -46,6 +46,7 @@ Head
 Cell()
 Table
 Cell
+|null
 Returns the head cell of this table cell.
 get
 Merge
@@ -157,6 +158,7 @@ or if this cell is the head cell.
 Return
 Table
 Cell
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

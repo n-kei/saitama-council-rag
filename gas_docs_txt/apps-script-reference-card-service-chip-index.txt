@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/chip/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Chip is a UI element with an icon and text label that can be deactivated.
 Chips are available for Google Chat apps and are in developer preview for Google Workspace add-ons.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/action-response-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ActionResponseBuilder is used to build ActionResponse objects.
 The

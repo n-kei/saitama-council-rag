@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/inline-image.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 InlineImage represents an embedded image element in a document.
 It can be contained within ListItem or Paragraph elements, except within a FootnoteSection.
@@ -44,12 +44,12 @@ Returns a detached, deep copy of the current element.
 get
 Alt
 Description()
-String
+String|null
 Returns the image's alternate description.
 get
 Alt
 Title()
-String
+String|null
 Returns the image's alternate title.
 get
 As(contentType)
@@ -70,22 +70,25 @@ Retrieves the image's height, in pixels.
 get
 Link
 Url()
-String
+String|null
 Retrieves the link URL.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Type()
@@ -110,12 +113,14 @@ Document
 merge()
 Inline
 Image
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 From
 Parent()
 Inline
 Image
+|null
 Removes the element from its parent.
 set
 Alt
@@ -170,7 +175,7 @@ Alt
 Description()
 Returns the image's alternate description.
 Return
-String
+String|null
 — The alternate description, or
 null
 if the element does not have an alternate
@@ -186,7 +191,7 @@ Alt
 Title()
 Returns the image's alternate title.
 Return
-String
+String|null
 — The alternate title, or
 null
 if the element does not have an alternate title.
@@ -353,7 +358,7 @@ Link
 Url()
 Retrieves the link URL.
 Return
-String
+String|null
 — The link URL, or
 null
 if the element contains multiple values for this
@@ -371,6 +376,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -385,6 +391,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -399,6 +406,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -641,6 +649,7 @@ merge
 Return
 Inline
 Image
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -710,6 +719,7 @@ removeFromParent
 Return
 Inline
 Image
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -720,7 +730,7 @@ https://www.googleapis.com/auth/documents
 set
 Alt
 Description(description)
-Sets the image's alternate description. If the given title is
+Sets the image's alternate description. If the given description is
 null
 , sets the
 description to the empty string.

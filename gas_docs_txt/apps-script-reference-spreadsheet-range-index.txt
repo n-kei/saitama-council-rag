@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/range/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 Range
@@ -301,6 +301,7 @@ Formula()
 Data
 Source
 Formula
+|null
 Returns the
 Data
 Source
@@ -388,6 +389,7 @@ Returns the rectangular grid of values for this range.
 get
 Filter()
 Filter
+|null
 Returns the filter on the sheet this range belongs to, or
 null
 if there is no filter on
@@ -573,6 +575,7 @@ Value()
 Rich
 Text
 Value
+|null
 Returns the Rich Text value for the top left cell of the range, or
 null
 if the cell
@@ -4750,6 +4753,7 @@ Return
 Data
 Source
 Formula
+|null
 — The
 Data
 Source
@@ -5785,6 +5789,7 @@ getFilter
 ();
 Return
 Filter
+|null
 — The filter.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -7649,6 +7654,7 @@ Return
 Rich
 Text
 Value
+|null
 — The Rich Text value of the top left cell in the range, or
 null
 if the cell

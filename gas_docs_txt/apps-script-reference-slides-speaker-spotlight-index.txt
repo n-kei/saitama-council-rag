@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/speaker-spotlight/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SpeakerSpotlight is a PageElement representing a speaker spotlight in Google Slides.
 SpeakerSpotlight provides methods to manipulate its position, size, appearance, and properties.
@@ -112,18 +112,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -136,6 +136,7 @@ Shape
 Type()
 Shape
 Type
+|null
 Returns the
 Shape
 Type
@@ -164,6 +165,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -194,7 +196,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -427,7 +429,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -445,7 +447,7 @@ Returns the element's inherent height in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent height in points, or
 null
 if the page element does
@@ -463,7 +465,7 @@ Returns the element's inherent width in points.
 The page element's transform is relative to its inherent size. Use the inherent size in
 conjunction with the element's transform to determine the element's final visual appearance.
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does
@@ -531,6 +533,7 @@ getMaskShapeType
 Return
 Shape
 Type
+|null
 — The shape type of the speaker spotlight mask.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -581,6 +584,7 @@ if the element is not in a
 group.
 Return
 Group
+|null
 — The group this page element belongs to, or
 null
 .
@@ -668,7 +672,7 @@ compatible with this method, refer to the
 sizing and positioning limitations
 .
 Return
-Number
+Number|null
 — The page element's inherent width in points, or
 null
 if the page element does

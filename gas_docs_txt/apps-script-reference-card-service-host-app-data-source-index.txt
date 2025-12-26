@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/host-app-data-source/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 HostAppDataSource is used with SelectionInput widgets in multiselect menus to populate items from a Google Workspace application data source.
 This feature is exclusively available for Google Chat apps and cannot be used with Google Workspace add-ons.
@@ -137,10 +137,7 @@ Workflow
 Data
 Source(workflowDataSource)
 Sets the data source from Google Workspace Flows.
-Only available through the
-Gemini
-Alpha program
-for Google Workspace add-ons that extend Google Workspace Flows.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
 const
 workflowDataSource
 =

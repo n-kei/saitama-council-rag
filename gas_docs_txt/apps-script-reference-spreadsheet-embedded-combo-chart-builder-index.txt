@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-combo-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedComboChartBuilder is a builder specifically for combo charts.
 It provides methods to add, remove, and clear data ranges for the chart.

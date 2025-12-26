@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/attribute/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 An Attribute object represents an XML attribute and is used in conjunction with XmlService.
 Attributes have methods to get and set their name, namespace, and value.

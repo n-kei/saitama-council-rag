@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-database-meta-data/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 JdbcDatabaseMetaData
 provides information about a database and mirrors
@@ -3274,7 +3274,7 @@ The table name pattern to filter the search by. It must match the table
     name as it is stored in the database.
 types
 String[]
-A list of type types to return, each of which must be on the list that
+A list of table types to return, each of which must be on the list that
 get
 Table
 Types()

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/conference-data/conference-error-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ConferenceErrorType is an enum defining error types for ConferenceError.
 You access its properties by calling the parent class, name, and property.

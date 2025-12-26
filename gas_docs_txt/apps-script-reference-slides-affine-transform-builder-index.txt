@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/affine-transform-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AffineTransformBuilder is used to build AffineTransform objects and defaults to the identity transform.
 Call the

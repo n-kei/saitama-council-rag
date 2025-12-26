@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/element/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Element object represents an XML Element node and provides methods for manipulating its content, attributes, and relationships within an XML document.
 You can add, remove, and retrieve content (including child elements and other nodes) from an Element using methods like addContent, removeContent, getAllContent, getChildren, and getContent.

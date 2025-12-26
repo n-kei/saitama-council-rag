@@ -1,13 +1,111 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/changelog/index.html
 
 This page documents updates to the Gemini API.
+December 17, 2025
+Launched Gemini 3 Flash Preview,
+gemini-3-flash-preview
+, delivering fast
+frontier-class performance that rivals larger models at a fraction of the
+cost. With upgraded visual and spatial reasoning, and agentic coding
+capabilities. Read the documentation on some new features, including:
+Multimodal function responses
+Code execution with images
+December 12, 2025
+Released
+gemini-2.5-flash-native-audio-preview-12-2025
+,
+a new native audio model for the Live API. This update improves the model's
+ability to handle complex workflows. To learn more, see the
+Live API guide
+and
+Gemini 2.5 Flash Native Audio
+.
+December 11, 2025
+Launched the Interactions API in Beta. This API provides a unified interface
+for interacting with Gemini models and agents. To learn more, see the
+Interactions API
+guide.
+Launched the Gemini Deep Research Agent in preview. It can
+autonomously plan, execute, and synthesize results for multi-step research
+tasks. See the
+Deep Research
+guide for
+details.
+December 10, 2025
+Launched enhancements to our
+text-to-speech models
+, Gemini 2.5 Flash TTS preview
+(optimized for low latency) and Gemini 2.5 Pro TTS preview (optimized for
+quality), including enhanced expressivity, precision pacing, and seamless
+dialogue.
+December 9, 2025
+The following Gemini Live API models are now shut down:
+gemini-2.0-flash-live-001
+gemini-live-2.5-flash-preview
+December 5, 2025
+Gemini 3 billing for
+Grounding with Google Search
+will begin on January 5, 2026.
+December 4, 2025
+Deprecation announcement: The
+gemini-2.5-flash-image-preview
+model will be
+shut down January 15, 2026.
+December 3, 2025
+Deprecation announcement: The
+text-embedding-004
+model will be shut down
+January 14, 2026.
+November 20, 2025
+Released Gemini 3 Pro Image Preview,
+gemini-3-pro-image-preview
+, the
+next iteration to the Nano Banana model. Read the
+Image generation
+page for more details.
+November 18, 2025
+Launched the first Gemini 3 series model,
+gemini-3-pro-preview
+, our
+state-of-the-art reasoning and multimodal understanding model with powerful
+agentic and coding capabilities.
+In addition to improvements in intelligence and performance,
+Gemini 3 Pro Preview introduces new behavior around:
+Media resolution
+Thought signatures
+Thinking levels
+Read the
+Gemini 3 Developer Guide
+for
+migration, new features, and specs.
+November 11, 2025
+Deprecation announcement: The following models will be shut down:
+November 12:
+veo-3.0-fast-generate-preview
+veo-3.0-generate-preview
+November 14:
+gemini-2.0-flash-exp-image-generation
+gemini-2.0-flash-preview-image-generation
+November 10, 2025
+The following model is shut down:
+imagen-3.0-generate-002
+Use
+Imagen 4
+instead. Refer to the
+Gemini deprecations table
+for more details.
 November 6, 2025
 Launched the File Search API to public preview, enabling developers to
 ground responses in their own data. Read the new
 File Search
 page for more info.
 November 4, 2025
-The following models will be deprecated:
+For
+Gemini 2.5 Flash Image
+, the input
+token count for images has been reduced from 1290 to 258, lowering the cost
+of image editing.
+Deprecation announcement: The following models will be shut down:
 November 18th:
 gemini-2.5-flash-lite-preview-06-17
 gemini-2.5-flash-preview-05-20
@@ -24,15 +122,16 @@ gemini-2.0-flash-lite-preview-02-05
 October 29, 2025
 Launched the new
 logging and datasets
-tool for the Gemini API.
+tool
+for the Gemini API.
 October 20, 2025
-The following Gemini Live API models are now deprecated:
+The following Gemini Live API models are now shut down:
 gemini-2.5-flash-preview-native-audio-dialog
 gemini-2.5-flash-exp-native-audio-thinking-dialog
 You can use
 gemini-2.5-flash-native-audio-preview-09-2025
 instead.
-Deprecation for
+Deprecation announcement: Shut down for
 gemini-2.0-flash-live-001
 and
 gemini-live-2.5-flash-preview
@@ -53,11 +152,11 @@ Referencing up to three images to generate a video.
 Providing first and last frame images to generate videos from.
 This launch also added more options for Veo 3 output video durations: 4, 6,
 and 8 seconds.
-Deprecation for
+Deprecation announcement: Shut down for
 veo-3.0-generate-preview
 and
 veo-3.0-fast-generate-preview
-coming November 6, 2025.
+coming November 12, 2025.
 October 7, 2025
 Launched
 Gemini 2.5 Computer Use Preview
@@ -65,7 +164,7 @@ October 2, 2025
 Launched Gemini 2.5 Flash Image GA:
 Image Generation with Gemini
 September 29, 2025
-The following Gemini 1.5 models are now deprecated:
+The following Gemini 1.5 models are now shut down:
 gemini-1.5-pro
 gemini-1.5-flash-8b
 gemini-1.5-flash
@@ -90,7 +189,7 @@ and
 Gemini 2.5 Flash Native Audio
 .
 September 16, 2025
-The following models will be deprecated in October, 2025:
+Deprecation announcement: The following models will be shut down in October 2025:
 embedding-001
 embedding-gecko-001
 gemini-embedding-exp-03-07
@@ -188,7 +287,7 @@ the latest stable version
 gemini-2.5-pro
 .
 gemini-2.5-pro-exp-03-25
-is deprecated.
+is shut down.
 June 24, 2025
 Released Imagen 4 Ultra and Standard Preview models. To learn more, see the
 Image generation
@@ -235,6 +334,12 @@ will be redirected to
 gemini-2.5-pro
 on
 June 26, 2025.
+May 27, 2025
+The last available tuning model, Gemini 1.5 Flash 001, has been shut down.
+Tuning is no longer supported on any models.
+See
+Fine tuning with the Gemini API
+.
 May 20, 2025
 API updates:
 Launched support for

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/script-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 ScriptApp
@@ -75,7 +75,7 @@ Gets an object that checks if the user has granted authorization for the request
 get
 Identity
 Token()
-String
+String|null
 Gets an
 Open
 ID Connect
@@ -433,7 +433,7 @@ Open
 ID Connect
 documentation for the full list of fields (claims) returned.
 Return
-String
+String|null
 — The identity token if available; otherwise
 null
 .

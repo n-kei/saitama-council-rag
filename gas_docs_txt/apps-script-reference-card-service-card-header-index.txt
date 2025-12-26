@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card-header/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CardHeader
 represents the header for a

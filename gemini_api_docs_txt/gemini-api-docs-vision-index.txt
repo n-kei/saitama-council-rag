@@ -2727,6 +2727,19 @@ Divide each dimension by the crop unit size and multiply together to get the
 number of tiles.
 For example, for an image of dimensions 960x540 would have a crop unit size
 of 360. Divide each dimension by 360 and the number of tile is 3 * 2 = 6.
+Media resolution
+Gemini 3 introduces granular control over multimodal vision processing with the
+media_resolution
+parameter. The
+media_resolution
+parameter determines the
+maximum number of tokens allocated per input image or video frame.
+Higher resolutions improve the model's ability to
+read fine text or identify small details, but increase token usage and latency.
+For more details about the parameter and how it can impact token calculations,
+see the
+media resolution
+guide.
 Tips and best practices
 Verify that images are correctly rotated.
 Use clear, non-blurry images.

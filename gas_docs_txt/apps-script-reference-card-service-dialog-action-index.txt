@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/dialog-action/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DialogAction is a builder for DialogAction objects and is only available for Google Chat apps, not Google Workspace add-ons.
 The

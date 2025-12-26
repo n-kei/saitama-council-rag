@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/properties/user-properties/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 This class is deprecated and should not be used in new scripts.
 User Properties are key-value pairs unique to a user.

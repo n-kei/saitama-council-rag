@@ -1,0 +1,79 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/workflow-text-format/index.html
+
+Workflow
+Text
+Format
+A block of text with rich formatting options including styles, hyperlinks, and interactive
+elements defined in
+Text
+Format
+Element
+. A WorkflowTextFormat can contain one or more
+Text
+Format
+Element
+s.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+workflowTextFormat
+=
+AddOnsResponseService
+.
+newWorkflowTextFormat
+()
+.
+addTextFormatElement
+(
+AddOnsResponseService
+.
+newTextFormatElement
+()
+.
+setText
+(
+"example_text"
+)
+);
+Methods
+Method
+Return type
+Brief description
+add
+Text
+Format
+Element(textFormatElement)
+Workflow
+Text
+Format
+Adds a
+Text
+Format
+Element
+to the workflow text format.
+Detailed documentation
+add
+Text
+Format
+Element(textFormatElement)
+Adds a
+Text
+Format
+Element
+to the workflow text format.
+Parameters
+Name
+Type
+Description
+text
+Format
+Element
+Text
+Format
+Element
+The text format element to be added.
+Return
+Workflow
+Text
+Format
+— This workflow text format object, for chaining.

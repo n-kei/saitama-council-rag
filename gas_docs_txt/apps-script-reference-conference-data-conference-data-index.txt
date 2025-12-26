@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/conference-data/conference-data/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ConferenceData is a container for all conference-related information.
 You can build a ConferenceData object using the

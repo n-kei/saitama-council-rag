@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/item-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ItemType is an enum representing the supported types of form items in Google Forms.
 Item types can be accessed using

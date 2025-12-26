@@ -1,0 +1,65 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/remove-section/index.html
+
+Remove
+Section
+A builder for
+Remove
+Section
+objects. Developers can remove a section from the card by
+passing a
+Remove
+Section
+to
+Modify
+Card
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+const
+removeSection
+=
+AddOnsResponseService
+.
+newRemoveSection
+().
+setSectionId
+(
+'sample_id'
+);
+const
+modifyCard
+=
+AddOnsResponseService
+.
+newModifyCard
+().
+setRemoveSection
+(
+removeSection
+);
+Methods
+Method
+Return type
+Brief description
+set
+Section
+Id(sectionId)
+Remove
+Section
+Sets the section ID of the section to be removed.
+Detailed documentation
+set
+Section
+Id(sectionId)
+Sets the section ID of the section to be removed.
+Parameters
+Name
+Type
+Description
+section
+Id
+String
+The ID of the section to be removed.
+Return
+Remove
+Section
+— This remove section object, for chaining.

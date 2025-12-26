@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/action-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ActionResponse is an object returned from a callback function to perform actions on the client.
 It can be used to open links, show notifications, or display additional cards.

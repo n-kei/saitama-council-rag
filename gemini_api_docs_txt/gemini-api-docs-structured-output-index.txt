@@ -1019,6 +1019,323 @@ parts
 text
 )
 }
+Structured outputs with tools
+Preview:
+This is a feature available only for the Gemini 3 series models,
+gemini-3-pro-preview
+and
+gemini-3-flash-preview
+.
+Gemini 3 lets you combine Structured Outputs with built-in tools, including
+Grounding with Google Search
+,
+URL Context
+, and
+Code Execution
+.
+Python
+from
+google
+import
+genai
+from
+pydantic
+import
+BaseModel
+,
+Field
+from
+typing
+import
+List
+class
+MatchResult
+(
+BaseModel
+):
+winner
+:
+str
+=
+Field
+(
+description
+=
+"The name of the winner."
+)
+final_match_score
+:
+str
+=
+Field
+(
+description
+=
+"The final match score."
+)
+scorers
+:
+List
+[
+str
+]
+=
+Field
+(
+description
+=
+"The name of the scorer."
+)
+client
+=
+genai
+.
+Client
+()
+response
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-3-pro-preview"
+,
+contents
+=
+"Search for all details for the latest Euro."
+,
+config
+=
+{
+"tools"
+:
+[
+{
+"google_search"
+:
+{}},
+{
+"url_context"
+:
+{}}
+],
+"response_mime_type"
+:
+"application/json"
+,
+"response_json_schema"
+:
+MatchResult
+.
+model_json_schema
+(),
+},
+)
+result
+=
+MatchResult
+.
+model_validate_json
+(
+response
+.
+text
+)
+print
+(
+result
+)
+JavaScript
+import
+{
+GoogleGenAI
+}
+from
+"@google/genai"
+;
+import
+{
+z
+}
+from
+"zod"
+;
+import
+{
+zodToJsonSchema
+}
+from
+"zod-to-json-schema"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+const
+matchSchema
+=
+z
+.
+object
+({
+winner
+:
+z
+.
+string
+().
+describe
+(
+"The name of the winner."
+),
+final_match_score
+:
+z
+.
+string
+().
+describe
+(
+"The final score."
+),
+scorers
+:
+z
+.
+array
+(
+z
+.
+string
+()).
+describe
+(
+"The name of the scorer."
+)
+});
+async
+function
+run
+()
+{
+const
+response
+=
+await
+ai
+.
+models
+.
+generateContent
+({
+model
+:
+"gemini-3-pro-preview"
+,
+contents
+:
+"Search for all details for the latest Euro."
+,
+config
+:
+{
+tools
+:
+[
+{
+googleSearch
+:
+{}
+},
+{
+urlContext
+:
+{}
+}
+],
+responseMimeType
+:
+"application/json"
+,
+responseJsonSchema
+:
+zodToJsonSchema
+(
+matchSchema
+),
+},
+});
+const
+match
+=
+matchSchema
+.
+parse
+(
+JSON
+.
+parse
+(
+response
+.
+text
+));
+console
+.
+log
+(
+match
+);
+}
+run
+();
+REST
+curl
+"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent"
+\
+-H
+"x-goog-api-key:
+$GEMINI_API_KEY
+"
+\
+-H
+'Content-Type: application/json'
+\
+-X
+POST
+\
+-d
+'{
+"contents": [{
+"parts": [{"text": "Search for all details for the latest Euro."}]
+}],
+"tools": [
+{"googleSearch": {}},
+{"urlContext": {}}
+],
+"generationConfig": {
+"responseMimeType": "application/json",
+"responseJsonSchema": {
+"type": "object",
+"properties": {
+"winner": {"type": "string", "description": "The name of the winner."},
+"final_match_score": {"type": "string", "description": "The final score."},
+"scorers": {
+"type": "array",
+"items": {"type": "string"},
+"description": "The name of the scorer."
+}
+},
+"required": ["winner", "final_match_score", "scorers"]
+}
+}
+}'
 JSON schema support
 To generate a JSON object, set the
 response_mime_type
@@ -1110,6 +1427,10 @@ Model support
 The following models support structured output:
 Model
 Structured Outputs
+Gemini 3 Pro Preview
+✔️
+Gemini 3 Flash Preview
+✔️
 Gemini 2.5 Pro
 ✔️
 Gemini 2.5 Flash

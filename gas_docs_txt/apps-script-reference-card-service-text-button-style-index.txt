@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/text-button-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextButtonStyle is an enum used to specify the style for TextButton.
 Available styles include OUTLINED (default), FILLED, FILLED_TONAL, and BORDERLESS.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/master/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Master in a presentation defines common elements and properties for layouts, including default text styles, shape properties, common page properties, and shapes displayed on all slides.
 The
@@ -80,6 +80,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -105,6 +106,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -118,6 +120,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -472,6 +475,7 @@ The ID of the page element that is being retrieved.
 Return
 Page
 Element
+|null
 — The page element with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -559,6 +563,7 @@ Type
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -620,6 +625,7 @@ Integer
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

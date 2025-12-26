@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Google Slides service for Apps Script enables creation, access, and modification of presentations through various classes and methods.
 Key classes like
@@ -501,15 +501,17 @@ Type()
 Auto
 Text
 Type
+|null
 Returns the type of auto text.
 get
 Index()
-Integer
+Integer|null
 Returns the index of the auto text.
 get
 Range()
 Text
 Range
+|null
 Returns a
 Text
 Range
@@ -590,6 +592,7 @@ Dash
 Style()
 Dash
 Style
+|null
 Gets the
 Dash
 Style
@@ -605,7 +608,7 @@ Fill
 of the border.
 get
 Weight()
-Number
+Number|null
 Gets the thickness of the border in points.
 is
 Visible()
@@ -804,6 +807,7 @@ Solid
 Fill()
 Solid
 Fill
+|null
 Get the solid fill of this background, or
 null
 if the fill type is not
@@ -934,18 +938,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -973,6 +977,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -1003,7 +1008,7 @@ Transform
 Gets the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -1140,18 +1145,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -1161,6 +1166,7 @@ page when the element has no rotation.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -1187,6 +1193,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -1201,11 +1208,12 @@ Parent
 Placeholder()
 Page
 Element
+|null
 Returns the parent page element of the placeholder.
 get
 Placeholder
 Index()
-Integer
+Integer|null
 Returns the index of the placeholder image.
 get
 Placeholder
@@ -1225,7 +1233,7 @@ means no rotation.
 get
 Source
 Url()
-String
+String|null
 Gets the image's source URL, if available.
 get
 Title()
@@ -1243,7 +1251,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -1436,6 +1444,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -1461,6 +1470,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -1474,6 +1484,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -1777,23 +1788,24 @@ End
 Connection()
 Connection
 Site
+|null
 Returns the connection at the end of the line, or
 null
 if there is no connection.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -1830,6 +1842,7 @@ of the line.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -1856,6 +1869,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -1888,6 +1902,7 @@ Start
 Connection()
 Connection
 Site
+|null
 Returns the connection at the beginning of the line, or
 null
 if there is no connection.
@@ -1911,7 +1926,7 @@ Number
 Returns the thickness of the line in points.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 is
@@ -2137,6 +2152,7 @@ Solid
 Fill()
 Solid
 Fill
+|null
 Gets the solid fill of the line, or
 null
 if the fill type is not
@@ -2269,13 +2285,14 @@ get
 Linked
 Slide()
 Slide
+|null
 Returns the linked
 Slide
 for non-URL links types, if it exists.
 get
 Slide
 Id()
-String
+String|null
 Returns the ID of the linked
 Slide
 or
@@ -2290,7 +2307,7 @@ Type.SLIDE_ID
 get
 Slide
 Index()
-Integer
+Integer|null
 Returns the zero-based index of the linked
 Slide
 or
@@ -2307,6 +2324,7 @@ Slide
 Position()
 Slide
 Position
+|null
 Returns the
 Slide
 Position
@@ -2323,7 +2341,7 @@ Type.SLIDE_POSITION
 .
 get
 Url()
-String
+String|null
 Returns the URL to the external web page or
 null
 if the
@@ -2446,11 +2464,12 @@ Preset
 to all of the paragraphs that overlap with the text.
 get
 Glyph()
-String
+String|null
 Returns the rendered glyph for the text.
 get
 List()
 List
+|null
 Returns the
 List
 the text is in, or
@@ -2460,12 +2479,12 @@ part of the text is in a list, or the text is in multiple lists.
 get
 Nesting
 Level()
-Integer
+Integer|null
 Returns the 0-based nesting level of the text.
 is
 In
 List()
-Boolean
+Boolean|null
 Returns
 true
 if the text is in exactly one list,
@@ -2534,6 +2553,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -2559,6 +2579,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -2572,6 +2593,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -2847,6 +2869,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -2866,6 +2889,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -2879,6 +2903,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -2969,6 +2994,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -2988,6 +3014,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -3001,6 +3028,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -3132,6 +3160,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -3157,6 +3186,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -3170,6 +3200,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -3420,6 +3451,7 @@ Picture
 Fill()
 Picture
 Fill
+|null
 Get the stretched picture fill of this background, or
 null
 if the background fill type
@@ -3433,6 +3465,7 @@ Solid
 Fill()
 Solid
 Fill
+|null
 Get the solid fill of this background, or
 null
 if the background fill type is not
@@ -3620,18 +3653,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -3659,6 +3692,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -3689,7 +3723,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -3868,12 +3902,13 @@ Return type
 Brief description
 get
 Index()
-Integer
+Integer|null
 Returns the index of the paragraph's newline.
 get
 Range()
 Text
 Range
+|null
 Returns a
 Text
 Range
@@ -3909,7 +3944,7 @@ Brief description
 get
 Indent
 End()
-Number
+Number|null
 Returns the text end indentation for paragraphs in the
 Text
 Range
@@ -3920,7 +3955,7 @@ get
 Indent
 First
 Line()
-Number
+Number|null
 Returns the indentation for the first line of paragraphs in the
 Text
 Range
@@ -3930,7 +3965,7 @@ if there are multiple paragraph styles on the given text.
 get
 Indent
 Start()
-Number
+Number|null
 Returns the text start indentation for paragraphs in the
 Text
 Range
@@ -3940,7 +3975,7 @@ if there are multiple paragraph styles on the given text.
 get
 Line
 Spacing()
-Number
+Number|null
 Returns the line spacing, or
 null
 if there are multiple paragraph styles on the given
@@ -3950,6 +3985,7 @@ Paragraph
 Alignment()
 Paragraph
 Alignment
+|null
 Returns the
 Paragraph
 Alignment
@@ -3962,7 +3998,7 @@ if there are multiple paragraph styles on the given text.
 get
 Space
 Above()
-Number
+Number|null
 Returns the extra space above paragraphs in the
 Text
 Range
@@ -3973,7 +4009,7 @@ there are multiple paragraph styles on the given text.
 get
 Space
 Below()
-Number
+Number|null
 Returns the extra space below paragraphs in the
 Text
 Range
@@ -3986,6 +4022,7 @@ Spacing
 Mode()
 Spacing
 Mode
+|null
 Returns the
 Spacing
 Mode
@@ -4001,6 +4038,7 @@ Text
 Direction()
 Text
 Direction
+|null
 Returns the
 Text
 Direction
@@ -4121,7 +4159,7 @@ Gets a URL to the image.
 get
 Source
 Url()
-String
+String|null
 Gets the image's source URL, if available.
 Placeholder
 Type
@@ -4358,6 +4396,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -4377,12 +4416,14 @@ Gets the page width of the slides, layouts, and masters in the presentation in p
 get
 Selection()
 Selection
+|null
 Gets the user’s selection in the active presentation.
 get
 Slide
 By
 Id(id)
 Slide
+|null
 Returns the
 Slide
 with the given ID, or
@@ -4490,6 +4531,7 @@ get
 Current
 Page()
 Page
+|null
 Returns the currently active
 Page
 or
@@ -4502,6 +4544,7 @@ Range()
 Page
 Element
 Range
+|null
 Returns the
 Page
 Element
@@ -4521,6 +4564,7 @@ Page
 Range()
 Page
 Range
+|null
 Returns the
 Page
 Range
@@ -4549,6 +4593,7 @@ Range()
 Table
 Cell
 Range
+|null
 Returns the
 Table
 Cell
@@ -4568,6 +4613,7 @@ Text
 Range()
 Text
 Range
+|null
 Returns the
 Text
 Range
@@ -4630,6 +4676,7 @@ Duplicates the page element.
 get
 Autofit()
 Autofit
+|null
 Returns the
 Autofit
 of the text within this shape.
@@ -4670,18 +4717,18 @@ Fill
 of the shape.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -4691,6 +4738,7 @@ page when the element has no rotation.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -4717,6 +4765,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -4731,11 +4780,12 @@ Parent
 Placeholder()
 Page
 Element
+|null
 Returns the parent page element of the placeholder.
 get
 Placeholder
 Index()
-Integer
+Integer|null
 Returns the placeholder index of the shape.
 get
 Placeholder
@@ -4779,7 +4829,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -5394,6 +5444,7 @@ Aligns the element to the specified alignment position on the page.
 as
 Image()
 Image
+|null
 Returns the chart as an image or
 null
 if the chart is not an embedded image.
@@ -5441,18 +5492,18 @@ Type
 Returns the embed type of the Sheets chart.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -5462,6 +5513,7 @@ page when the element has no rotation.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -5488,6 +5540,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -5523,7 +5576,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -5706,6 +5759,7 @@ objects on the page.
 get
 Layout()
 Layout
+|null
 Gets the layout that the slide is based on or
 null
 if the slide is not based on a
@@ -5734,6 +5788,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -5759,6 +5814,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -5772,6 +5828,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -6298,6 +6355,7 @@ get
 Active
 Presentation()
 Presentation
+|null
 Returns the currently active presentation to which the script is
 container-bound
 , or
@@ -6416,18 +6474,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -6440,6 +6498,7 @@ Shape
 Type()
 Shape
 Type
+|null
 Returns the
 Shape
 Type
@@ -6468,6 +6527,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -6498,7 +6558,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -6646,18 +6706,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -6695,6 +6755,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -6730,7 +6791,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 insert
@@ -6850,6 +6911,7 @@ Head
 Cell()
 Table
 Cell
+|null
 Returns the head cell of this table cell.
 get
 Merge
@@ -7137,6 +7199,7 @@ Text
 Style()
 Text
 Style
+|null
 Returns the text style of the range, or
 null
 if the range is empty.
@@ -7199,6 +7262,7 @@ get
 Background
 Color()
 Color
+|null
 Returns the background color of the text, or
 null
 if there are multiple styles on the
@@ -7209,6 +7273,7 @@ Offset()
 Text
 Baseline
 Offset
+|null
 Returns the vertical offset of text from its normal position, or
 null
 if there are
@@ -7216,14 +7281,14 @@ multiple styles on the text.
 get
 Font
 Family()
-String
+String|null
 Returns the font family of the text, or
 null
 if there are multiple styles on the text.
 get
 Font
 Size()
-Number
+Number|null
 Returns the font size of the text in points, or
 null
 if there are multiple styles on
@@ -7231,7 +7296,7 @@ the text.
 get
 Font
 Weight()
-Integer
+Integer|null
 Returns the font weight of the text, or
 null
 if there are multiple styles on the text.
@@ -7239,6 +7304,7 @@ get
 Foreground
 Color()
 Color
+|null
 Returns the foreground color of the text, or
 null
 if there are multiple styles on the
@@ -7246,6 +7312,7 @@ text.
 get
 Link()
 Link
+|null
 Returns the
 Link
 on the text, or
@@ -7254,7 +7321,7 @@ if there is no link or if the link is on
 part of the text or if there are multiple links.
 has
 Link()
-Boolean
+Boolean|null
 Returns
 true
 if there is link on the text,
@@ -7266,7 +7333,7 @@ link is on part of the text or there are multiple links.
 is
 Background
 Transparent()
-Boolean
+Boolean|null
 Returns
 true
 if the background of the text is transparent,
@@ -7276,7 +7343,7 @@ null
 if there are multiple styles on the text.
 is
 Bold()
-Boolean
+Boolean|null
 Returns
 true
 if the text is rendered as bold,
@@ -7287,7 +7354,7 @@ if
 there are multiple styles on the text.
 is
 Italic()
-Boolean
+Boolean|null
 Returns
 true
 if the text is italicized,
@@ -7299,7 +7366,7 @@ are multiple styles on the text.
 is
 Small
 Caps()
-Boolean
+Boolean|null
 Returns
 true
 if the text is in small capital letters,
@@ -7309,7 +7376,7 @@ null
 if there are multiple styles on the text.
 is
 Strikethrough()
-Boolean
+Boolean|null
 Returns
 true
 if the text is struck through,
@@ -7320,7 +7387,7 @@ if
 there are multiple styles on the text.
 is
 Underline()
-Boolean
+Boolean|null
 Returns
 true
 if the text is underlined,
@@ -7600,18 +7667,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -7639,6 +7706,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -7680,7 +7748,7 @@ Transform
 Returns the page element's transform.
 get
 Url()
-String
+String|null
 Gets an URL to the video.
 get
 Video
@@ -7689,7 +7757,7 @@ String
 Gets the video source's unique identifier for this video.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate
@@ -7822,18 +7890,18 @@ String
 Returns the page element's alt text description.
 get
 Height()
-Number
+Number|null
 Gets the element's height in points, which is the height of the element's bounding box when the
 element has no rotation.
 get
 Inherent
 Height()
-Number
+Number|null
 Returns the element's inherent height in points.
 get
 Inherent
 Width()
-Number
+Number|null
 Returns the element's inherent width in points.
 get
 Left()
@@ -7843,6 +7911,7 @@ page when the element has no rotation.
 get
 Link()
 Link
+|null
 Returns the
 Link
 or
@@ -7869,6 +7938,7 @@ get
 Parent
 Group()
 Group
+|null
 Returns the group this page element belongs to, or
 null
 if the element is not in a
@@ -7904,7 +7974,7 @@ Transform
 Returns the page element's transform.
 get
 Width()
-Number
+Number|null
 Returns the element's width in points, which is the width of the element's bounding box when
 the element has no rotation.
 preconcatenate

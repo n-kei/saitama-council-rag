@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Card Service enables building card-based user interfaces for Google Workspace add-ons and Google Chat apps across desktop and mobile platforms.
 Numerous classes are provided for interactive elements, layout, input and display widgets, response handling, data sources, and styling.
@@ -210,6 +210,10 @@ Draft
 Action
 Response
 .
+Data
+Source
+Config
+A configuration object that helps configure the data sources for a widget.
 Date
 Picker
 An input field that allows inputing a date.
@@ -236,6 +240,19 @@ Style
 An enum that defines the display style of card.
 Divider
 A horizontal divider.
+Drive
+Data
+Source
+Spec
+Holds a set of
+Drive
+Item
+Type
+objects that are displayed in a row.
+Drive
+Item
+Type
+An enum define the file type for a drive item.
 Drive
 Items
 Selected
@@ -284,7 +301,7 @@ expression validation
 condition is met.
 Expression
 Data
-The expression data that is used to evaluate an expression
+The expression data that is used to evaluate an expression.
 Expression
 Data
 Action
@@ -498,6 +515,10 @@ Text
 Input
 A input field widget that accepts text input.
 Text
+Input
+Mode
+An enum that defines the what type of input is allowed for the text input field.
+Text
 Paragraph
 A widget that displays text and supports
 basic HTML formatting
@@ -613,7 +634,7 @@ Picker
 Text
 Input
 widget, a data source
-from a Google Workspace flow.
+used in Google Workspace Studio.
 Workflow
 Data
 Source
@@ -889,6 +910,19 @@ Button(button)
 Button
 Set
 Adds a button.
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Calendar
 Event
 Action
@@ -1015,6 +1049,12 @@ Card
 Action
 to this Card.
 add
+Expression
+Data(expressionData)
+Card
+Builder
+Adds an expression data to this card.
+add
 Section(section)
 Card
 Builder
@@ -1114,6 +1154,11 @@ Card
 Section
 Sets the header of the section.
 set
+Id(id)
+Card
+Section
+Sets the unique ID assigned that's used to identify the section to be mutated.
+set
 Num
 Uncollapsible
 Widgets(numUncollapsibleWidgets)
@@ -1145,6 +1190,17 @@ Chip
 List
 Layout
 enumeration.
+Common
+Data
+Source
+Common
+Data
+Source
+The
+Common
+Data
+Source
+enumeration.
 Composed
 Email
 Type
@@ -1162,6 +1218,17 @@ Content
 Type
 The
 Content
+Type
+enumeration.
+Drive
+Item
+Type
+Drive
+Item
+Type
+The
+Drive
+Item
 Type
 enumeration.
 Expression
@@ -1300,6 +1367,17 @@ Text
 Button
 Style
 enumeration.
+Text
+Input
+Mode
+Text
+Input
+Mode
+The
+Text
+Input
+Mode
+enumeration.
 Update
 Draft
 Body
@@ -1313,6 +1391,17 @@ Update
 Draft
 Body
 Type
+enumeration.
+Variable
+Button
+Size
+Variable
+Button
+Size
+The
+Variable
+Button
+Size
 enumeration.
 Visibility
 Visibility
@@ -1545,6 +1634,18 @@ Creates a new set of
 Columns
 .
 new
+Common
+Widget
+Action()
+Common
+Widget
+Action
+Creates a new
+Common
+Widget
+Action
+.
+new
 Compose
 Action
 Response
@@ -1558,6 +1659,24 @@ Compose
 Action
 Response
 Builder
+.
+new
+Condition()
+Condition
+Creates a new
+Condition
+used for client-side validation.
+new
+Data
+Source
+Config()
+Data
+Source
+Config
+Creates a new, empty
+Data
+Source
+Config
 .
 new
 Date
@@ -1612,6 +1731,21 @@ Divider
 .
 new
 Drive
+Data
+Source
+Spec()
+Drive
+Data
+Source
+Spec
+Creates a new
+Drive
+Data
+Source
+Spec
+.
+new
+Drive
 Items
 Selected
 Action
@@ -1652,6 +1786,48 @@ Action
 Response
 Builder
 .
+new
+Event
+Action()
+Event
+Action
+Creates a new
+Event
+Action
+used for client-side validation.
+new
+Expression
+Data()
+Expression
+Data
+Creates a new
+Expression
+Data
+used for client-side validation.
+new
+Expression
+Data
+Action()
+Expression
+Data
+Action
+Creates a new
+Expression
+Data
+Action
+used for client-side validation.
+new
+Expression
+Data
+Condition()
+Expression
+Data
+Condition
+Creates a new
+Expression
+Data
+Condition
+used for client-side validation.
 new
 Fixed
 Footer()
@@ -1686,11 +1862,6 @@ App
 Data
 Source
 Creates a new
-Host
-App
-Data
-Source
-and return an empty
 Host
 App
 Data
@@ -1811,6 +1982,18 @@ Menu
 Item
 .
 new
+Platform
+Data
+Source()
+Platform
+Data
+Source
+Creates a new
+Platform
+Data
+Source
+.
+new
 Selection
 Input()
 Selection
@@ -1879,6 +2062,12 @@ Creates a new
 Time
 Picker
 .
+new
+Trigger()
+Trigger
+Creates and returns a new
+Trigger
+used for client-side validation.
 new
 Universal
 Action
@@ -1997,10 +2186,34 @@ Recipients
 Action
 .
 new
+Update
+Visibility
+Action()
+Update
+Visibility
+Action
+Creates a new
+Update
+Visibility
+Action
+.
+new
 Validation()
 Validation
 Creates a new
 Validation
+.
+new
+Workflow
+Data
+Source()
+Workflow
+Data
+Source
+Creates a new
+Workflow
+Data
+Source
 .
 Card
 With
@@ -2040,6 +2253,19 @@ Carousel
 Card(card)
 Carousel
 Adds a carousel card.
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Carousel
 Card
 Methods
@@ -2233,11 +2459,24 @@ Chip(chip)
 Chip
 List
 Adds a chip.
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 Layout(layout)
 Chip
 List
 Sets the chip list layout.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Chip
 List
 Layout
@@ -2335,6 +2574,19 @@ Columns
 Adds a
 Column
 to the Columns widget.
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 set
 Wrap
 Style(wrapStyle)
@@ -2353,6 +2605,9 @@ Default value.
 USER
 Enum
 Google Workspace users.
+DRIVE
+Enum
+Use Google Drive as a data source.
 Common
 Widget
 Action
@@ -2457,12 +2712,66 @@ IMMUTABLE_HTML
 Enum
 Indicates that the generated content is formatted as HTML, but this content cannot be edited
 after it is generated.
+Data
+Source
+Config
+Methods
+Method
+Return type
+Brief description
+set
+Max
+Characters
+To
+Disable(maxCharactersToDisable)
+Data
+Source
+Config
+Sets the maximum number of characters the user can enter before this data provider is disabled.
+set
+Max
+Results(maxResults)
+Data
+Source
+Config
+Sets the maximum number of results to return.
+set
+Min
+Characters
+To
+Trigger(minCharactersToTrigger)
+Data
+Source
+Config
+Sets the minimum number of characters the user must enter before this data provider is
+triggered to return results.
+set
+Platform
+Data
+Source(platformDataSource)
+Data
+Source
+Config
+Sets the data source to a platform data source.
+set
+Remote
+Data
+Source(action)
+Data
+Source
+Config
+Sets the data source to a remote data provider.
 Date
 Picker
 Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Field
 Name(fieldName)
@@ -2470,6 +2779,10 @@ Date
 Picker
 Sets the field name that identifies this picker in the event object that is generated when
 there is a UI interaction.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 On
 Change
@@ -2502,6 +2815,10 @@ Epoch(valueMsEpoch)
 Date
 Picker
 Sets the prefilled value to be set in the input field.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Date
 Time
 Picker
@@ -2509,6 +2826,11 @@ Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Field
 Name(fieldName)
@@ -2525,10 +2847,14 @@ Source(hostAppDataSource)
 Date
 Time
 Picker
-In a Google Workspace flow, lets
+In a Google Workspace Studio agent, lets
 input
 variables
-accept datetime outputs from other steps in the flow.
+accept datetime outputs from other steps in the agent.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 On
 Change
@@ -2575,12 +2901,21 @@ Date
 Time
 Picker
 Sets the prefilled value to be set in the input field.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Decorated
 Text
 Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Authorization
 Action(action)
@@ -2616,6 +2951,10 @@ Sets the optional
 Icon
 Image
 that is displayed to the right of the content.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 On
 Click
@@ -2666,6 +3005,10 @@ Label(text)
 Decorated
 Text
 Sets the label text to be used as the key and is displayed above the text content.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 set
 Wrap
 Text(wrapText)
@@ -2719,6 +3062,67 @@ REPLACE
 Enum
 Show the card by replacing existing content.
 Divider
+Methods
+Method
+Return type
+Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
+Drive
+Data
+Source
+Spec
+Methods
+Method
+Return type
+Brief description
+add
+Item
+Type(driveItemType)
+Drive
+Data
+Source
+Spec
+Adds a driveItemType to allowed item types list.
+Drive
+Item
+Type
+Properties
+Property
+Type
+Description
+DRIVE_ITEM_TYPE_UNSPECIFIED
+Enum
+Default value.
+DOCUMENTS
+Enum
+Represents a Google Docs document.
+SPREADSHEETS
+Enum
+Represents a Google Sheets document.
+PRESENTATIONS
+Enum
+Represents a Google Slides document.
+PDFS
+Enum
+Represents a PDF document.
+FORMS
+Enum
+Represents a Google Forms document.
+FOLDERS
+Enum
+Represents a Google Drive folder.
 Drive
 Items
 Selected
@@ -2966,6 +3370,11 @@ Method
 Return type
 Brief description
 add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+add
 Item(gridItem)
 Grid
 Adds a new grid item to the grid.
@@ -2985,6 +3394,10 @@ Compose
 Action(action, composedEmailType)
 Grid
 Sets an action that composes a draft email when the object is clicked.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 Num
 Columns(numColumns)
@@ -3013,6 +3426,10 @@ set
 Title(title)
 Grid
 Sets the title text of the grid.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Grid
 Item
 Methods
@@ -3234,6 +3651,11 @@ Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Alt
 Text(altText)
@@ -3250,6 +3672,10 @@ Compose
 Action(action, composedEmailType)
 Image
 Sets an action that composes a draft email when the object is clicked.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 Image
 Url(url)
@@ -3274,6 +3700,10 @@ Open
 Link(openLink)
 Image
 Sets a URL to be opened when the object is clicked.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Image
 Button
 Methods
@@ -3492,6 +3922,11 @@ Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Authorization
 Action(action)
@@ -3505,6 +3940,10 @@ Action(action, composedEmailType)
 Key
 Value
 Sets an action that composes a draft email when the object is clicked.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 On
 Click
@@ -3527,6 +3966,10 @@ Link(openLink)
 Key
 Value
 Sets a URL to be opened when the object is clicked.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Link
 Preview
 Methods
@@ -3775,6 +4218,15 @@ Data
 Source
 Sets the data source from Google Workspace.
 set
+Drive
+Data
+Source
+Spec(driveDataSourceSpec)
+Platform
+Data
+Source
+Sets the drive data source spec from Google Workspace.
+set
 Host
 App
 Data
@@ -3819,6 +4271,18 @@ Method
 Return type
 Brief description
 add
+Data
+Source
+Config(dataSourceConfig)
+Selection
+Input
+Sets the data source configs for the selection control.
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+add
 Item(text, value, selected)
 Selection
 Input
@@ -3844,6 +4308,10 @@ Selection
 Input
 Sets the key that identifies this selection input in the event object that is generated when
 there is a UI interaction.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 Multi
 Select
@@ -3889,6 +4357,10 @@ Type(type)
 Selection
 Input
 Sets the type of this input.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Selection
 Input
 Type
@@ -4182,6 +4654,11 @@ Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Field
 Name(fieldName)
@@ -4202,6 +4679,16 @@ Source(hostAppDataSource)
 Text
 Input
 Sets a data source from Google Workspace applications.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
+set
+Input
+Mode(inputMode)
+Text
+Input
+Sets whether this text input field supports variable insertion.
 set
 Multiline(multiline)
 Text
@@ -4240,12 +4727,38 @@ Value(value)
 Text
 Input
 Sets the pre-filled value to be set in the input field.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
+Text
+Input
+Mode
+Properties
+Property
+Type
+Description
+PLAIN_TEXT
+Enum
+Only allow plain text input.
+RICH_TEXT
+Enum
+Support both plain text input and variables in a text input.
 Text
 Paragraph
 Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 Max
 Lines(maxLines)
@@ -4257,12 +4770,21 @@ Text(text)
 Text
 Paragraph
 Sets the text of the paragraph.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Time
 Picker
 Methods
 Method
 Return type
 Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
 set
 Field
 Name(fieldName)
@@ -4275,6 +4797,10 @@ Hours(hours)
 Time
 Picker
 Sets the prefilled hours value to set in the input field.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
 set
 Minutes(minutes)
 Time
@@ -4294,6 +4820,10 @@ Title(title)
 Time
 Picker
 Sets the title displayed above the input field.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Trigger
 Methods
 Method
@@ -4639,6 +5169,23 @@ VISIBILITY_UNSPECIFIED
 Enum
 The UI element is unspecified.
 Widget
+Methods
+Method
+Return type
+Brief description
+add
+Event
+Action(eventAction)
+Widget
+Adds the event action that can be performed on the widget.
+set
+Id(id)
+Widget
+Sets the unique ID assigned that's used to identify the widget to be mutated.
+set
+Visibility(visibility)
+Widget
+Sets the visibility of the widget.
 Workflow
 Data
 Source
@@ -4666,8 +5213,8 @@ Label(variableButtonLabel)
 Workflow
 Data
 Source
-Sets the label of the variable picker button, which will be displayed after the `+` sign in
-FULL_SIZE button size.
+Sets the label of the variable picker button, which displays after the `+` sign in FULL_SIZE
+button size.
 set
 Variable
 Button
@@ -4675,8 +5222,8 @@ Size(variableButtonSize)
 Workflow
 Data
 Source
-Sets the size of the variable picker button, Workflow will automatically using COMPACT in side
-panel and FULL_SIZE in other cases if UNSPECIFIED is selected.
+Sets the size of the variable picker button, Workflow automatically uses COMPACT in side panel
+and FULL_SIZE in other cases if UNSPECIFIED is selected.
 Workflow
 Data
 Source

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Apps Script JDBC service allows connecting to various JDBC-compliant databases like Google Cloud SQL, MySQL, Microsoft SQL Server, and Oracle.
 The
@@ -419,6 +419,11 @@ Integer[]
 For documentation of this method, see
 java.sql.Statement#executeBatch()
 .
+execute
+Batch(parameters)
+Integer[]
+Submits a batch of commands to the database for execution and if all commands execute
+successfully, returns an array of update counts.
 execute
 Query()
 Jdbc
@@ -3400,6 +3405,11 @@ For documentation of this method, see
 java.sql.Statement#executeBatch()
 .
 execute
+Batch(parameters)
+Integer[]
+Submits a batch of commands to the database for execution and if all commands execute
+successfully, returns an array of update counts.
+execute
 Query()
 Jdbc
 Result
@@ -4204,6 +4214,23 @@ Id
 For documentation of this method, see
 java.sql.ResultSet#getRowId(String)
 .
+get
+Rows(queryString)
+Object[][]
+Returns all the rows from this
+Result
+Set
+object.
+get
+Rows(queryString, batchSize)
+Object[][]
+Returns up to
+batch
+Size
+rows from this
+Result
+Set
+object.
 get
 SQLXML(columnIndex)
 Jdbc

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/connection-site/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A ConnectionSite is a point on a PageElement that can connect to a connector.
 The getIndex() method returns the unique index of a connection site among all connection sites on the same page element.

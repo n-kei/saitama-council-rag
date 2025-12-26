@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/updated-widget/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 UpdatedWidget is used to provide autocomplete options for multiselect menus in SelectionInput.
 It is only available for Google Chat apps and not Google Workspace add-ons.

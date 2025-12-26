@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/table-cell/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A TableCell is an element representing a table cell, always contained within a TableRow.
 TableCell elements can contain ListItem, Paragraph, or Table elements.
@@ -122,11 +122,13 @@ find
 Element(elementType)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type.
 find
 Element(elementType, from)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type, starting from the
 specified
 Range
@@ -136,11 +138,13 @@ find
 Text(searchPattern)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern using regular expressions.
 find
 Text(searchPattern, from)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern, starting from a given
 search result.
 get
@@ -150,7 +154,7 @@ Retrieves the element's attributes.
 get
 Background
 Color()
-String
+String|null
 Retrieves the background color.
 get
 Child(childIndex)
@@ -169,12 +173,13 @@ Retrieves the column span, which is the number of columns of table cells this ce
 get
 Link
 Url()
-String
+String|null
 Retrieves the link url.
 get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Num
@@ -184,33 +189,35 @@ Retrieves the number of children.
 get
 Padding
 Bottom()
-Number
+Number|null
 Retrieves the bottom padding, in points.
 get
 Padding
 Left()
-Number
+Number|null
 Retrieves the left padding, in points.
 get
 Padding
 Right()
-Number
+Number|null
 Retrieves the right padding, in points.
 get
 Padding
 Top()
-Number
+Number|null
 Retrieves the top padding, in points.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Parent
 Row()
 Table
 Row
+|null
 Retrieves the
 Table
 Row
@@ -222,6 +229,7 @@ get
 Parent
 Table()
 Table
+|null
 Retrieves the
 Table
 containing the current
@@ -232,6 +240,7 @@ get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Row
@@ -247,6 +256,7 @@ Text
 Alignment()
 Text
 Alignment
+|null
 Gets the text alignment.
 get
 Type()
@@ -261,13 +271,14 @@ Vertical
 Alignment()
 Vertical
 Alignment
+|null
 Retrieves the
 Vertical
 Alignment
 .
 get
 Width()
-Number
+Number|null
 Retrieves the width of the column containing the cell, in points.
 insert
 Horizontal
@@ -354,6 +365,7 @@ Document
 merge()
 Table
 Cell
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 Child(child)
@@ -365,6 +377,7 @@ From
 Parent()
 Table
 Cell
+|null
 Removes the element from its parent.
 replace
 Text(searchPattern, replacement)
@@ -774,6 +787,7 @@ The type of element to search for.
 Return
 Range
 Element
+|null
 — A search result indicating the position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -877,6 +891,7 @@ The search result to search from.
 Return
 Range
 Element
+|null
 — A search result indicating the next position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -902,6 +917,7 @@ the pattern to search for
 Return
 Range
 Element
+|null
 — a search result indicating the position of the search text, or null if there is no
     match
 Authorization
@@ -933,6 +949,7 @@ the search result to search from
 Return
 Range
 Element
+|null
 — a search result indicating the next position of the search text, or null if there is no
     match
 Authorization
@@ -1043,7 +1060,7 @@ Background
 Color()
 Retrieves the background color.
 Return
-String
+String|null
 — the background color, formatted in CSS notation (like
 '#ffffff'
 )
@@ -1159,7 +1176,7 @@ Link
 Url()
 Retrieves the link url.
 Return
-String
+String|null
 — the link url, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1174,6 +1191,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1226,7 +1244,7 @@ Padding
 Bottom()
 Retrieves the bottom padding, in points.
 Return
-Number
+Number|null
 — the bottom padding, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1239,7 +1257,7 @@ Padding
 Left()
 Retrieves the left padding, in points.
 Return
-Number
+Number|null
 — the left padding, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1252,7 +1270,7 @@ Padding
 Right()
 Retrieves the right padding, in points.
 Return
-Number
+Number|null
 — the right padding, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1265,7 +1283,7 @@ Padding
 Top()
 Retrieves the top padding, in points.
 Return
-Number
+Number|null
 — the top padding, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1280,6 +1298,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1300,6 +1319,7 @@ Cell
 Return
 Table
 Row
+|null
 — the table row containing the current cell
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1318,6 +1338,7 @@ Cell
 .
 Return
 Table
+|null
 — the table containing the current cell
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1332,6 +1353,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1381,6 +1403,7 @@ App.TextAlignment.SUPERSCRIPT
 Return
 Text
 Alignment
+|null
 — the type of text alignment, or
 null
 if the text contains multiple types of text
@@ -1485,6 +1508,7 @@ Alignment
 Return
 Vertical
 Alignment
+|null
 — the vertical alignment
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1496,7 +1520,7 @@ get
 Width()
 Retrieves the width of the column containing the cell, in points.
 Return
-Number
+Number|null
 — the column width, in points
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1914,6 +1938,7 @@ merge
 Return
 Table
 Cell
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -2003,6 +2028,7 @@ removeFromParent
 Return
 Table
 Cell
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

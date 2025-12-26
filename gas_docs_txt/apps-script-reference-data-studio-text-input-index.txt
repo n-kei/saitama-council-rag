@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/text-input/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 TextInput is used in Data Studio configurations to display text input fields.
 Various methods like

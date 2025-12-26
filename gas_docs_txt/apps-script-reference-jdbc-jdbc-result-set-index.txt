@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/jdbc/jdbc-result-set/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 JdbcResultSet in Google Apps Script mirrors
 java.sql.ResultSet
@@ -366,6 +366,23 @@ Id
 For documentation of this method, see
 java.sql.ResultSet#getRowId(String)
 .
+get
+Rows(queryString)
+Object[][]
+Returns all the rows from this
+Result
+Set
+object.
+get
+Rows(queryString, batchSize)
+Object[][]
+Returns up to
+batch
+Size
+rows from this
+Result
+Set
+object.
 get
 SQLXML(columnIndex)
 Jdbc
@@ -2066,6 +2083,201 @@ null
 if the value is SQL
 NULL
 .
+Authorization
+Scripts that use this method require authorization with one or more of the following
+scopes
+:
+https://www.googleapis.com/auth/script.external_request
+get
+Rows(queryString)
+Returns all the rows from this
+Result
+Set
+object.
+The
+query
+String
+consists of comma-separated calls to getter methods of this
+Jdbc
+Result
+Set
+, for example:
+"getString(1), getDouble('price'), getDate(3, 'UTC')"
+.
+Supported methods include
+get
+String
+,
+get
+Int
+,
+get
+Double
+,
+get
+Date
+, etc. Arguments can be integer column indices (1-based) or single/double quoted string
+column labels.
+Usage: For example, to read column 1 from result set, instead of iterating using
+next()
+, use
+get
+Rows
+, shown in the following examples.
+The following example uses
+next()
+:
+while (rs.next()) {
+  Logger.log(rs.getString(1));
+}
+Use
+get
+Rows()
+for better performance, in the following way:
+var
+rows
+=
+rs
+.
+getRows
+(
+"getString(1)"
+);
+for
+(
+var
+i
+=
+0
+;
+i
+<
+rows
+.
+length
+;
+i
+++
+)
+{
+Logger
+.
+log
+(
+rows
+[
+i
+][
+0
+]
+);
+}
+Note:
+For large results, you can use
+get
+Rows(queryString, batchSize)
+for pagination.
+Parameters
+Name
+Type
+Description
+query
+String
+String
+The SQL query string used to generate this result set.
+Return
+Object[][]
+— The current rows from this
+Result
+Set
+object.
+Authorization
+Scripts that use this method require authorization with one or more of the following
+scopes
+:
+https://www.googleapis.com/auth/script.external_request
+get
+Rows(queryString, batchSize)
+Returns up to
+batch
+Size
+rows from this
+Result
+Set
+object. Consecutively calling
+this method starts iteration from where it left in previous iteration.
+Usage:
+var
+rows
+;
+do
+{
+rows
+=
+rs
+.
+getRows
+(
+"getString(1)"
+,
+100
+);
+for
+(
+var
+i
+=
+0
+;
+i
+<
+rows
+.
+length
+;
+i
+++
+)
+{
+Logger
+.
+log
+(
+rows
+[
+i
+][
+0
+]
+);
+}
+}
+while
+(
+rows
+.
+length
+>
+0
+);
+Parameters
+Name
+Type
+Description
+query
+String
+String
+The SQL query string used to generate this result set.
+batch
+Size
+Integer
+The maximum number of rows to return in single call.
+Return
+Object[][]
+— The current rows from this
+Result
+Set
+object.
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/gmail/gmail-message.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GmailMessage represents a single email message within a user's Gmail account.
 You can create draft replies, draft replies to all recipients, forward messages, and reply to messages or reply to all recipients with various options for the message body and additional parameters.

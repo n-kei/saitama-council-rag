@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/mime-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The MimeType enumeration provides access to MIME-type declarations without explicit string typing.
 Methods expecting a MIME type as a string also accept values from the MimeType enumeration if the underlying MIME type is supported.

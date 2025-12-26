@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/inline-drawing/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 An InlineDrawing represents an embedded drawing within a ListItem or Paragraph, unless that parent is within a FootnoteSection, and cannot contain other elements itself.
 The InlineDrawing element provides methods to manage its properties and position, such as copying, getting/setting alternate descriptions and titles, retrieving attributes, navigating siblings and parent, determining its type and position, merging, and removing from its parent.
@@ -42,12 +42,12 @@ Returns a detached, deep copy of the current element.
 get
 Alt
 Description()
-String
+String|null
 Returns the drawing's alternate description.
 get
 Alt
 Title()
-String
+String|null
 Returns the drawing's alternate title.
 get
 Attributes()
@@ -57,16 +57,19 @@ get
 Next
 Sibling()
 Element
+|null
 Retrieves the element's next sibling element.
 get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Previous
 Sibling()
 Element
+|null
 Retrieves the element's previous sibling element.
 get
 Type()
@@ -87,12 +90,14 @@ Document
 merge()
 Inline
 Drawing
+|null
 Merges the element with the preceding sibling of the same type.
 remove
 From
 Parent()
 Inline
 Drawing
+|null
 Removes the element from its parent.
 set
 Alt
@@ -131,7 +136,7 @@ Alt
 Description()
 Returns the drawing's alternate description.
 Return
-String
+String|null
 — The alternate description, or
 null
 if the element does not have an alternate
@@ -147,7 +152,7 @@ Alt
 Title()
 Returns the drawing's alternate title.
 Return
-String
+String|null
 — The alternate title, or
 null
 if the element does not have an alternate title.
@@ -261,6 +266,7 @@ Retrieves the element's next sibling element.
 The next sibling has the same parent and follows the current element.
 Return
 Element
+|null
 — The next sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -275,6 +281,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -289,6 +296,7 @@ Retrieves the element's previous sibling element.
 The previous sibling has the same parent and precedes the current element.
 Return
 Element
+|null
 — The previous sibling element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -519,6 +527,7 @@ merge
 Return
 Inline
 Drawing
+|null
 — The merged element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -588,6 +597,7 @@ removeFromParent
 Return
 Inline
 Drawing
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following

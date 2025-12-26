@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/checkbox-grid-validation-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CheckboxGridValidationBuilder is used to create validation rules for Checkbox Grid items in Google Forms.
 The

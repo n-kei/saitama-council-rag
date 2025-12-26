@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/calendar/calendar-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Calendar class offers methods to create all-day event series and modify calendar properties like color, description, visibility, name, and selection status.
 All methods within the Calendar class for modifying calendar properties return the Calendar object itself.

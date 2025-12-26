@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/authorization-exception/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 AuthorizationException is an error used to trigger an authorization card for the user.
 Key methods include setting the authorization URL and resource display name.

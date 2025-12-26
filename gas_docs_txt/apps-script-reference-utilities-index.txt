@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/utilities/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Utilities service provides various functions for handling string encoding/decoding, date formatting, and JSON manipulation.
 It includes classes for specifying character sets, digest algorithms, MAC algorithms, and RSA algorithms.

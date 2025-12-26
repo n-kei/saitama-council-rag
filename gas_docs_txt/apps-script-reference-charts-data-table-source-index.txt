@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/data-table-source/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DataTableSource is an interface for objects that can represent their data as a DataTable.
 Implementing classes include DataTable and Range, which can be used with DataTableSource.

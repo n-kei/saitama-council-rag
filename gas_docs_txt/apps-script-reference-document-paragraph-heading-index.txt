@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/paragraph-heading/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ParagraphHeading is an enumeration used to configure heading styles for ParagraphElement.
 Enums are called using their parent class, name, and property, such as DocumentApp.ParagraphHeading.NORMAL.

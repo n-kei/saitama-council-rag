@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/paragraph-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ParagraphStyle applies text styles to entire paragraphs.
 Reading methods for ParagraphStyle return null if the TextRange spans paragraphs with different styles.
@@ -32,7 +32,7 @@ Brief description
 get
 Indent
 End()
-Number
+Number|null
 Returns the text end indentation for paragraphs in the
 Text
 Range
@@ -43,7 +43,7 @@ get
 Indent
 First
 Line()
-Number
+Number|null
 Returns the indentation for the first line of paragraphs in the
 Text
 Range
@@ -53,7 +53,7 @@ if there are multiple paragraph styles on the given text.
 get
 Indent
 Start()
-Number
+Number|null
 Returns the text start indentation for paragraphs in the
 Text
 Range
@@ -63,7 +63,7 @@ if there are multiple paragraph styles on the given text.
 get
 Line
 Spacing()
-Number
+Number|null
 Returns the line spacing, or
 null
 if there are multiple paragraph styles on the given
@@ -73,6 +73,7 @@ Paragraph
 Alignment()
 Paragraph
 Alignment
+|null
 Returns the
 Paragraph
 Alignment
@@ -85,7 +86,7 @@ if there are multiple paragraph styles on the given text.
 get
 Space
 Above()
-Number
+Number|null
 Returns the extra space above paragraphs in the
 Text
 Range
@@ -96,7 +97,7 @@ there are multiple paragraph styles on the given text.
 get
 Space
 Below()
-Number
+Number|null
 Returns the extra space below paragraphs in the
 Text
 Range
@@ -109,6 +110,7 @@ Spacing
 Mode()
 Spacing
 Mode
+|null
 Returns the
 Spacing
 Mode
@@ -124,6 +126,7 @@ Text
 Direction()
 Text
 Direction
+|null
 Returns the
 Text
 Direction
@@ -234,7 +237,7 @@ null
 if there are multiple paragraph styles on the given text.
 The side that corresponds to the end of the text is based on the current text direction.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -252,7 +255,7 @@ in points, or
 null
 if there are multiple paragraph styles on the given text.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -270,7 +273,7 @@ null
 if there are multiple paragraph styles on the given text.
 The side that corresponds to the start of the text is based on the current text direction.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -287,7 +290,7 @@ text.
 This is a value that corresponds to the space between lines, as a percentage of normal.
 Normal is represented as 100.0.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -309,6 +312,7 @@ if there are multiple paragraph styles on the given text.
 Return
 Paragraph
 Alignment
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -326,7 +330,7 @@ null
 if
 there are multiple paragraph styles on the given text.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -344,7 +348,7 @@ null
 if
 there are multiple paragraph styles on the given text.
 Return
-Number
+Number|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -367,6 +371,7 @@ there are multiple paragraph styles on the given text.
 Return
 Spacing
 Mode
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -389,6 +394,7 @@ there are multiple paragraph styles on the given text.
 Return
 Text
 Direction
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

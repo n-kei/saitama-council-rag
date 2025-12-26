@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/banding-theme/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 BandingTheme is an enumeration that defines various complementary color themes for spreadsheet banding.
 Each theme consists of complementary colors applied to cells based on banding settings.

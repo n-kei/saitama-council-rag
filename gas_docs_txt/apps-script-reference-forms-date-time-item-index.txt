@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/date-time-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DateTimeItem is a question item in Google Forms that allows respondents to indicate a date and time and can be graded when used in a quiz.
 You can create or access DateTimeItem instances from a Form object.
@@ -59,6 +59,7 @@ General
 Feedback()
 Quiz
 Feedback
+|null
 Returns the feedback that is shown to respondents when they respond to a gradeable question.
 get
 Help
@@ -227,6 +228,7 @@ Returns the feedback that is shown to respondents when they respond to a gradeab
 Return
 Quiz
 Feedback
+|null
 — the feedback, if any.
 Authorization
 Scripts that use this method require authorization with one or more of the following

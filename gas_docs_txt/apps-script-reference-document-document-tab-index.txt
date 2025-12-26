@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/document-tab/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A DocumentTab is a rich text container within a document, capable of holding elements like tables and lists.
 You can retrieve a DocumentTab using
@@ -77,6 +77,7 @@ Body
 get
 Bookmark(id)
 Bookmark
+|null
 Gets the
 Bookmark
 with the given ID.
@@ -90,10 +91,12 @@ get
 Footer()
 Footer
 Section
+|null
 Retrieves the tab's footer section, if one exists.
 get
 Footnotes()
 Footnote[]
+|null
 Retrieves all the
 Footnote
 elements in the tab's body.
@@ -101,6 +104,7 @@ get
 Header()
 Header
 Section
+|null
 Retrieves the tab's header section, if one exists.
 get
 Named
@@ -109,6 +113,7 @@ By
 Id(id)
 Named
 Range
+|null
 Gets the
 Named
 Range
@@ -590,6 +595,7 @@ Bookmark
 .
 Return
 Bookmark
+|null
 — The
 Bookmark
 with the given ID, or
@@ -691,6 +697,7 @@ getText
 Return
 Footer
 Section
+|null
 — The tab's footer.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -750,6 +757,7 @@ getText
 ());
 Return
 Footnote[]
+|null
 — The tab's footnotes.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -793,6 +801,7 @@ getText
 Return
 Header
 Section
+|null
 — The tab's header.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -826,6 +835,7 @@ The range's ID, which is unique within the tab.
 Return
 Named
 Range
+|null
 — The
 Named
 Range

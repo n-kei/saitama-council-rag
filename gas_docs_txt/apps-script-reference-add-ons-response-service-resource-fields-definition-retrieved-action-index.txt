@@ -1,0 +1,150 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/resource-fields-definition-retrieved-action/index.html
+
+Resource
+Fields
+Definition
+Retrieved
+Action
+A
+Resource
+Fields
+Definition
+Retrieved
+Action
+is a type of
+Resource
+Fields
+Definition
+Retrieved
+Action
+that is
+used to retrieve the definition of a list of resource fields through the
+dynamic
+Resource
+Definition
+Provider
+function specified in the manifest. A
+Resource
+Fields
+Definition
+Retrieved
+Action
+can contain one or more
+Dynamic
+Resource
+Definition
+.
+Only available for Google Workspace add-ons that extend Google Workspace Studio.
+Sample usage:
+let
+resourceDefinitions
+=
+AddOnsResponseService
+.
+newDynamicResourceDefinition
+()
+.
+setResourceId
+(
+"resource_definition_1"
+)
+.
+addResourceField
+(
+AddOnsResponseService
+.
+newResourceField
+()
+.
+setSelector
+(
+"question_1"
+)
+.
+setDisplayText
+(
+"Question 1"
+))
+let
+workflowAction
+=
+AddOnsResponseService
+.
+newResourceFieldsDefinitionRetrievedAction
+()
+.
+addDynamicResourceDefinition
+(
+resourceDefinitions
+)
+let
+hostAppAction
+=
+AddOnsResponseService
+.
+newHostAppAction
+()
+.
+setWorkflowAction
+(
+workflowAction
+);
+return
+AddOnsResponseService
+.
+newRenderActionBuilder
+()
+.
+setHostAppAction
+(
+hostAppAction
+)
+.
+build
+();
+Methods
+Method
+Return type
+Brief description
+add
+Dynamic
+Resource
+Definition(dynamicResourceDefinition)
+Resource
+Fields
+Definition
+Retrieved
+Action
+Adds a
+Dynamic
+Resource
+Definition
+to the resource fields definition retrieved action.
+Detailed documentation
+add
+Dynamic
+Resource
+Definition(dynamicResourceDefinition)
+Adds a
+Dynamic
+Resource
+Definition
+to the resource fields definition retrieved action.
+Parameters
+Name
+Type
+Description
+dynamic
+Resource
+Definition
+Dynamic
+Resource
+Definition
+The dynamic resource definition to add to the action.
+Return
+Resource
+Fields
+Definition
+Retrieved
+Action
+— This resource fields definition retrieved action, for chaining.

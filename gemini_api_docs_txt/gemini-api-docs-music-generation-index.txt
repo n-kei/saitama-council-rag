@@ -1,5 +1,8 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/music-generation/index.html
 
+We have updated our
+Terms of Service
+.
 The Gemini API, using
 Lyria RealTime
 ,

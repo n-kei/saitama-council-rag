@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/header-section/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 HeaderSection represents a header section in a Document and typically contains at most one.
 HeaderSection can contain ListItem, Paragraph, and Table elements.
@@ -126,11 +126,13 @@ find
 Element(elementType)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type.
 find
 Element(elementType, from)
 Range
 Element
+|null
 Searches the contents of the element for a descendant of the specified type, starting from the
 specified
 Range
@@ -140,11 +142,13 @@ find
 Text(searchPattern)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern using regular expressions.
 find
 Text(searchPattern, from)
 Range
 Element
+|null
 Searches the contents of the element for the specified text pattern, starting from a given
 search result.
 get
@@ -164,6 +168,7 @@ get
 Images()
 Inline
 Image[]
+|null
 Retrieves all the
 Inline
 Images
@@ -173,6 +178,7 @@ List
 Items()
 List
 Item[]
+|null
 Retrieves all the
 List
 Items
@@ -185,6 +191,7 @@ Retrieves the number of children.
 get
 Paragraphs()
 Paragraph[]
+|null
 Retrieves all the
 Paragraphs
 contained in the section (including
@@ -195,10 +202,12 @@ get
 Parent()
 Container
 Element
+|null
 Retrieves the element's parent element.
 get
 Tables()
 Table[]
+|null
 Retrieves all the
 Tables
 contained in the section.
@@ -211,6 +220,7 @@ Text
 Alignment()
 Text
 Alignment
+|null
 Gets the text alignment.
 get
 Type()
@@ -306,6 +316,7 @@ From
 Parent()
 Header
 Section
+|null
 Removes the element from its parent.
 replace
 Text(searchPattern, replacement)
@@ -335,13 +346,14 @@ Brief description
 get
 Footnotes()
 Footnote[]
+|null
 Retrieves all the
 Footnotes
 contained in the section.
 get
 Link
 Url()
-String
+String|null
 Retrieves the link url.
 get
 Next
@@ -741,6 +753,7 @@ The type of element to search for.
 Return
 Range
 Element
+|null
 — A search result indicating the position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -844,6 +857,7 @@ The search result to search from.
 Return
 Range
 Element
+|null
 — A search result indicating the next position of the search element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -869,6 +883,7 @@ the pattern to search for
 Return
 Range
 Element
+|null
 — a search result indicating the position of the search text, or null if there is no
     match
 Authorization
@@ -900,6 +915,7 @@ the search result to search from
 Return
 Range
 Element
+|null
 — a search result indicating the next position of the search text, or null if there is no
     match
 Authorization
@@ -1101,6 +1117,7 @@ contained in the section.
 Return
 Inline
 Image[]
+|null
 — The section images.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1118,6 +1135,7 @@ contained in the section.
 Return
 List
 Item[]
+|null
 — The section list items.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1175,6 +1193,7 @@ Items
 ).
 Return
 Paragraph[]
+|null
 — The section paragraphs.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1189,6 +1208,7 @@ The parent element contains the current element.
 Return
 Container
 Element
+|null
 — The parent element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1203,6 +1223,7 @@ Tables
 contained in the section.
 Return
 Table[]
+|null
 — The section tables.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1238,6 +1259,7 @@ App.TextAlignment.SUPERSCRIPT
 Return
 Text
 Alignment
+|null
 — the type of text alignment, or
 null
 if the text contains multiple types of text
@@ -1687,6 +1709,7 @@ removeFromParent
 Return
 Header
 Section
+|null
 — The removed element.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1969,6 +1992,7 @@ Footnotes
 contained in the section.
 Return
 Footnote[]
+|null
 — The section footnotes.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1984,7 +2008,7 @@ Instead of applying a link to an entire section, apply the link to an element
     within the section instead.
 Retrieves the link url.
 Return
-String
+String|null
 — the link url, or null if the element contains multiple values for this attribute
 Authorization
 Scripts that use this method require authorization with one or more of the following

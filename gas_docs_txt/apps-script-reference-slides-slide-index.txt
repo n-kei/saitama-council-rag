@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/slide/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A
 Slide
@@ -51,6 +51,7 @@ objects on the page.
 get
 Layout()
 Layout
+|null
 Gets the layout that the slide is based on or
 null
 if the slide is not based on a
@@ -79,6 +80,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -104,6 +106,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -117,6 +120,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -484,6 +488,7 @@ if the slide is not based on a
 layout.
 Return
 Layout
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -550,6 +555,7 @@ The ID of the page element that is being retrieved.
 Return
 Page
 Element
+|null
 — The page element with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -637,6 +643,7 @@ Type
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -698,6 +705,7 @@ Integer
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

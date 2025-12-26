@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/autofit/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Autofit describes the settings for how text fits within a shape's bounding box.
 When a change might affect text fitting, autofit is deactivated, and font scale and line spacing reduction are reset to default values.

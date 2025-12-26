@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/xml-service/content-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ContentType is an enumeration representing the types of XML content nodes.
 To call an enum, you call its parent class, name, and property, such as

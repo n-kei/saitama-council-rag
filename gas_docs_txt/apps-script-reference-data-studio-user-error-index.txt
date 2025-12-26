@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/data-studio/user-error/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A UserError is an error shown to users of the connector.
 You can set the text of the error shown to users and a different debug text shown only to admins.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/range-element/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 RangeElement is a wrapper around an Element with possible start and end offsets, useful for representing partial selections within Text elements.
 The getElement() method retrieves the Element corresponding to the RangeElement.

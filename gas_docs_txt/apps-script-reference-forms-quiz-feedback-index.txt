@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/quiz-feedback/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 QuizFeedback is a bean implementation of Feedback containing properties like display text and links.
 Feedback can be added to gradeable Form items.

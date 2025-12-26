@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/grid-validation-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GridValidationBuilder is a DataValidationBuilder for a GridValidation in Google Apps Script forms.
 It can be used to set validation rules for grid items, such as requiring a limit of one response per column.

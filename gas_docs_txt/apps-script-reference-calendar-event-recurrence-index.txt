@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/calendar/event-recurrence/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EventRecurrence represents the recurrence settings for an event series.
 You can add rules to specify daily, weekly, monthly, or yearly recurrences or exclusions for events.

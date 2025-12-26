@@ -1,0 +1,18 @@
+Source Path: gas_docs_html/apps-script/reference/add-ons-response-service/error-retryability/index.html
+
+Error
+Retryability
+A Enum that represents the retry-ability of action invocation when having an error.
+Properties
+Property
+Type
+Description
+RETRYABILITY_UNSPECIFIED
+Enum
+Unspecified.
+NOT_RETRYABLE
+Enum
+The error is not retryable, the flow terminates after the first try.
+RETRYABLE
+Enum
+The error is retryable, Workflow is going to try to execute the Step for up to 5 times.

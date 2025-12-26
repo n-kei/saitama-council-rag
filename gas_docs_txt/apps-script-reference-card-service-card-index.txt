@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/card/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A Card is a UI view in the Gmail add-ons context.
 Cards are built using the CardService.newCardBuilder() method.

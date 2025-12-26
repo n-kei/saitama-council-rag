@@ -1,0 +1,177 @@
+Source Path: gas_docs_html/apps-script/reference/card-service/data-source-config/index.html
+
+Data
+Source
+Config
+A configuration object that helps configure the data sources for a widget.
+Sample usage:
+const
+dataSourceConfig
+=
+CardService
+.
+newDataSourceConfig
+()
+.
+setPlatformDataSource
+(
+CardService
+.
+newPlatformDataSource
+()
+.
+setWorkflowDataSource
+(
+CardService
+.
+WorkflowDataSourceType
+.
+USER
+));
+Methods
+Method
+Return type
+Brief description
+set
+Max
+Characters
+To
+Disable(maxCharactersToDisable)
+Data
+Source
+Config
+Sets the maximum number of characters the user can enter before this data provider is disabled.
+set
+Max
+Results(maxResults)
+Data
+Source
+Config
+Sets the maximum number of results to return.
+set
+Min
+Characters
+To
+Trigger(minCharactersToTrigger)
+Data
+Source
+Config
+Sets the minimum number of characters the user must enter before this data provider is
+triggered to return results.
+set
+Platform
+Data
+Source(platformDataSource)
+Data
+Source
+Config
+Sets the data source to a platform data source.
+set
+Remote
+Data
+Source(action)
+Data
+Source
+Config
+Sets the data source to a remote data provider.
+Detailed documentation
+set
+Max
+Characters
+To
+Disable(maxCharactersToDisable)
+Sets the maximum number of characters the user can enter before this data provider is disabled.
+Results are not shown if the input exceeds this length.
+Parameters
+Name
+Type
+Description
+max
+Characters
+To
+Disable
+Integer
+The maximum number of characters required. A value of 0 means no
+    limit, always enabled.
+Return
+Data
+Source
+Config
+— This object, for chaining.
+set
+Max
+Results(maxResults)
+Sets the maximum number of results to return.
+Parameters
+Name
+Type
+Description
+max
+Results
+Integer
+The maximum number of results to return.
+Return
+Data
+Source
+Config
+— This object, for chaining.
+set
+Min
+Characters
+To
+Trigger(minCharactersToTrigger)
+Sets the minimum number of characters the user must enter before this data provider is
+triggered to return results.
+Parameters
+Name
+Type
+Description
+min
+Characters
+To
+Trigger
+Integer
+The minimum number of characters required.
+Return
+Data
+Source
+Config
+— This object, for chaining.
+set
+Platform
+Data
+Source(platformDataSource)
+Sets the data source to a platform data source.
+Parameters
+Name
+Type
+Description
+platform
+Data
+Source
+Platform
+Data
+Source
+A data source that is shared by all Google Workspace applications.
+Return
+Data
+Source
+Config
+— This object, for chaining.
+set
+Remote
+Data
+Source(action)
+Sets the data source to a remote data provider.
+Parameters
+Name
+Type
+Description
+action
+Action
+An action that returns data.
+Return
+Data
+Source
+Config
+— This object, for chaining.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/arrow-style/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ArrowStyle defines the start and end forms for rendering linear geometry.
 Some ArrowStyle values are based on the "ST_LineEndType" simple type from ECMA-376 5th edition.

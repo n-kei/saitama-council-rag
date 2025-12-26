@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/slides/notes-page/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Notes pages in a presentation contain content for handouts, including a shape for speaker notes.
 Each slide in a presentation has a corresponding notes page.
@@ -50,6 +50,7 @@ By
 Id(id)
 Page
 Element
+|null
 Returns the
 Page
 Element
@@ -69,6 +70,7 @@ get
 Placeholder(placeholderType)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -82,6 +84,7 @@ get
 Placeholder(placeholderType, placeholderIndex)
 Page
 Element
+|null
 Returns the placeholder
 Page
 Element
@@ -226,6 +229,7 @@ The ID of the page element that is being retrieved.
 Return
 Page
 Element
+|null
 — The page element with the given ID.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -299,6 +303,7 @@ Type
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes
@@ -360,6 +365,7 @@ Integer
 Return
 Page
 Element
+|null
 Authorization
 Scripts that use this method require authorization with one or more of the following
 scopes

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/script/trigger/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 getEventType()
 returns the type of event that causes the trigger to fire.

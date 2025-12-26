@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/cell-image-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CellImageBuilder is used to create the image value needed to add an image to a cell.
 The value type for a CellImage is

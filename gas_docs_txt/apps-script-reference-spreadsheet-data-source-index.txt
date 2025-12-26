@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/data-source/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 DataSource
@@ -69,6 +69,7 @@ Name(columnName)
 Data
 Source
 Column
+|null
 Returns the calculated column in the data source that matches the column name.
 get
 Calculated
@@ -260,6 +261,7 @@ Return
 Data
 Source
 Column
+|null
 — The calculated column that matches the column name, or
 null
 if there is no such

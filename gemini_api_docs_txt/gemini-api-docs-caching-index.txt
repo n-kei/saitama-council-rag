@@ -14,7 +14,15 @@ Implicit caching
 Implicit caching is enabled by default for all Gemini 2.5 models. We automatically
 pass on cost savings if your request hits caches. There is nothing you need to do
 in order to enable this. It is effective as of May 8th, 2025. The minimum input
-token count for context caching is 1,024 for 2.5 Flash and 4,096 for 2.5 Pro.
+token count for context caching is listed in the following table for each model:
+Model
+Min token limit
+Gemini 3 Pro Preview
+4096
+Gemini 2.5 Pro
+4096
+Gemini 2.5 Flash
+1024
 To increase the chance of an implicit cache hit:
 Try putting large and common contents at the beginning of your prompt
 Try to send requests with similar prefix in a short amount of time
@@ -647,12 +655,13 @@ Additional considerations
 Keep the following considerations in mind when using context caching:
 The
 minimum
-input token count for context caching is 1,024 for 2.5 Flash
-and 4,096 for 2.5 Pro. The
+input token count for context caching is 1,024 for 2.5 Flash,
+4,096 for 2.5 Pro and 2,048 for 3 Pro Preview. The
 maximum
-is the same as the maximum for the given
-model. (For more on counting tokens, see the
-Token guide
+is the same as the
+maximum for the given model. (For more on counting tokens, see the
+Token
+guide
 ).
 The model doesn't make any distinction between cached tokens and regular
 input tokens. Cached content is a prefix to the prompt.

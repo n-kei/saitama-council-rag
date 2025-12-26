@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/menu/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Custom menus are part of the user interface for a Google App and can only be interacted with by container-bound scripts.
 The provided example demonstrates how to create a custom menu with items, a separator, and a submenu using Apps Script.

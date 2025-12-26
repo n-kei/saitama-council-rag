@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/developer-metadata/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Developer metadata can be accessed and modified within a spreadsheet.
 New developer metadata can be created using methods on Range, Sheet, or Spreadsheet objects.

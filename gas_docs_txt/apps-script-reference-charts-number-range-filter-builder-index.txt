@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/charts/number-range-filter-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A NumberRangeFilterBuilder is used to create number range filter controls, which are sliders allowing users to select ranges of numeric values to filter data.
 The builder provides methods such as setMaxValue, setMinValue, setOrientation, setShowRangeValues, and setTicks to customize the number range filter.

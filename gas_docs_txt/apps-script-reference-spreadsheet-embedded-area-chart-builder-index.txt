@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/embedded-area-chart-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 EmbeddedAreaChartBuilder is a builder specifically for area charts, providing methods to configure various aspects of the chart.
 You can add or remove data ranges, set the chart's position, and build the final EmbeddedChart object using this builder.

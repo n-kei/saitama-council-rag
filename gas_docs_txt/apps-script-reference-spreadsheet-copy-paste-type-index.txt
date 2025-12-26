@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/copy-paste-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CopyPasteType is an enumeration of possible special paste types.
 To call an enum, you call its parent class, name, and property.

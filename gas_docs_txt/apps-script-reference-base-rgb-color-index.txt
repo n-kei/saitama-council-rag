@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/base/rgb-color/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 RgbColor defines a color using red, green, and blue channels.
 You can get the hexadecimal string representation of the color using asHexString().

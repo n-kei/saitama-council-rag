@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/address-field/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The AddressField in a contact is deprecated; use the People API advanced service instead.
 You can get and set the address and label for an AddressField using the provided methods.

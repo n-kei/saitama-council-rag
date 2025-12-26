@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/cell-image/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 CellImage represents an image value in a cell and is added using
 SpreadsheetApp.newCellImage()

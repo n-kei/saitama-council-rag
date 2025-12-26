@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/forms/image-item/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ImageItem is a layout item used in Google Forms to display an image.
 ImageItems can be created or accessed from a Form object in Apps Script.

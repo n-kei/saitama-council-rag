@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/document.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 Documents can contain one or more tabs, each with rich text and elements like tables and lists.
 Documents can be opened or created using
@@ -170,6 +170,7 @@ Section
 get
 Bookmark(id)
 Bookmark
+|null
 Gets the
 Bookmark
 with the given ID in the first tab or, for scripts that are
@@ -186,6 +187,7 @@ to a document, the active tab.
 get
 Cursor()
 Position
+|null
 Gets the user's cursor in the active tab.
 get
 Editors()
@@ -197,6 +199,7 @@ get
 Footer()
 Footer
 Section
+|null
 Retrieves the first tab's footer section or, for scripts that are
 bound
 to a document, the active tab's footer
@@ -204,6 +207,7 @@ section.
 get
 Footnotes()
 Footnote[]
+|null
 Retrieves all the
 Footnote
 elements in the first tab's body or, for scripts that are
@@ -213,6 +217,7 @@ get
 Header()
 Header
 Section
+|null
 Retrieves the first tab's header section or, for scripts that are
 bound
 to a document, the active tab's header
@@ -236,6 +241,7 @@ By
 Id(id)
 Named
 Range
+|null
 Gets the
 Named
 Range
@@ -268,6 +274,7 @@ to a document, the active tab.
 get
 Selection()
 Range
+|null
 Gets the user's selection in the active tab.
 get
 Supported
@@ -1104,6 +1111,7 @@ Bookmark
 .
 Return
 Bookmark
+|null
 — The
 Bookmark
 with the given ID, or
@@ -1237,6 +1245,7 @@ alert
 }
 Return
 Position
+|null
 — A representation of the user's cursor, or
 null
 if the user does not have a
@@ -1296,6 +1305,7 @@ getText
 Return
 Footer
 Section
+|null
 — The tab's footer.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1354,6 +1364,7 @@ getText
 ());
 Return
 Footnote[]
+|null
 — The tab's footnotes.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1396,6 +1407,7 @@ getText
 Return
 Header
 Section
+|null
 — The tab's header.
 Authorization
 Scripts that use this method require authorization with one or more of the following
@@ -1482,6 +1494,7 @@ The range's ID, which is unique within the tab.
 Return
 Named
 Range
+|null
 — The
 Named
 Range
@@ -1630,6 +1643,7 @@ alert
 }
 Return
 Range
+|null
 — A representation of the user's selection, or
 null
 if the user does not have

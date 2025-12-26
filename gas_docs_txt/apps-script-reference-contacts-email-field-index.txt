@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/email-field/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The EmailField is deprecated and users should use the People API advanced service instead.
 EmailField represents an email field within a Contact.

@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/theme-color-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 ThemeColorType is an enum describing various color entries supported in themes.
 You call an enum by calling its parent class, name, and property, like

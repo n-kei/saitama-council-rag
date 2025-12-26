@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/maps/maps/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Maps service allows for finding directions, geocoding, sampling elevation, and creating static map images.
 It includes properties for DirectionFinder and StaticMap enums.

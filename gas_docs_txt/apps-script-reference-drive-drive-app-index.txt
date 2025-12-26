@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/drive/drive-app/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 DriveApp allows scripts to manage files and folders in Google Drive, although the advanced Drive service offers more features and supports shared drives.
 The DriveApp service includes properties for defining access and permission levels for files and folders.

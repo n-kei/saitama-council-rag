@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/document/glyph-type/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 GlyphType
 is an enumeration defining supported glyph types for list items.

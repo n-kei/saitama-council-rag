@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/gmail/gmail-label/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 A GmailLabel is a user-created label in a user's Gmail account.
 Gmail Labels have methods to add or remove themselves from individual threads or multiple threads.

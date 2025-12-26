@@ -1,18 +1,700 @@
 Source Path: gemini_api_docs_html/gemini-api/docs/audio/index.html
 
-Gemini can analyze and understand audio input, enabling use cases like the
-following:
+Gemini can analyze and understand audio input and generate text responses to it,
+enabling use cases like the following:
 Describe, summarize, or answer questions about audio content.
-Provide a transcription of the audio.
-Analyze specific segments of the audio.
-This guide shows you how to use the Gemini API to generate a text response to
-audio input.
-Before you begin
-Before calling the Gemini API, ensure you have
-your SDK of choice
-installed, and a
-Gemini API key
-configured and ready to use.
+Provide a transcription and translation of the audio (speech to text).
+Detect and label different speakers (speaker diarization).
+Detect emotion in speech and music.
+Analyze specific segments of the audio, and provide timestamps.
+As of now the Gemini API doesn't support real-time transcription use cases.
+For real-time voice and video interactions refer to the
+Live API
+.
+For dedicated speech to text models with support for real-time transcription,
+use the
+Google Cloud Speech-to-Text API
+.
+Transcribe speech to text
+This example application shows how to prompt the Gemini API to transcribe,
+translate, and summarize speech, including timestamps, speaker diarization, and
+emotion detection using
+structured outputs
+.
+Python
+from
+google
+import
+genai
+from
+google.genai
+import
+types
+client
+=
+genai
+.
+Client
+()
+YOUTUBE_URL
+=
+"https://www.youtube.com/watch?v=ku-N-eS1lgM"
+def
+main
+():
+prompt
+=
+"""
+Process the audio file and generate a detailed transcription.
+Requirements:
+1. Identify distinct speakers (e.g., Speaker 1, Speaker 2, or names if context allows).
+2. Provide accurate timestamps for each segment (Format: MM:SS).
+3. Detect the primary language of each segment.
+4. If the segment is in a language different than English, also provide the English translation.
+5. Identify the primary emotion of the speaker in this segment. You MUST choose exactly one of the following: Happy, Sad, Angry, Neutral.
+6. Provide a brief summary of the entire audio at the beginning.
+"""
+response
+=
+client
+.
+models
+.
+generate_content
+(
+model
+=
+"gemini-2.5-flash"
+,
+contents
+=
+[
+types
+.
+Content
+(
+parts
+=
+[
+types
+.
+Part
+(
+file_data
+=
+types
+.
+FileData
+(
+file_uri
+=
+YOUTUBE_URL
+)
+),
+types
+.
+Part
+(
+text
+=
+prompt
+)
+]
+)
+],
+config
+=
+types
+.
+GenerateContentConfig
+(
+response_mime_type
+=
+"application/json"
+,
+response_schema
+=
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+OBJECT
+,
+properties
+=
+{
+"summary"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+,
+description
+=
+"A concise summary of the audio content."
+,
+),
+"segments"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+ARRAY
+,
+description
+=
+"List of transcribed segments with speaker and timestamp."
+,
+items
+=
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+OBJECT
+,
+properties
+=
+{
+"speaker"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+),
+"timestamp"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+),
+"content"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+),
+"language"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+),
+"language_code"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+),
+"translation"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+),
+"emotion"
+:
+types
+.
+Schema
+(
+type
+=
+types
+.
+Type
+.
+STRING
+,
+enum
+=
+[
+"happy"
+,
+"sad"
+,
+"angry"
+,
+"neutral"
+]
+),
+},
+required
+=
+[
+"speaker"
+,
+"timestamp"
+,
+"content"
+,
+"language"
+,
+"language_code"
+,
+"emotion"
+],
+),
+),
+},
+required
+=
+[
+"summary"
+,
+"segments"
+],
+),
+),
+)
+print
+(
+response
+.
+text
+)
+if
+__name__
+==
+"__main__"
+:
+main
+()
+JavaScript
+import
+{
+GoogleGenAI
+,
+Type
+}
+from
+"@google/genai"
+;
+const
+ai
+=
+new
+GoogleGenAI
+({});
+const
+YOUTUBE_URL
+=
+"https://www.youtube.com/watch?v=ku-N-eS1lgM"
+;
+async
+function
+main
+()
+{
+const
+prompt
+=
+`
+Process the audio file and generate a detailed transcription.
+Requirements:
+1. Identify distinct speakers (e.g., Speaker 1, Speaker 2, or names if context allows).
+2. Provide accurate timestamps for each segment (Format: MM:SS).
+3. Detect the primary language of each segment.
+4. If the segment is in a language different than English, also provide the English translation.
+5. Identify the primary emotion of the speaker in this segment. You MUST choose exactly one of the following: Happy, Sad, Angry, Neutral.
+6. Provide a brief summary of the entire audio at the beginning.
+`
+;
+const
+Emotion
+=
+{
+Happy
+:
+'happy'
+,
+Sad
+:
+'sad'
+,
+Angry
+:
+'angry'
+,
+Neutral
+:
+'neutral'
+};
+const
+response
+=
+await
+ai
+.
+models
+.
+generateContent
+({
+model
+:
+"gemini-2.5-flash"
+,
+contents
+:
+{
+parts
+:
+[
+{
+fileData
+:
+{
+fileUri
+:
+YOUTUBE_URL
+,
+},
+},
+{
+text
+:
+prompt
+,
+},
+],
+},
+config
+:
+{
+responseMimeType
+:
+"application/json"
+,
+responseSchema
+:
+{
+type
+:
+Type
+.
+OBJECT
+,
+properties
+:
+{
+summary
+:
+{
+type
+:
+Type
+.
+STRING
+,
+description
+:
+"A concise summary of the audio content."
+,
+},
+segments
+:
+{
+type
+:
+Type
+.
+ARRAY
+,
+description
+:
+"List of transcribed segments with speaker and timestamp."
+,
+items
+:
+{
+type
+:
+Type
+.
+OBJECT
+,
+properties
+:
+{
+speaker
+:
+{
+type
+:
+Type
+.
+STRING
+},
+timestamp
+:
+{
+type
+:
+Type
+.
+STRING
+},
+content
+:
+{
+type
+:
+Type
+.
+STRING
+},
+language
+:
+{
+type
+:
+Type
+.
+STRING
+},
+language_code
+:
+{
+type
+:
+Type
+.
+STRING
+},
+translation
+:
+{
+type
+:
+Type
+.
+STRING
+},
+emotion
+:
+{
+type
+:
+Type
+.
+STRING
+,
+enum
+:
+Object
+.
+values
+(
+Emotion
+)
+},
+},
+required
+:
+[
+"speaker"
+,
+"timestamp"
+,
+"content"
+,
+"language"
+,
+"language_code"
+,
+"emotion"
+],
+},
+},
+},
+required
+:
+[
+"summary"
+,
+"segments"
+],
+},
+},
+});
+const
+json
+=
+JSON
+.
+parse
+(
+response
+.
+text
+);
+console
+.
+log
+(
+json
+);
+}
+await
+main
+();
+REST
+curl
+"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+\
+-H
+"x-goog-api-key:
+$GEMINI_API_KEY
+"
+\
+-H
+'Content-Type: application/json'
+\
+-X
+POST
+\
+-d
+'{
+"contents": [
+{
+"parts": [
+{
+"file_data": {
+"file_uri": "https://www.youtube.com/watch?v=ku-N-eS1lgM",
+"mime_type": "video/mp4"
+}
+},
+{
+"text": "Process the audio file and generate a detailed transcription.\n\nRequirements:\n1. Identify distinct speakers (e.g., Speaker 1, Speaker 2, or names if context allows).\n2. Provide accurate timestamps for each segment (Format: MM:SS).\n3. Detect the primary language of each segment.\n4. If the segment is in a language different than English, also provide the English translation.\n5. Identify the primary emotion of the speaker in this segment. You MUST choose exactly one of the following: Happy, Sad, Angry, Neutral.\n6. Provide a brief summary of the entire audio at the beginning."
+}
+]
+}
+],
+"generation_config": {
+"response_mime_type": "application/json",
+"response_schema": {
+"type": "OBJECT",
+"properties": {
+"summary": {
+"type": "STRING",
+"description": "A concise summary of the audio content."
+},
+"segments": {
+"type": "ARRAY",
+"description": "List of transcribed segments with speaker and timestamp.",
+"items": {
+"type": "OBJECT",
+"properties": {
+"speaker": { "type": "STRING" },
+"timestamp": { "type": "STRING" },
+"content": { "type": "STRING" },
+"language": { "type": "STRING" },
+"language_code": { "type": "STRING" },
+"translation": { "type": "STRING" },
+"emotion": {
+"type": "STRING",
+"enum": ["happy", "sad", "angry", "neutral"]
+}
+},
+"required": ["speaker", "timestamp", "content", "language", "language_code", "emotion"]
+}
+}
+},
+"required": ["summary", "segments"]
+}
+}
+}'
+2
+>
+/dev/null
+>
+response.json
+
+cat
+response.json
+echo
+jq
+".candidates[].content.parts[].text"
+response.json
+You can prompt
+AI Studio Build
+to create a
+transcription app just like this one, with the click of a button.
 Input audio
 You can provide audio data to Gemini in the following ways:
 Upload an audio file

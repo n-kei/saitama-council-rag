@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/suggestions-response/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 SuggestionsResponse is a response object used with TextInput widgets that implement autocomplete in Google Workspace add-ons and Google Chat apps.
 It can be created using

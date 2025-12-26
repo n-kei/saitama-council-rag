@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/contacts/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The Contacts service is deprecated and users should instead use the People API advanced service.
 This service allows scripts to access and modify Google Contacts for both individuals and groups.

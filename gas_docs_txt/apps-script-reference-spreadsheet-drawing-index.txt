@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/spreadsheet/drawing/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 The
 Drawing
@@ -32,7 +32,7 @@ Returns the actual height of this drawing in pixels.
 get
 On
 Action()
-String
+String|null
 Returns the name of the macro attached to this drawing.
 get
 Sheet()
@@ -178,7 +178,7 @@ getOnAction
 ());
 }
 Return
-String
+String|null
 — The macro name attached to this drawing.
 Authorization
 Scripts that use this method require authorization with one or more of the following

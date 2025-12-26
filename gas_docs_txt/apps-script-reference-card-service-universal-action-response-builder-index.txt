@@ -1,6 +1,6 @@
 Source Path: gas_docs_html/apps-script/reference/card-service/universal-action-response-builder/index.html
 
-AI-generated Key Takeaways
+Page Summary
 outlined_flag
 UniversalActionResponseBuilder is used to build UniversalActionResponse objects.
 The
